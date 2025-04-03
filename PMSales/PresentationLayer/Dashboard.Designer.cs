@@ -52,7 +52,7 @@ namespace PMSales.PresentationLayer
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Location = new System.Drawing.Point(46, 0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1338, 60);
+            this.headerPanel.Size = new System.Drawing.Size(1249, 60);
             this.headerPanel.TabIndex = 0;
             this.headerPanel.UseWaitCursor = true;
             // 
@@ -63,7 +63,7 @@ namespace PMSales.PresentationLayer
             this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(0, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(1338, 60);
+            this.titleLabel.Size = new System.Drawing.Size(1249, 60);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "📊 Dashboard";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,7 +77,7 @@ namespace PMSales.PresentationLayer
             this.sidebarPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebarPanel.Location = new System.Drawing.Point(0, 0);
             this.sidebarPanel.Name = "sidebarPanel";
-            this.sidebarPanel.Size = new System.Drawing.Size(46, 669);
+            this.sidebarPanel.Size = new System.Drawing.Size(46, 737);
             this.sidebarPanel.TabIndex = 1;
             this.sidebarPanel.UseWaitCursor = true;
             // 
@@ -93,7 +93,7 @@ namespace PMSales.PresentationLayer
             this.panelItems.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelItems.Location = new System.Drawing.Point(0, 0);
             this.panelItems.Name = "panelItems";
-            this.panelItems.Size = new System.Drawing.Size(46, 669);
+            this.panelItems.Size = new System.Drawing.Size(46, 737);
             this.panelItems.TabIndex = 3;
             this.panelItems.UseWaitCursor = true;
             // 
@@ -222,7 +222,7 @@ namespace PMSales.PresentationLayer
             this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contentPanel.Location = new System.Drawing.Point(46, 60);
             this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Size = new System.Drawing.Size(1338, 609);
+            this.contentPanel.Size = new System.Drawing.Size(1249, 677);
             this.contentPanel.TabIndex = 2;
             this.contentPanel.UseWaitCursor = true;
             // 
@@ -230,7 +230,7 @@ namespace PMSales.PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 669);
+            this.ClientSize = new System.Drawing.Size(1295, 737);
             this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.headerPanel);
             this.Controls.Add(this.sidebarPanel);

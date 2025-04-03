@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PMSales.PresentationLayer.UserForm
 {
-    public partial class CustomerFullDetails : Form
+    public partial class CustomerForm2Product : Form
     {
-        public CustomerFullDetails()
+        public CustomerForm2Product()
         {
             InitializeComponent();
         }

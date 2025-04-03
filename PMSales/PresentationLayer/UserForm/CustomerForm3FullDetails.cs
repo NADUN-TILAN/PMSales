@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PMSales.PresentationLayer
+namespace PMSales.PresentationLayer.UserForm
 {
-    public partial class CustomerAdd : Form
+    public partial class CustomerForm3FullDetails : Form
     {
-        public CustomerAdd()
+        public CustomerForm3FullDetails()
         {
             InitializeComponent();
-        }
-
-        private void titleLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

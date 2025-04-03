@@ -83,23 +83,23 @@
     <Compile Include="PresentationLayer\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\UserForm\CustomerAdd.cs">
+    <Compile Include="PresentationLayer\UserForm\CustomerForm1Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\UserForm\CustomerAdd.Designer.cs">
-      <DependentUpon>CustomerAdd.cs</DependentUpon>
+    <Compile Include="PresentationLayer\UserForm\CustomerForm1Add.Designer.cs">
+      <DependentUpon>CustomerForm1Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\UserForm\CustomerFullDetails.cs">
+    <Compile Include="PresentationLayer\UserForm\CustomerForm3FullDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\UserForm\CustomerFullDetails.Designer.cs">
-      <DependentUpon>CustomerFullDetails.cs</DependentUpon>
+    <Compile Include="PresentationLayer\UserForm\CustomerForm3FullDetails.Designer.cs">
+      <DependentUpon>CustomerForm3FullDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresentationLayer\UserForm\CustomerProduct.cs">
+    <Compile Include="PresentationLayer\UserForm\CustomerForm2Product.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentationLayer\UserForm\CustomerProduct.Designer.cs">
-      <DependentUpon>CustomerProduct.cs</DependentUpon>
+    <Compile Include="PresentationLayer\UserForm\CustomerForm2Product.Designer.cs">
+      <DependentUpon>CustomerForm2Product.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\UserForm\ProductAdd.cs">
       <SubType>Form</SubType>
@@ -115,14 +115,14 @@
     <EmbeddedResource Include="PresentationLayer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\UserForm\CustomerAdd.resx">
-      <DependentUpon>CustomerAdd.cs</DependentUpon>
+    <EmbeddedResource Include="PresentationLayer\UserForm\CustomerForm1Add.resx">
+      <DependentUpon>CustomerForm1Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\UserForm\CustomerFullDetails.resx">
-      <DependentUpon>CustomerFullDetails.cs</DependentUpon>
+    <EmbeddedResource Include="PresentationLayer\UserForm\CustomerForm3FullDetails.resx">
+      <DependentUpon>CustomerForm3FullDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentationLayer\UserForm\CustomerProduct.resx">
-      <DependentUpon>CustomerProduct.cs</DependentUpon>
+    <EmbeddedResource Include="PresentationLayer\UserForm\CustomerForm2Product.resx">
+      <DependentUpon>CustomerForm2Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\UserForm\ProductAdd.resx">
       <DependentUpon>ProductAdd.cs</DependentUpon>

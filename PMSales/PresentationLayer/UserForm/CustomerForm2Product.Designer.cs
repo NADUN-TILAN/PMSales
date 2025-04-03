@@ -1,6 +1,6 @@
 ﻿namespace PMSales.PresentationLayer.UserForm
 {
-    partial class CustomerProduct
+    partial class CustomerForm2Product
     {
         /// <summary>
         /// Required designer variable.

@@ -1,7 +1,7 @@
 ﻿
 namespace PMSales.PresentationLayer
 {
-    partial class CustomerAdd
+    partial class CustomerForm1Add
     {
         /// <summary>
         /// Required designer variable.
@@ -76,7 +76,7 @@ namespace PMSales.PresentationLayer
             this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(0, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(1338, 60);
+            this.titleLabel.Size = new System.Drawing.Size(1258, 60);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "📊 Customer";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -90,7 +90,7 @@ namespace PMSales.PresentationLayer
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Location = new System.Drawing.Point(46, 0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1338, 60);
+            this.headerPanel.Size = new System.Drawing.Size(1258, 60);
             this.headerPanel.TabIndex = 3;
             this.headerPanel.UseWaitCursor = true;
             // 
@@ -101,7 +101,7 @@ namespace PMSales.PresentationLayer
             this.sidebarPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebarPanel.Location = new System.Drawing.Point(0, 0);
             this.sidebarPanel.Name = "sidebarPanel";
-            this.sidebarPanel.Size = new System.Drawing.Size(46, 586);
+            this.sidebarPanel.Size = new System.Drawing.Size(46, 730);
             this.sidebarPanel.TabIndex = 4;
             this.sidebarPanel.UseWaitCursor = true;
             // 
@@ -117,7 +117,7 @@ namespace PMSales.PresentationLayer
             this.panelItems.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelItems.Location = new System.Drawing.Point(0, 0);
             this.panelItems.Name = "panelItems";
-            this.panelItems.Size = new System.Drawing.Size(46, 586);
+            this.panelItems.Size = new System.Drawing.Size(46, 730);
             this.panelItems.TabIndex = 3;
             this.panelItems.UseWaitCursor = true;
             // 
@@ -265,69 +265,73 @@ namespace PMSales.PresentationLayer
             this.contentPanel.Controls.Add(this.textBox1);
             this.contentPanel.Controls.Add(this.label1);
             this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentPanel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.contentPanel.Location = new System.Drawing.Point(0, 0);
             this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Size = new System.Drawing.Size(1384, 586);
+            this.contentPanel.Size = new System.Drawing.Size(1304, 730);
             this.contentPanel.TabIndex = 5;
             this.contentPanel.UseWaitCursor = true;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(1011, 423);
+            this.button1.BackColor = System.Drawing.Color.Purple;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(969, 465);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 38);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Click To Next";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Next";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.UseWaitCursor = true;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(728, 368);
+            this.textBox10.Location = new System.Drawing.Point(676, 405);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(434, 35);
+            this.textBox10.Size = new System.Drawing.Size(444, 35);
             this.textBox10.TabIndex = 19;
             this.textBox10.UseWaitCursor = true;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(724, 341);
+            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label10.Location = new System.Drawing.Point(672, 378);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 24);
+            this.label10.Size = new System.Drawing.Size(62, 19);
             this.label10.TabIndex = 18;
             this.label10.Text = "Email 2";
             this.label10.UseWaitCursor = true;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(286, 368);
+            this.textBox9.Location = new System.Drawing.Point(207, 405);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(436, 35);
+            this.textBox9.Size = new System.Drawing.Size(442, 35);
             this.textBox9.TabIndex = 17;
             this.textBox9.UseWaitCursor = true;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(282, 341);
+            this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label9.Location = new System.Drawing.Point(203, 378);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 24);
+            this.label9.Size = new System.Drawing.Size(62, 19);
             this.label9.TabIndex = 16;
             this.label9.Text = "Email 1";
             this.label9.UseWaitCursor = true;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(878, 291);
+            this.textBox8.Location = new System.Drawing.Point(835, 328);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(285, 34);
@@ -337,18 +341,18 @@ namespace PMSales.PresentationLayer
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(874, 264);
+            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label8.Location = new System.Drawing.Point(831, 301);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 24);
+            this.label8.Size = new System.Drawing.Size(101, 19);
             this.label8.TabIndex = 14;
             this.label8.Text = "Contact No 3";
             this.label8.UseWaitCursor = true;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(878, 209);
+            this.textBox7.Location = new System.Drawing.Point(835, 246);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(285, 34);
@@ -358,18 +362,18 @@ namespace PMSales.PresentationLayer
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(874, 182);
+            this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label7.Location = new System.Drawing.Point(831, 219);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 24);
+            this.label7.Size = new System.Drawing.Size(36, 19);
             this.label7.TabIndex = 12;
             this.label7.Text = "City";
             this.label7.UseWaitCursor = true;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(592, 291);
+            this.textBox6.Location = new System.Drawing.Point(530, 328);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(280, 34);
@@ -379,18 +383,18 @@ namespace PMSales.PresentationLayer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(588, 264);
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label6.Location = new System.Drawing.Point(526, 301);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 24);
+            this.label6.Size = new System.Drawing.Size(101, 19);
             this.label6.TabIndex = 10;
             this.label6.Text = "Contact No 2";
             this.label6.UseWaitCursor = true;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(287, 291);
+            this.textBox5.Location = new System.Drawing.Point(207, 328);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(299, 34);
@@ -400,39 +404,39 @@ namespace PMSales.PresentationLayer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(283, 264);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label5.Location = new System.Drawing.Point(203, 301);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 24);
+            this.label5.Size = new System.Drawing.Size(101, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "Contact No 1";
             this.label5.UseWaitCursor = true;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(287, 209);
+            this.textBox4.Location = new System.Drawing.Point(207, 246);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(585, 34);
+            this.textBox4.Size = new System.Drawing.Size(603, 34);
             this.textBox4.TabIndex = 7;
             this.textBox4.UseWaitCursor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(283, 182);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label4.Location = new System.Drawing.Point(203, 219);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 24);
+            this.label4.Size = new System.Drawing.Size(66, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Address";
             this.label4.UseWaitCursor = true;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(878, 129);
+            this.textBox3.Location = new System.Drawing.Point(835, 166);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(285, 34);
@@ -442,18 +446,18 @@ namespace PMSales.PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(874, 102);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label3.Location = new System.Drawing.Point(831, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 24);
+            this.label3.Size = new System.Drawing.Size(83, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Last Name";
             this.label3.UseWaitCursor = true;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(592, 129);
+            this.textBox2.Location = new System.Drawing.Point(530, 166);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(280, 34);
@@ -463,18 +467,18 @@ namespace PMSales.PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(588, 102);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(526, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 24);
+            this.label2.Size = new System.Drawing.Size(101, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Middle Name";
             this.label2.UseWaitCursor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(287, 129);
+            this.textBox1.Location = new System.Drawing.Point(207, 166);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(299, 34);
@@ -484,11 +488,11 @@ namespace PMSales.PresentationLayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(283, 102);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(203, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 24);
+            this.label1.Size = new System.Drawing.Size(85, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "First Name";
             this.label1.UseWaitCursor = true;
@@ -497,7 +501,7 @@ namespace PMSales.PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 586);
+            this.ClientSize = new System.Drawing.Size(1304, 730);
             this.Controls.Add(this.headerPanel);
             this.Controls.Add(this.sidebarPanel);
             this.Controls.Add(this.contentPanel);
