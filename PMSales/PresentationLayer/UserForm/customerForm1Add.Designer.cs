@@ -1,0 +1,602 @@
+﻿namespace PMSales.PresentationLayer.UserForm
+{
+    partial class customerForm1Add
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            labelName = new Label();
+            textBoxName = new RJCodeAdvance.RJControls.RJTextBox();
+            labelPhone1 = new Label();
+            textBoxPhone1 = new RJCodeAdvance.RJControls.RJTextBox();
+            labelPhone2 = new Label();
+            textBoxPhone2 = new RJCodeAdvance.RJControls.RJTextBox();
+            labelPhone3 = new Label();
+            textBoxPhone3 = new RJCodeAdvance.RJControls.RJTextBox();
+            labelEmail1 = new Label();
+            textBoxEmail1 = new RJCodeAdvance.RJControls.RJTextBox();
+            labelEmail2 = new Label();
+            textBoxEmail2 = new RJCodeAdvance.RJControls.RJTextBox();
+            labelAddress = new Label();
+            textBoxAddress = new RJCodeAdvance.RJControls.RJTextBox();
+            labelCity = new Label();
+            textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
+            buttonSave = new RJCodeAdvance.RJControls.RJButton();
+            label1 = new Label();
+            rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
+            label2 = new Label();
+            rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
+            panel1 = new Panel();
+            label3 = new Label();
+            panel3 = new Panel();
+            rjButton4 = new RJCodeAdvance.RJControls.RJButton();
+            panel2 = new Panel();
+            rjButton3 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton5 = new RJCodeAdvance.RJControls.RJButton();
+            panel1.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
+            // 
+            // labelName
+            // 
+            labelName.AutoSize = true;
+            labelName.Location = new Point(242, 116);
+            labelName.Name = "labelName";
+            labelName.Size = new Size(64, 15);
+            labelName.TabIndex = 2;
+            labelName.Text = "FirstName:";
+            // 
+            // textBoxName
+            // 
+            textBoxName.BackColor = Color.White;
+            textBoxName.BorderColor = Color.Gray;
+            textBoxName.BorderFocusColor = Color.DodgerBlue;
+            textBoxName.BorderRadius = 10;
+            textBoxName.BorderSize = 2;
+            textBoxName.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxName.ForeColor = Color.Black;
+            textBoxName.Location = new Point(362, 116);
+            textBoxName.Margin = new Padding(4);
+            textBoxName.Multiline = false;
+            textBoxName.Name = "textBoxName";
+            textBoxName.Padding = new Padding(10, 7, 10, 7);
+            textBoxName.PasswordChar = false;
+            textBoxName.PlaceholderColor = Color.DarkGray;
+            textBoxName.PlaceholderText = "Enter Customer FirstName";
+            textBoxName.Size = new Size(498, 31);
+            textBoxName.TabIndex = 3;
+            textBoxName.Texts = "";
+            textBoxName.UnderlinedStyle = false;
+            // 
+            // labelPhone1
+            // 
+            labelPhone1.AutoSize = true;
+            labelPhone1.Location = new Point(242, 233);
+            labelPhone1.Name = "labelPhone1";
+            labelPhone1.Size = new Size(53, 15);
+            labelPhone1.TabIndex = 4;
+            labelPhone1.Text = "Phone 1:";
+            // 
+            // textBoxPhone1
+            // 
+            textBoxPhone1.BackColor = Color.White;
+            textBoxPhone1.BorderColor = Color.Gray;
+            textBoxPhone1.BorderFocusColor = Color.DodgerBlue;
+            textBoxPhone1.BorderRadius = 10;
+            textBoxPhone1.BorderSize = 2;
+            textBoxPhone1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxPhone1.ForeColor = Color.Black;
+            textBoxPhone1.Location = new Point(362, 233);
+            textBoxPhone1.Margin = new Padding(4);
+            textBoxPhone1.Multiline = false;
+            textBoxPhone1.Name = "textBoxPhone1";
+            textBoxPhone1.Padding = new Padding(10, 7, 10, 7);
+            textBoxPhone1.PasswordChar = false;
+            textBoxPhone1.PlaceholderColor = Color.DarkGray;
+            textBoxPhone1.PlaceholderText = "Enter Phone 1";
+            textBoxPhone1.Size = new Size(498, 31);
+            textBoxPhone1.TabIndex = 5;
+            textBoxPhone1.Texts = "";
+            textBoxPhone1.UnderlinedStyle = false;
+            // 
+            // labelPhone2
+            // 
+            labelPhone2.AutoSize = true;
+            labelPhone2.Location = new Point(242, 273);
+            labelPhone2.Name = "labelPhone2";
+            labelPhone2.Size = new Size(53, 15);
+            labelPhone2.TabIndex = 6;
+            labelPhone2.Text = "Phone 2:";
+            // 
+            // textBoxPhone2
+            // 
+            textBoxPhone2.BackColor = Color.White;
+            textBoxPhone2.BorderColor = Color.Gray;
+            textBoxPhone2.BorderFocusColor = Color.DodgerBlue;
+            textBoxPhone2.BorderRadius = 10;
+            textBoxPhone2.BorderSize = 2;
+            textBoxPhone2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxPhone2.ForeColor = Color.Black;
+            textBoxPhone2.Location = new Point(362, 273);
+            textBoxPhone2.Margin = new Padding(4);
+            textBoxPhone2.Multiline = false;
+            textBoxPhone2.Name = "textBoxPhone2";
+            textBoxPhone2.Padding = new Padding(10, 7, 10, 7);
+            textBoxPhone2.PasswordChar = false;
+            textBoxPhone2.PlaceholderColor = Color.DarkGray;
+            textBoxPhone2.PlaceholderText = "Enter Phone 2";
+            textBoxPhone2.Size = new Size(498, 31);
+            textBoxPhone2.TabIndex = 7;
+            textBoxPhone2.Texts = "";
+            textBoxPhone2.UnderlinedStyle = false;
+            // 
+            // labelPhone3
+            // 
+            labelPhone3.AutoSize = true;
+            labelPhone3.Location = new Point(242, 313);
+            labelPhone3.Name = "labelPhone3";
+            labelPhone3.Size = new Size(53, 15);
+            labelPhone3.TabIndex = 8;
+            labelPhone3.Text = "Phone 3:";
+            // 
+            // textBoxPhone3
+            // 
+            textBoxPhone3.BackColor = Color.White;
+            textBoxPhone3.BorderColor = Color.Gray;
+            textBoxPhone3.BorderFocusColor = Color.DodgerBlue;
+            textBoxPhone3.BorderRadius = 10;
+            textBoxPhone3.BorderSize = 2;
+            textBoxPhone3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxPhone3.ForeColor = Color.Black;
+            textBoxPhone3.Location = new Point(362, 313);
+            textBoxPhone3.Margin = new Padding(4);
+            textBoxPhone3.Multiline = false;
+            textBoxPhone3.Name = "textBoxPhone3";
+            textBoxPhone3.Padding = new Padding(10, 7, 10, 7);
+            textBoxPhone3.PasswordChar = false;
+            textBoxPhone3.PlaceholderColor = Color.DarkGray;
+            textBoxPhone3.PlaceholderText = "Enter Phone 3";
+            textBoxPhone3.Size = new Size(498, 31);
+            textBoxPhone3.TabIndex = 9;
+            textBoxPhone3.Texts = "";
+            textBoxPhone3.UnderlinedStyle = false;
+            // 
+            // labelEmail1
+            // 
+            labelEmail1.AutoSize = true;
+            labelEmail1.Location = new Point(242, 353);
+            labelEmail1.Name = "labelEmail1";
+            labelEmail1.Size = new Size(48, 15);
+            labelEmail1.TabIndex = 10;
+            labelEmail1.Text = "Email 1:";
+            // 
+            // textBoxEmail1
+            // 
+            textBoxEmail1.BackColor = Color.White;
+            textBoxEmail1.BorderColor = Color.Gray;
+            textBoxEmail1.BorderFocusColor = Color.DodgerBlue;
+            textBoxEmail1.BorderRadius = 10;
+            textBoxEmail1.BorderSize = 2;
+            textBoxEmail1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxEmail1.ForeColor = Color.Black;
+            textBoxEmail1.Location = new Point(362, 353);
+            textBoxEmail1.Margin = new Padding(4);
+            textBoxEmail1.Multiline = false;
+            textBoxEmail1.Name = "textBoxEmail1";
+            textBoxEmail1.Padding = new Padding(10, 7, 10, 7);
+            textBoxEmail1.PasswordChar = false;
+            textBoxEmail1.PlaceholderColor = Color.DarkGray;
+            textBoxEmail1.PlaceholderText = "Enter Email 1";
+            textBoxEmail1.Size = new Size(498, 31);
+            textBoxEmail1.TabIndex = 11;
+            textBoxEmail1.Texts = "";
+            textBoxEmail1.UnderlinedStyle = false;
+            // 
+            // labelEmail2
+            // 
+            labelEmail2.AutoSize = true;
+            labelEmail2.Location = new Point(242, 393);
+            labelEmail2.Name = "labelEmail2";
+            labelEmail2.Size = new Size(48, 15);
+            labelEmail2.TabIndex = 12;
+            labelEmail2.Text = "Email 2:";
+            // 
+            // textBoxEmail2
+            // 
+            textBoxEmail2.BackColor = Color.White;
+            textBoxEmail2.BorderColor = Color.Gray;
+            textBoxEmail2.BorderFocusColor = Color.DodgerBlue;
+            textBoxEmail2.BorderRadius = 10;
+            textBoxEmail2.BorderSize = 2;
+            textBoxEmail2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxEmail2.ForeColor = Color.Black;
+            textBoxEmail2.Location = new Point(362, 393);
+            textBoxEmail2.Margin = new Padding(4);
+            textBoxEmail2.Multiline = false;
+            textBoxEmail2.Name = "textBoxEmail2";
+            textBoxEmail2.Padding = new Padding(10, 7, 10, 7);
+            textBoxEmail2.PasswordChar = false;
+            textBoxEmail2.PlaceholderColor = Color.DarkGray;
+            textBoxEmail2.PlaceholderText = "Enter Email 2";
+            textBoxEmail2.Size = new Size(498, 31);
+            textBoxEmail2.TabIndex = 13;
+            textBoxEmail2.Texts = "";
+            textBoxEmail2.UnderlinedStyle = false;
+            // 
+            // labelAddress
+            // 
+            labelAddress.AutoSize = true;
+            labelAddress.Location = new Point(242, 433);
+            labelAddress.Name = "labelAddress";
+            labelAddress.Size = new Size(52, 15);
+            labelAddress.TabIndex = 14;
+            labelAddress.Text = "Address:";
+            // 
+            // textBoxAddress
+            // 
+            textBoxAddress.BackColor = Color.White;
+            textBoxAddress.BorderColor = Color.Gray;
+            textBoxAddress.BorderFocusColor = Color.DodgerBlue;
+            textBoxAddress.BorderRadius = 10;
+            textBoxAddress.BorderSize = 2;
+            textBoxAddress.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxAddress.ForeColor = Color.Black;
+            textBoxAddress.Location = new Point(362, 433);
+            textBoxAddress.Margin = new Padding(4);
+            textBoxAddress.Multiline = false;
+            textBoxAddress.Name = "textBoxAddress";
+            textBoxAddress.Padding = new Padding(10, 7, 10, 7);
+            textBoxAddress.PasswordChar = false;
+            textBoxAddress.PlaceholderColor = Color.DarkGray;
+            textBoxAddress.PlaceholderText = "Enter Address";
+            textBoxAddress.Size = new Size(498, 31);
+            textBoxAddress.TabIndex = 15;
+            textBoxAddress.Texts = "";
+            textBoxAddress.UnderlinedStyle = false;
+            // 
+            // labelCity
+            // 
+            labelCity.AutoSize = true;
+            labelCity.Location = new Point(242, 473);
+            labelCity.Name = "labelCity";
+            labelCity.Size = new Size(31, 15);
+            labelCity.TabIndex = 16;
+            labelCity.Text = "City:";
+            // 
+            // textBoxCity
+            // 
+            textBoxCity.BackColor = Color.White;
+            textBoxCity.BorderColor = Color.Gray;
+            textBoxCity.BorderFocusColor = Color.DodgerBlue;
+            textBoxCity.BorderRadius = 10;
+            textBoxCity.BorderSize = 2;
+            textBoxCity.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxCity.ForeColor = Color.Black;
+            textBoxCity.Location = new Point(362, 473);
+            textBoxCity.Margin = new Padding(4);
+            textBoxCity.Multiline = false;
+            textBoxCity.Name = "textBoxCity";
+            textBoxCity.Padding = new Padding(10, 7, 10, 7);
+            textBoxCity.PasswordChar = false;
+            textBoxCity.PlaceholderColor = Color.DarkGray;
+            textBoxCity.PlaceholderText = "Enter City";
+            textBoxCity.Size = new Size(498, 31);
+            textBoxCity.TabIndex = 17;
+            textBoxCity.Texts = "";
+            textBoxCity.UnderlinedStyle = false;
+            // 
+            // buttonSave
+            // 
+            buttonSave.BackColor = Color.DodgerBlue;
+            buttonSave.BackgroundColor = Color.DodgerBlue;
+            buttonSave.BorderColor = Color.PaleVioletRed;
+            buttonSave.BorderRadius = 20;
+            buttonSave.BorderSize = 0;
+            buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.ForeColor = Color.White;
+            buttonSave.Location = new Point(362, 523);
+            buttonSave.Name = "buttonSave";
+            buttonSave.Size = new Size(498, 35);
+            buttonSave.TabIndex = 18;
+            buttonSave.Text = "Next >>";
+            buttonSave.TextColor = Color.White;
+            buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += buttonSave_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(242, 155);
+            label1.Name = "label1";
+            label1.Size = new Size(81, 15);
+            label1.TabIndex = 19;
+            label1.Text = "SecondName:";
+            // 
+            // rjTextBox1
+            // 
+            rjTextBox1.BackColor = Color.White;
+            rjTextBox1.BorderColor = Color.Gray;
+            rjTextBox1.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox1.BorderRadius = 10;
+            rjTextBox1.BorderSize = 2;
+            rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox1.ForeColor = Color.Black;
+            rjTextBox1.Location = new Point(362, 155);
+            rjTextBox1.Margin = new Padding(4);
+            rjTextBox1.Multiline = false;
+            rjTextBox1.Name = "rjTextBox1";
+            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox1.PasswordChar = false;
+            rjTextBox1.PlaceholderColor = Color.DarkGray;
+            rjTextBox1.PlaceholderText = "Enter Customer SecondName";
+            rjTextBox1.Size = new Size(498, 31);
+            rjTextBox1.TabIndex = 20;
+            rjTextBox1.Texts = "";
+            rjTextBox1.UnderlinedStyle = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(242, 194);
+            label2.Name = "label2";
+            label2.Size = new Size(63, 15);
+            label2.TabIndex = 21;
+            label2.Text = "LastName:";
+            // 
+            // rjTextBox2
+            // 
+            rjTextBox2.BackColor = Color.White;
+            rjTextBox2.BorderColor = Color.Gray;
+            rjTextBox2.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox2.BorderRadius = 10;
+            rjTextBox2.BorderSize = 2;
+            rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox2.ForeColor = Color.Black;
+            rjTextBox2.Location = new Point(362, 194);
+            rjTextBox2.Margin = new Padding(4);
+            rjTextBox2.Multiline = false;
+            rjTextBox2.Name = "rjTextBox2";
+            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox2.PasswordChar = false;
+            rjTextBox2.PlaceholderColor = Color.DarkGray;
+            rjTextBox2.PlaceholderText = "Enter Customer LastName";
+            rjTextBox2.Size = new Size(498, 31);
+            rjTextBox2.TabIndex = 22;
+            rjTextBox2.Texts = "";
+            rjTextBox2.UnderlinedStyle = false;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(rjButton5);
+            panel1.Controls.Add(label3);
+            panel1.Location = new Point(161, 46);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(790, 556);
+            panel1.TabIndex = 23;
+            panel1.Paint += panel1_Paint;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(81, 26);
+            label3.Name = "label3";
+            label3.Size = new Size(352, 30);
+            label3.TabIndex = 26;
+            label3.Text = "Customer Create Application Form";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.DodgerBlue;
+            panel3.Controls.Add(rjButton4);
+            panel3.Location = new Point(2, 46);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(160, 556);
+            panel3.TabIndex = 25;
+            // 
+            // rjButton4
+            // 
+            rjButton4.BackColor = Color.Navy;
+            rjButton4.BackgroundColor = Color.Navy;
+            rjButton4.BorderColor = Color.PaleVioletRed;
+            rjButton4.BorderRadius = 10;
+            rjButton4.BorderSize = 0;
+            rjButton4.FlatStyle = FlatStyle.Flat;
+            rjButton4.ForeColor = Color.White;
+            rjButton4.Location = new Point(8, 6);
+            rjButton4.Name = "rjButton4";
+            rjButton4.Size = new Size(143, 26);
+            rjButton4.TabIndex = 27;
+            rjButton4.Text = "Add";
+            rjButton4.TextColor = Color.White;
+            rjButton4.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.DodgerBlue;
+            panel2.Controls.Add(rjButton3);
+            panel2.Controls.Add(rjButton2);
+            panel2.Controls.Add(rjButton1);
+            panel2.ForeColor = Color.White;
+            panel2.Location = new Point(2, 1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(949, 45);
+            panel2.TabIndex = 24;
+            // 
+            // rjButton3
+            // 
+            rjButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton3.BackColor = Color.MidnightBlue;
+            rjButton3.BackgroundColor = Color.MidnightBlue;
+            rjButton3.BorderColor = Color.PaleVioletRed;
+            rjButton3.BorderRadius = 10;
+            rjButton3.BorderSize = 0;
+            rjButton3.CausesValidation = false;
+            rjButton3.FlatStyle = FlatStyle.Popup;
+            rjButton3.ForeColor = Color.Transparent;
+            rjButton3.Location = new Point(313, 6);
+            rjButton3.Name = "rjButton3";
+            rjButton3.Size = new Size(75, 34);
+            rjButton3.TabIndex = 29;
+            rjButton3.Text = "Products";
+            rjButton3.TextColor = Color.Transparent;
+            rjButton3.UseVisualStyleBackColor = false;
+            // 
+            // rjButton2
+            // 
+            rjButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton2.BackColor = Color.MidnightBlue;
+            rjButton2.BackgroundColor = Color.MidnightBlue;
+            rjButton2.BorderColor = Color.PaleVioletRed;
+            rjButton2.BorderRadius = 10;
+            rjButton2.BorderSize = 0;
+            rjButton2.CausesValidation = false;
+            rjButton2.FlatStyle = FlatStyle.Popup;
+            rjButton2.ForeColor = Color.Transparent;
+            rjButton2.Location = new Point(236, 6);
+            rjButton2.Name = "rjButton2";
+            rjButton2.Size = new Size(75, 34);
+            rjButton2.TabIndex = 28;
+            rjButton2.Text = "Sales";
+            rjButton2.TextColor = Color.Transparent;
+            rjButton2.UseVisualStyleBackColor = false;
+            // 
+            // rjButton1
+            // 
+            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton1.BackColor = Color.MidnightBlue;
+            rjButton1.BackgroundColor = Color.MidnightBlue;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 0;
+            rjButton1.CausesValidation = false;
+            rjButton1.FlatStyle = FlatStyle.Popup;
+            rjButton1.ForeColor = Color.Transparent;
+            rjButton1.Location = new Point(159, 6);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(75, 34);
+            rjButton1.TabIndex = 27;
+            rjButton1.Text = "Customer";
+            rjButton1.TextColor = Color.Transparent;
+            rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // rjButton5
+            // 
+            rjButton5.BackColor = SystemColors.HotTrack;
+            rjButton5.BackgroundColor = SystemColors.HotTrack;
+            rjButton5.BorderColor = Color.PaleVioletRed;
+            rjButton5.BorderRadius = 20;
+            rjButton5.BorderSize = 0;
+            rjButton5.FlatStyle = FlatStyle.Flat;
+            rjButton5.ForeColor = Color.White;
+            rjButton5.Location = new Point(201, 477);
+            rjButton5.Name = "rjButton5";
+            rjButton5.Size = new Size(168, 35);
+            rjButton5.TabIndex = 51;
+            rjButton5.Text = "<< Back";
+            rjButton5.TextColor = Color.White;
+            rjButton5.UseVisualStyleBackColor = false;
+            // 
+            // customerForm1Add
+            // 
+            ClientSize = new Size(950, 602);
+            Controls.Add(label2);
+            Controls.Add(panel3);
+            Controls.Add(rjTextBox2);
+            Controls.Add(panel2);
+            Controls.Add(label1);
+            Controls.Add(rjTextBox1);
+            Controls.Add(labelName);
+            Controls.Add(textBoxName);
+            Controls.Add(labelPhone1);
+            Controls.Add(textBoxPhone1);
+            Controls.Add(labelPhone2);
+            Controls.Add(textBoxPhone2);
+            Controls.Add(labelPhone3);
+            Controls.Add(textBoxPhone3);
+            Controls.Add(labelEmail1);
+            Controls.Add(textBoxEmail1);
+            Controls.Add(labelEmail2);
+            Controls.Add(textBoxEmail2);
+            Controls.Add(labelAddress);
+            Controls.Add(textBoxAddress);
+            Controls.Add(labelCity);
+            Controls.Add(textBoxCity);
+            Controls.Add(buttonSave);
+            Controls.Add(panel1);
+            Name = "customerForm1Add";
+            Text = "Add Customer";
+            Load += customerForm1Add_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+        private System.Windows.Forms.Label labelName;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxName;
+        private System.Windows.Forms.Label labelPhone1;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxPhone1;
+        private System.Windows.Forms.Label labelPhone2;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxPhone2;
+        private System.Windows.Forms.Label labelPhone3;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxPhone3;
+        private System.Windows.Forms.Label labelEmail1;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxEmail1;
+        private System.Windows.Forms.Label labelEmail2;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxEmail2;
+        private System.Windows.Forms.Label labelAddress;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxAddress;
+        private System.Windows.Forms.Label labelCity;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxCity;
+        private RJCodeAdvance.RJControls.RJButton buttonSave;
+
+        // Event handler for Save button
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            // Save customer data logic goes here
+        }
+        private Label label1;
+        private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
+        private Label label2;
+        private RJCodeAdvance.RJControls.RJTextBox rjTextBox2;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label3;
+        private RJCodeAdvance.RJControls.RJButton rjButton1;
+        private RJCodeAdvance.RJControls.RJButton rjButton3;
+        private RJCodeAdvance.RJControls.RJButton rjButton2;
+        private RJCodeAdvance.RJControls.RJButton rjButton4;
+        private RJCodeAdvance.RJControls.RJButton rjButton5;
+    }
+}
