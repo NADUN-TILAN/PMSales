@@ -28,21 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customerForm3Confirm));
             rjButton3 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel2 = new Panel();
-            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             panel3 = new Panel();
             label3 = new Label();
             buttonSave = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
+            rjButton5 = new RJCodeAdvance.RJControls.RJButton();
+            rjTextBox12 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox11 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox10 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox9 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox16 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox15 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox14 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox13 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox5 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox6 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox7 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox8 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox3 = new RJCodeAdvance.RJControls.RJTextBox();
+            rjTextBox4 = new RJCodeAdvance.RJControls.RJTextBox();
             rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
             label1 = new Label();
             rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
-            labelName = new Label();
-            textBoxPhone3 = new RJCodeAdvance.RJControls.RJTextBox();
             textBoxPhone2 = new RJCodeAdvance.RJControls.RJTextBox();
+            textBoxPhone3 = new RJCodeAdvance.RJControls.RJTextBox();
+            labelName = new Label();
             labelPhone1 = new Label();
             textBoxPhone1 = new RJCodeAdvance.RJControls.RJTextBox();
             textBoxName = new RJCodeAdvance.RJControls.RJTextBox();
@@ -54,21 +68,14 @@
             textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
             textBoxAddress = new RJCodeAdvance.RJControls.RJTextBox();
             labelCity = new Label();
-            rjTextBox3 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox4 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox5 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox6 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox7 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox8 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox13 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox14 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox15 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox16 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox9 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox10 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox11 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjTextBox12 = new RJCodeAdvance.RJControls.RJTextBox();
-            rjButton5 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton6 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton7 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton8 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton9 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton10 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton11 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
@@ -79,43 +86,23 @@
             rjButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             rjButton3.BackColor = Color.MidnightBlue;
             rjButton3.BackgroundColor = Color.MidnightBlue;
+            rjButton3.BackgroundImage = Properties.Resources.cus;
+            rjButton3.BackgroundImageLayout = ImageLayout.Zoom;
             rjButton3.BorderColor = Color.PaleVioletRed;
             rjButton3.BorderRadius = 10;
             rjButton3.BorderSize = 0;
             rjButton3.CausesValidation = false;
-            rjButton3.FlatStyle = FlatStyle.Popup;
             rjButton3.ForeColor = Color.Transparent;
-            rjButton3.Location = new Point(313, 6);
+            rjButton3.Location = new Point(11, 6);
             rjButton3.Name = "rjButton3";
-            rjButton3.Size = new Size(75, 34);
+            rjButton3.Size = new Size(47, 44);
             rjButton3.TabIndex = 29;
-            rjButton3.Text = "Products";
             rjButton3.TextColor = Color.Transparent;
             rjButton3.UseVisualStyleBackColor = false;
-            // 
-            // rjButton1
-            // 
-            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton1.BackColor = Color.MidnightBlue;
-            rjButton1.BackgroundColor = Color.MidnightBlue;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.CausesValidation = false;
-            rjButton1.FlatStyle = FlatStyle.Popup;
-            rjButton1.ForeColor = Color.Transparent;
-            rjButton1.Location = new Point(159, 6);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(75, 34);
-            rjButton1.TabIndex = 27;
-            rjButton1.Text = "Customer";
-            rjButton1.TextColor = Color.Transparent;
-            rjButton1.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
             panel2.BackColor = Color.DodgerBlue;
-            panel2.Controls.Add(rjButton3);
             panel2.Controls.Add(rjButton2);
             panel2.Controls.Add(rjButton1);
             panel2.ForeColor = Color.White;
@@ -123,25 +110,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(949, 45);
             panel2.TabIndex = 48;
-            // 
-            // rjButton2
-            // 
-            rjButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton2.BackColor = Color.MidnightBlue;
-            rjButton2.BackgroundColor = Color.MidnightBlue;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 10;
-            rjButton2.BorderSize = 0;
-            rjButton2.CausesValidation = false;
-            rjButton2.FlatStyle = FlatStyle.Popup;
-            rjButton2.ForeColor = Color.Transparent;
-            rjButton2.Location = new Point(236, 6);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(75, 34);
-            rjButton2.TabIndex = 28;
-            rjButton2.Text = "Sales";
-            rjButton2.TextColor = Color.Transparent;
-            rjButton2.UseVisualStyleBackColor = false;
             // 
             // rjButton4
             // 
@@ -152,7 +120,7 @@
             rjButton4.BorderSize = 0;
             rjButton4.FlatStyle = FlatStyle.Flat;
             rjButton4.ForeColor = Color.White;
-            rjButton4.Location = new Point(8, 6);
+            rjButton4.Location = new Point(7, 355);
             rjButton4.Name = "rjButton4";
             rjButton4.Size = new Size(143, 26);
             rjButton4.TabIndex = 27;
@@ -163,6 +131,13 @@
             // panel3
             // 
             panel3.BackColor = Color.DodgerBlue;
+            panel3.Controls.Add(rjButton11);
+            panel3.Controls.Add(rjButton10);
+            panel3.Controls.Add(rjButton9);
+            panel3.Controls.Add(rjButton8);
+            panel3.Controls.Add(rjButton7);
+            panel3.Controls.Add(rjButton6);
+            panel3.Controls.Add(rjButton3);
             panel3.Controls.Add(rjButton4);
             panel3.Location = new Point(1, 46);
             panel3.Name = "panel3";
@@ -224,6 +199,331 @@
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 47;
             // 
+            // rjButton5
+            // 
+            rjButton5.BackColor = SystemColors.HotTrack;
+            rjButton5.BackgroundColor = SystemColors.HotTrack;
+            rjButton5.BorderColor = Color.PaleVioletRed;
+            rjButton5.BorderRadius = 20;
+            rjButton5.BorderSize = 0;
+            rjButton5.FlatStyle = FlatStyle.Flat;
+            rjButton5.ForeColor = Color.White;
+            rjButton5.Location = new Point(201, 477);
+            rjButton5.Name = "rjButton5";
+            rjButton5.Size = new Size(168, 35);
+            rjButton5.TabIndex = 69;
+            rjButton5.Text = "<< Back";
+            rjButton5.TextColor = Color.White;
+            rjButton5.UseVisualStyleBackColor = false;
+            // 
+            // rjTextBox12
+            // 
+            rjTextBox12.BackColor = Color.White;
+            rjTextBox12.BorderColor = Color.Gray;
+            rjTextBox12.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox12.BorderRadius = 10;
+            rjTextBox12.BorderSize = 2;
+            rjTextBox12.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox12.ForeColor = Color.Black;
+            rjTextBox12.Location = new Point(623, 421);
+            rjTextBox12.Margin = new Padding(4);
+            rjTextBox12.Multiline = false;
+            rjTextBox12.Name = "rjTextBox12";
+            rjTextBox12.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox12.PasswordChar = false;
+            rjTextBox12.PlaceholderColor = Color.DarkGray;
+            rjTextBox12.PlaceholderText = "Qty.";
+            rjTextBox12.Size = new Size(76, 31);
+            rjTextBox12.TabIndex = 68;
+            rjTextBox12.Texts = "";
+            rjTextBox12.UnderlinedStyle = false;
+            // 
+            // rjTextBox11
+            // 
+            rjTextBox11.BackColor = Color.White;
+            rjTextBox11.BorderColor = Color.Gray;
+            rjTextBox11.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox11.BorderRadius = 10;
+            rjTextBox11.BorderSize = 2;
+            rjTextBox11.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox11.ForeColor = Color.Black;
+            rjTextBox11.Location = new Point(623, 382);
+            rjTextBox11.Margin = new Padding(4);
+            rjTextBox11.Multiline = false;
+            rjTextBox11.Name = "rjTextBox11";
+            rjTextBox11.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox11.PasswordChar = false;
+            rjTextBox11.PlaceholderColor = Color.DarkGray;
+            rjTextBox11.PlaceholderText = "Qty.";
+            rjTextBox11.Size = new Size(76, 31);
+            rjTextBox11.TabIndex = 67;
+            rjTextBox11.Texts = "";
+            rjTextBox11.UnderlinedStyle = false;
+            // 
+            // rjTextBox10
+            // 
+            rjTextBox10.BackColor = Color.White;
+            rjTextBox10.BorderColor = Color.Gray;
+            rjTextBox10.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox10.BorderRadius = 10;
+            rjTextBox10.BorderSize = 2;
+            rjTextBox10.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox10.ForeColor = Color.Black;
+            rjTextBox10.Location = new Point(623, 343);
+            rjTextBox10.Margin = new Padding(4);
+            rjTextBox10.Multiline = false;
+            rjTextBox10.Name = "rjTextBox10";
+            rjTextBox10.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox10.PasswordChar = false;
+            rjTextBox10.PlaceholderColor = Color.DarkGray;
+            rjTextBox10.PlaceholderText = "Qty.";
+            rjTextBox10.Size = new Size(76, 31);
+            rjTextBox10.TabIndex = 66;
+            rjTextBox10.Texts = "";
+            rjTextBox10.UnderlinedStyle = false;
+            // 
+            // rjTextBox9
+            // 
+            rjTextBox9.BackColor = Color.White;
+            rjTextBox9.BorderColor = Color.Gray;
+            rjTextBox9.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox9.BorderRadius = 10;
+            rjTextBox9.BorderSize = 2;
+            rjTextBox9.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox9.ForeColor = Color.Black;
+            rjTextBox9.Location = new Point(623, 304);
+            rjTextBox9.Margin = new Padding(4);
+            rjTextBox9.Multiline = false;
+            rjTextBox9.Name = "rjTextBox9";
+            rjTextBox9.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox9.PasswordChar = false;
+            rjTextBox9.PlaceholderColor = Color.DarkGray;
+            rjTextBox9.PlaceholderText = "Qty.";
+            rjTextBox9.Size = new Size(76, 31);
+            rjTextBox9.TabIndex = 65;
+            rjTextBox9.Texts = "";
+            rjTextBox9.UnderlinedStyle = false;
+            // 
+            // rjTextBox16
+            // 
+            rjTextBox16.BackColor = Color.White;
+            rjTextBox16.BorderColor = Color.Gray;
+            rjTextBox16.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox16.BorderRadius = 10;
+            rjTextBox16.BorderSize = 2;
+            rjTextBox16.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox16.ForeColor = Color.Black;
+            rjTextBox16.Location = new Point(367, 421);
+            rjTextBox16.Margin = new Padding(4);
+            rjTextBox16.Multiline = false;
+            rjTextBox16.Name = "rjTextBox16";
+            rjTextBox16.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox16.PasswordChar = false;
+            rjTextBox16.PlaceholderColor = Color.DarkGray;
+            rjTextBox16.PlaceholderText = "Qty.";
+            rjTextBox16.Size = new Size(76, 31);
+            rjTextBox16.TabIndex = 64;
+            rjTextBox16.Texts = "";
+            rjTextBox16.UnderlinedStyle = false;
+            // 
+            // rjTextBox15
+            // 
+            rjTextBox15.BackColor = Color.White;
+            rjTextBox15.BorderColor = Color.Gray;
+            rjTextBox15.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox15.BorderRadius = 10;
+            rjTextBox15.BorderSize = 2;
+            rjTextBox15.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox15.ForeColor = Color.Black;
+            rjTextBox15.Location = new Point(367, 382);
+            rjTextBox15.Margin = new Padding(4);
+            rjTextBox15.Multiline = false;
+            rjTextBox15.Name = "rjTextBox15";
+            rjTextBox15.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox15.PasswordChar = false;
+            rjTextBox15.PlaceholderColor = Color.DarkGray;
+            rjTextBox15.PlaceholderText = "Qty.";
+            rjTextBox15.Size = new Size(76, 31);
+            rjTextBox15.TabIndex = 63;
+            rjTextBox15.Texts = "";
+            rjTextBox15.UnderlinedStyle = false;
+            // 
+            // rjTextBox14
+            // 
+            rjTextBox14.BackColor = Color.White;
+            rjTextBox14.BorderColor = Color.Gray;
+            rjTextBox14.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox14.BorderRadius = 10;
+            rjTextBox14.BorderSize = 2;
+            rjTextBox14.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox14.ForeColor = Color.Black;
+            rjTextBox14.Location = new Point(367, 343);
+            rjTextBox14.Margin = new Padding(4);
+            rjTextBox14.Multiline = false;
+            rjTextBox14.Name = "rjTextBox14";
+            rjTextBox14.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox14.PasswordChar = false;
+            rjTextBox14.PlaceholderColor = Color.DarkGray;
+            rjTextBox14.PlaceholderText = "Qty.";
+            rjTextBox14.Size = new Size(76, 31);
+            rjTextBox14.TabIndex = 62;
+            rjTextBox14.Texts = "";
+            rjTextBox14.UnderlinedStyle = false;
+            // 
+            // rjTextBox13
+            // 
+            rjTextBox13.BackColor = Color.White;
+            rjTextBox13.BorderColor = Color.Gray;
+            rjTextBox13.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox13.BorderRadius = 10;
+            rjTextBox13.BorderSize = 2;
+            rjTextBox13.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox13.ForeColor = Color.Black;
+            rjTextBox13.Location = new Point(367, 304);
+            rjTextBox13.Margin = new Padding(4);
+            rjTextBox13.Multiline = false;
+            rjTextBox13.Name = "rjTextBox13";
+            rjTextBox13.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox13.PasswordChar = false;
+            rjTextBox13.PlaceholderColor = Color.DarkGray;
+            rjTextBox13.PlaceholderText = "Qty.";
+            rjTextBox13.Size = new Size(76, 31);
+            rjTextBox13.TabIndex = 61;
+            rjTextBox13.Texts = "";
+            rjTextBox13.UnderlinedStyle = false;
+            // 
+            // rjTextBox5
+            // 
+            rjTextBox5.BackColor = Color.White;
+            rjTextBox5.BorderColor = Color.Gray;
+            rjTextBox5.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox5.BorderRadius = 10;
+            rjTextBox5.BorderSize = 2;
+            rjTextBox5.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox5.ForeColor = Color.Black;
+            rjTextBox5.Location = new Point(457, 421);
+            rjTextBox5.Margin = new Padding(4);
+            rjTextBox5.Multiline = false;
+            rjTextBox5.Name = "rjTextBox5";
+            rjTextBox5.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox5.PasswordChar = false;
+            rjTextBox5.PlaceholderColor = Color.DarkGray;
+            rjTextBox5.PlaceholderText = "Item";
+            rjTextBox5.Size = new Size(165, 31);
+            rjTextBox5.TabIndex = 56;
+            rjTextBox5.Texts = "";
+            rjTextBox5.UnderlinedStyle = false;
+            // 
+            // rjTextBox6
+            // 
+            rjTextBox6.BackColor = Color.White;
+            rjTextBox6.BorderColor = Color.Gray;
+            rjTextBox6.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox6.BorderRadius = 10;
+            rjTextBox6.BorderSize = 2;
+            rjTextBox6.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox6.ForeColor = Color.Black;
+            rjTextBox6.Location = new Point(457, 382);
+            rjTextBox6.Margin = new Padding(4);
+            rjTextBox6.Multiline = false;
+            rjTextBox6.Name = "rjTextBox6";
+            rjTextBox6.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox6.PasswordChar = false;
+            rjTextBox6.PlaceholderColor = Color.DarkGray;
+            rjTextBox6.PlaceholderText = "Item";
+            rjTextBox6.Size = new Size(165, 31);
+            rjTextBox6.TabIndex = 55;
+            rjTextBox6.Texts = "";
+            rjTextBox6.UnderlinedStyle = false;
+            // 
+            // rjTextBox7
+            // 
+            rjTextBox7.BackColor = Color.White;
+            rjTextBox7.BorderColor = Color.Gray;
+            rjTextBox7.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox7.BorderRadius = 10;
+            rjTextBox7.BorderSize = 2;
+            rjTextBox7.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox7.ForeColor = Color.Black;
+            rjTextBox7.Location = new Point(457, 343);
+            rjTextBox7.Margin = new Padding(4);
+            rjTextBox7.Multiline = false;
+            rjTextBox7.Name = "rjTextBox7";
+            rjTextBox7.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox7.PasswordChar = false;
+            rjTextBox7.PlaceholderColor = Color.DarkGray;
+            rjTextBox7.PlaceholderText = "Item";
+            rjTextBox7.Size = new Size(165, 31);
+            rjTextBox7.TabIndex = 54;
+            rjTextBox7.Texts = "";
+            rjTextBox7.UnderlinedStyle = false;
+            // 
+            // rjTextBox8
+            // 
+            rjTextBox8.BackColor = Color.White;
+            rjTextBox8.BorderColor = Color.Gray;
+            rjTextBox8.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox8.BorderRadius = 10;
+            rjTextBox8.BorderSize = 2;
+            rjTextBox8.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox8.ForeColor = Color.Black;
+            rjTextBox8.Location = new Point(457, 304);
+            rjTextBox8.Margin = new Padding(4);
+            rjTextBox8.Multiline = false;
+            rjTextBox8.Name = "rjTextBox8";
+            rjTextBox8.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox8.PasswordChar = false;
+            rjTextBox8.PlaceholderColor = Color.DarkGray;
+            rjTextBox8.PlaceholderText = "Item";
+            rjTextBox8.Size = new Size(165, 31);
+            rjTextBox8.TabIndex = 53;
+            rjTextBox8.Texts = "";
+            rjTextBox8.UnderlinedStyle = false;
+            // 
+            // rjTextBox3
+            // 
+            rjTextBox3.BackColor = Color.White;
+            rjTextBox3.BorderColor = Color.Gray;
+            rjTextBox3.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox3.BorderRadius = 10;
+            rjTextBox3.BorderSize = 2;
+            rjTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox3.ForeColor = Color.Black;
+            rjTextBox3.Location = new Point(201, 421);
+            rjTextBox3.Margin = new Padding(4);
+            rjTextBox3.Multiline = false;
+            rjTextBox3.Name = "rjTextBox3";
+            rjTextBox3.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox3.PasswordChar = false;
+            rjTextBox3.PlaceholderColor = Color.DarkGray;
+            rjTextBox3.PlaceholderText = "Item";
+            rjTextBox3.Size = new Size(165, 31);
+            rjTextBox3.TabIndex = 52;
+            rjTextBox3.Texts = "";
+            rjTextBox3.UnderlinedStyle = false;
+            // 
+            // rjTextBox4
+            // 
+            rjTextBox4.BackColor = Color.White;
+            rjTextBox4.BorderColor = Color.Gray;
+            rjTextBox4.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox4.BorderRadius = 10;
+            rjTextBox4.BorderSize = 2;
+            rjTextBox4.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox4.ForeColor = Color.Black;
+            rjTextBox4.Location = new Point(201, 382);
+            rjTextBox4.Margin = new Padding(4);
+            rjTextBox4.Multiline = false;
+            rjTextBox4.Name = "rjTextBox4";
+            rjTextBox4.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox4.PasswordChar = false;
+            rjTextBox4.PlaceholderColor = Color.DarkGray;
+            rjTextBox4.PlaceholderText = "Item";
+            rjTextBox4.Size = new Size(165, 31);
+            rjTextBox4.TabIndex = 51;
+            rjTextBox4.Texts = "";
+            rjTextBox4.UnderlinedStyle = false;
+            // 
             // rjTextBox2
             // 
             rjTextBox2.BackColor = Color.White;
@@ -277,14 +577,27 @@
             rjTextBox1.Texts = "";
             rjTextBox1.UnderlinedStyle = false;
             // 
-            // labelName
+            // textBoxPhone2
             // 
-            labelName.AutoSize = true;
-            labelName.Location = new Point(241, 118);
-            labelName.Name = "labelName";
-            labelName.Size = new Size(67, 15);
-            labelName.TabIndex = 26;
-            labelName.Text = "FirstName :";
+            textBoxPhone2.BackColor = Color.White;
+            textBoxPhone2.BorderColor = Color.Gray;
+            textBoxPhone2.BorderFocusColor = Color.DodgerBlue;
+            textBoxPhone2.BorderRadius = 10;
+            textBoxPhone2.BorderSize = 2;
+            textBoxPhone2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxPhone2.ForeColor = Color.Black;
+            textBoxPhone2.Location = new Point(367, 108);
+            textBoxPhone2.Margin = new Padding(4);
+            textBoxPhone2.Multiline = false;
+            textBoxPhone2.Name = "textBoxPhone2";
+            textBoxPhone2.Padding = new Padding(10, 7, 10, 7);
+            textBoxPhone2.PasswordChar = false;
+            textBoxPhone2.PlaceholderColor = Color.DarkGray;
+            textBoxPhone2.PlaceholderText = "Enter Phone 2";
+            textBoxPhone2.Size = new Size(165, 31);
+            textBoxPhone2.TabIndex = 31;
+            textBoxPhone2.Texts = "";
+            textBoxPhone2.UnderlinedStyle = false;
             // 
             // textBoxPhone3
             // 
@@ -308,27 +621,14 @@
             textBoxPhone3.Texts = "";
             textBoxPhone3.UnderlinedStyle = false;
             // 
-            // textBoxPhone2
+            // labelName
             // 
-            textBoxPhone2.BackColor = Color.White;
-            textBoxPhone2.BorderColor = Color.Gray;
-            textBoxPhone2.BorderFocusColor = Color.DodgerBlue;
-            textBoxPhone2.BorderRadius = 10;
-            textBoxPhone2.BorderSize = 2;
-            textBoxPhone2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxPhone2.ForeColor = Color.Black;
-            textBoxPhone2.Location = new Point(367, 108);
-            textBoxPhone2.Margin = new Padding(4);
-            textBoxPhone2.Multiline = false;
-            textBoxPhone2.Name = "textBoxPhone2";
-            textBoxPhone2.Padding = new Padding(10, 7, 10, 7);
-            textBoxPhone2.PasswordChar = false;
-            textBoxPhone2.PlaceholderColor = Color.DarkGray;
-            textBoxPhone2.PlaceholderText = "Enter Phone 2";
-            textBoxPhone2.Size = new Size(165, 31);
-            textBoxPhone2.TabIndex = 31;
-            textBoxPhone2.Texts = "";
-            textBoxPhone2.UnderlinedStyle = false;
+            labelName.AutoSize = true;
+            labelName.Location = new Point(241, 118);
+            labelName.Name = "labelName";
+            labelName.Size = new Size(67, 15);
+            labelName.TabIndex = 26;
+            labelName.Text = "FirstName :";
             // 
             // labelPhone1
             // 
@@ -507,330 +807,157 @@
             labelCity.TabIndex = 40;
             labelCity.Text = "City :";
             // 
-            // rjTextBox3
+            // rjButton6
             // 
-            rjTextBox3.BackColor = Color.White;
-            rjTextBox3.BorderColor = Color.Gray;
-            rjTextBox3.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox3.BorderRadius = 10;
-            rjTextBox3.BorderSize = 2;
-            rjTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox3.ForeColor = Color.Black;
-            rjTextBox3.Location = new Point(201, 421);
-            rjTextBox3.Margin = new Padding(4);
-            rjTextBox3.Multiline = false;
-            rjTextBox3.Name = "rjTextBox3";
-            rjTextBox3.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox3.PasswordChar = false;
-            rjTextBox3.PlaceholderColor = Color.DarkGray;
-            rjTextBox3.PlaceholderText = "Item";
-            rjTextBox3.Size = new Size(165, 31);
-            rjTextBox3.TabIndex = 52;
-            rjTextBox3.Texts = "";
-            rjTextBox3.UnderlinedStyle = false;
+            rjButton6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton6.BackColor = Color.MidnightBlue;
+            rjButton6.BackgroundColor = Color.MidnightBlue;
+            rjButton6.BackgroundImage = (Image)resources.GetObject("rjButton6.BackgroundImage");
+            rjButton6.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton6.BorderColor = Color.PaleVioletRed;
+            rjButton6.BorderRadius = 10;
+            rjButton6.BorderSize = 0;
+            rjButton6.CausesValidation = false;
+            rjButton6.ForeColor = Color.Transparent;
+            rjButton6.Location = new Point(11, 55);
+            rjButton6.Name = "rjButton6";
+            rjButton6.Size = new Size(47, 44);
+            rjButton6.TabIndex = 30;
+            rjButton6.TextColor = Color.Transparent;
+            rjButton6.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox4
+            // rjButton7
             // 
-            rjTextBox4.BackColor = Color.White;
-            rjTextBox4.BorderColor = Color.Gray;
-            rjTextBox4.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox4.BorderRadius = 10;
-            rjTextBox4.BorderSize = 2;
-            rjTextBox4.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox4.ForeColor = Color.Black;
-            rjTextBox4.Location = new Point(201, 382);
-            rjTextBox4.Margin = new Padding(4);
-            rjTextBox4.Multiline = false;
-            rjTextBox4.Name = "rjTextBox4";
-            rjTextBox4.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox4.PasswordChar = false;
-            rjTextBox4.PlaceholderColor = Color.DarkGray;
-            rjTextBox4.PlaceholderText = "Item";
-            rjTextBox4.Size = new Size(165, 31);
-            rjTextBox4.TabIndex = 51;
-            rjTextBox4.Texts = "";
-            rjTextBox4.UnderlinedStyle = false;
+            rjButton7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton7.BackColor = Color.MidnightBlue;
+            rjButton7.BackgroundColor = Color.MidnightBlue;
+            rjButton7.BackgroundImage = (Image)resources.GetObject("rjButton7.BackgroundImage");
+            rjButton7.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton7.BorderColor = Color.PaleVioletRed;
+            rjButton7.BorderRadius = 10;
+            rjButton7.BorderSize = 0;
+            rjButton7.CausesValidation = false;
+            rjButton7.ForeColor = Color.Transparent;
+            rjButton7.Location = new Point(11, 105);
+            rjButton7.Name = "rjButton7";
+            rjButton7.Size = new Size(47, 44);
+            rjButton7.TabIndex = 31;
+            rjButton7.TextColor = Color.Transparent;
+            rjButton7.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox5
+            // rjButton8
             // 
-            rjTextBox5.BackColor = Color.White;
-            rjTextBox5.BorderColor = Color.Gray;
-            rjTextBox5.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox5.BorderRadius = 10;
-            rjTextBox5.BorderSize = 2;
-            rjTextBox5.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox5.ForeColor = Color.Black;
-            rjTextBox5.Location = new Point(457, 421);
-            rjTextBox5.Margin = new Padding(4);
-            rjTextBox5.Multiline = false;
-            rjTextBox5.Name = "rjTextBox5";
-            rjTextBox5.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox5.PasswordChar = false;
-            rjTextBox5.PlaceholderColor = Color.DarkGray;
-            rjTextBox5.PlaceholderText = "Item";
-            rjTextBox5.Size = new Size(165, 31);
-            rjTextBox5.TabIndex = 56;
-            rjTextBox5.Texts = "";
-            rjTextBox5.UnderlinedStyle = false;
+            rjButton8.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton8.BackColor = Color.MidnightBlue;
+            rjButton8.BackgroundColor = Color.MidnightBlue;
+            rjButton8.BackgroundImage = (Image)resources.GetObject("rjButton8.BackgroundImage");
+            rjButton8.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton8.BorderColor = Color.PaleVioletRed;
+            rjButton8.BorderRadius = 10;
+            rjButton8.BorderSize = 0;
+            rjButton8.CausesValidation = false;
+            rjButton8.ForeColor = Color.Transparent;
+            rjButton8.Location = new Point(11, 155);
+            rjButton8.Name = "rjButton8";
+            rjButton8.Size = new Size(47, 44);
+            rjButton8.TabIndex = 32;
+            rjButton8.TextColor = Color.Transparent;
+            rjButton8.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox6
+            // rjButton9
             // 
-            rjTextBox6.BackColor = Color.White;
-            rjTextBox6.BorderColor = Color.Gray;
-            rjTextBox6.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox6.BorderRadius = 10;
-            rjTextBox6.BorderSize = 2;
-            rjTextBox6.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox6.ForeColor = Color.Black;
-            rjTextBox6.Location = new Point(457, 382);
-            rjTextBox6.Margin = new Padding(4);
-            rjTextBox6.Multiline = false;
-            rjTextBox6.Name = "rjTextBox6";
-            rjTextBox6.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox6.PasswordChar = false;
-            rjTextBox6.PlaceholderColor = Color.DarkGray;
-            rjTextBox6.PlaceholderText = "Item";
-            rjTextBox6.Size = new Size(165, 31);
-            rjTextBox6.TabIndex = 55;
-            rjTextBox6.Texts = "";
-            rjTextBox6.UnderlinedStyle = false;
+            rjButton9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton9.BackColor = Color.MidnightBlue;
+            rjButton9.BackgroundColor = Color.MidnightBlue;
+            rjButton9.BackgroundImage = (Image)resources.GetObject("rjButton9.BackgroundImage");
+            rjButton9.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton9.BorderColor = Color.PaleVioletRed;
+            rjButton9.BorderRadius = 10;
+            rjButton9.BorderSize = 0;
+            rjButton9.CausesValidation = false;
+            rjButton9.ForeColor = Color.Transparent;
+            rjButton9.Location = new Point(11, 205);
+            rjButton9.Name = "rjButton9";
+            rjButton9.Size = new Size(47, 44);
+            rjButton9.TabIndex = 33;
+            rjButton9.TextColor = Color.Transparent;
+            rjButton9.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox7
+            // rjButton10
             // 
-            rjTextBox7.BackColor = Color.White;
-            rjTextBox7.BorderColor = Color.Gray;
-            rjTextBox7.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox7.BorderRadius = 10;
-            rjTextBox7.BorderSize = 2;
-            rjTextBox7.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox7.ForeColor = Color.Black;
-            rjTextBox7.Location = new Point(457, 343);
-            rjTextBox7.Margin = new Padding(4);
-            rjTextBox7.Multiline = false;
-            rjTextBox7.Name = "rjTextBox7";
-            rjTextBox7.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox7.PasswordChar = false;
-            rjTextBox7.PlaceholderColor = Color.DarkGray;
-            rjTextBox7.PlaceholderText = "Item";
-            rjTextBox7.Size = new Size(165, 31);
-            rjTextBox7.TabIndex = 54;
-            rjTextBox7.Texts = "";
-            rjTextBox7.UnderlinedStyle = false;
+            rjButton10.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton10.BackColor = Color.MidnightBlue;
+            rjButton10.BackgroundColor = Color.MidnightBlue;
+            rjButton10.BackgroundImage = (Image)resources.GetObject("rjButton10.BackgroundImage");
+            rjButton10.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton10.BorderColor = Color.PaleVioletRed;
+            rjButton10.BorderRadius = 10;
+            rjButton10.BorderSize = 0;
+            rjButton10.CausesValidation = false;
+            rjButton10.ForeColor = Color.Transparent;
+            rjButton10.Location = new Point(11, 255);
+            rjButton10.Name = "rjButton10";
+            rjButton10.Size = new Size(47, 44);
+            rjButton10.TabIndex = 34;
+            rjButton10.TextColor = Color.Transparent;
+            rjButton10.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox8
+            // rjButton11
             // 
-            rjTextBox8.BackColor = Color.White;
-            rjTextBox8.BorderColor = Color.Gray;
-            rjTextBox8.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox8.BorderRadius = 10;
-            rjTextBox8.BorderSize = 2;
-            rjTextBox8.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox8.ForeColor = Color.Black;
-            rjTextBox8.Location = new Point(457, 304);
-            rjTextBox8.Margin = new Padding(4);
-            rjTextBox8.Multiline = false;
-            rjTextBox8.Name = "rjTextBox8";
-            rjTextBox8.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox8.PasswordChar = false;
-            rjTextBox8.PlaceholderColor = Color.DarkGray;
-            rjTextBox8.PlaceholderText = "Item";
-            rjTextBox8.Size = new Size(165, 31);
-            rjTextBox8.TabIndex = 53;
-            rjTextBox8.Texts = "";
-            rjTextBox8.UnderlinedStyle = false;
+            rjButton11.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton11.BackColor = Color.MidnightBlue;
+            rjButton11.BackgroundColor = Color.MidnightBlue;
+            rjButton11.BackgroundImage = (Image)resources.GetObject("rjButton11.BackgroundImage");
+            rjButton11.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton11.BorderColor = Color.PaleVioletRed;
+            rjButton11.BorderRadius = 10;
+            rjButton11.BorderSize = 0;
+            rjButton11.CausesValidation = false;
+            rjButton11.ForeColor = Color.Transparent;
+            rjButton11.Location = new Point(11, 305);
+            rjButton11.Name = "rjButton11";
+            rjButton11.Size = new Size(47, 44);
+            rjButton11.TabIndex = 35;
+            rjButton11.TextColor = Color.Transparent;
+            rjButton11.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox13
+            // rjButton2
             // 
-            rjTextBox13.BackColor = Color.White;
-            rjTextBox13.BorderColor = Color.Gray;
-            rjTextBox13.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox13.BorderRadius = 10;
-            rjTextBox13.BorderSize = 2;
-            rjTextBox13.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox13.ForeColor = Color.Black;
-            rjTextBox13.Location = new Point(367, 304);
-            rjTextBox13.Margin = new Padding(4);
-            rjTextBox13.Multiline = false;
-            rjTextBox13.Name = "rjTextBox13";
-            rjTextBox13.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox13.PasswordChar = false;
-            rjTextBox13.PlaceholderColor = Color.DarkGray;
-            rjTextBox13.PlaceholderText = "Qty.";
-            rjTextBox13.Size = new Size(76, 31);
-            rjTextBox13.TabIndex = 61;
-            rjTextBox13.Texts = "";
-            rjTextBox13.UnderlinedStyle = false;
+            rjButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton2.BackColor = Color.MidnightBlue;
+            rjButton2.BackgroundColor = Color.MidnightBlue;
+            rjButton2.BorderColor = Color.PaleVioletRed;
+            rjButton2.BorderRadius = 10;
+            rjButton2.BorderSize = 0;
+            rjButton2.CausesValidation = false;
+            rjButton2.FlatStyle = FlatStyle.Popup;
+            rjButton2.ForeColor = Color.Transparent;
+            rjButton2.Location = new Point(236, 6);
+            rjButton2.Name = "rjButton2";
+            rjButton2.Size = new Size(75, 34);
+            rjButton2.TabIndex = 28;
+            rjButton2.Text = "Sales";
+            rjButton2.TextColor = Color.Transparent;
+            rjButton2.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox14
+            // rjButton1
             // 
-            rjTextBox14.BackColor = Color.White;
-            rjTextBox14.BorderColor = Color.Gray;
-            rjTextBox14.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox14.BorderRadius = 10;
-            rjTextBox14.BorderSize = 2;
-            rjTextBox14.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox14.ForeColor = Color.Black;
-            rjTextBox14.Location = new Point(367, 343);
-            rjTextBox14.Margin = new Padding(4);
-            rjTextBox14.Multiline = false;
-            rjTextBox14.Name = "rjTextBox14";
-            rjTextBox14.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox14.PasswordChar = false;
-            rjTextBox14.PlaceholderColor = Color.DarkGray;
-            rjTextBox14.PlaceholderText = "Qty.";
-            rjTextBox14.Size = new Size(76, 31);
-            rjTextBox14.TabIndex = 62;
-            rjTextBox14.Texts = "";
-            rjTextBox14.UnderlinedStyle = false;
-            // 
-            // rjTextBox15
-            // 
-            rjTextBox15.BackColor = Color.White;
-            rjTextBox15.BorderColor = Color.Gray;
-            rjTextBox15.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox15.BorderRadius = 10;
-            rjTextBox15.BorderSize = 2;
-            rjTextBox15.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox15.ForeColor = Color.Black;
-            rjTextBox15.Location = new Point(367, 382);
-            rjTextBox15.Margin = new Padding(4);
-            rjTextBox15.Multiline = false;
-            rjTextBox15.Name = "rjTextBox15";
-            rjTextBox15.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox15.PasswordChar = false;
-            rjTextBox15.PlaceholderColor = Color.DarkGray;
-            rjTextBox15.PlaceholderText = "Qty.";
-            rjTextBox15.Size = new Size(76, 31);
-            rjTextBox15.TabIndex = 63;
-            rjTextBox15.Texts = "";
-            rjTextBox15.UnderlinedStyle = false;
-            // 
-            // rjTextBox16
-            // 
-            rjTextBox16.BackColor = Color.White;
-            rjTextBox16.BorderColor = Color.Gray;
-            rjTextBox16.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox16.BorderRadius = 10;
-            rjTextBox16.BorderSize = 2;
-            rjTextBox16.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox16.ForeColor = Color.Black;
-            rjTextBox16.Location = new Point(367, 421);
-            rjTextBox16.Margin = new Padding(4);
-            rjTextBox16.Multiline = false;
-            rjTextBox16.Name = "rjTextBox16";
-            rjTextBox16.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox16.PasswordChar = false;
-            rjTextBox16.PlaceholderColor = Color.DarkGray;
-            rjTextBox16.PlaceholderText = "Qty.";
-            rjTextBox16.Size = new Size(76, 31);
-            rjTextBox16.TabIndex = 64;
-            rjTextBox16.Texts = "";
-            rjTextBox16.UnderlinedStyle = false;
-            // 
-            // rjTextBox9
-            // 
-            rjTextBox9.BackColor = Color.White;
-            rjTextBox9.BorderColor = Color.Gray;
-            rjTextBox9.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox9.BorderRadius = 10;
-            rjTextBox9.BorderSize = 2;
-            rjTextBox9.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox9.ForeColor = Color.Black;
-            rjTextBox9.Location = new Point(623, 304);
-            rjTextBox9.Margin = new Padding(4);
-            rjTextBox9.Multiline = false;
-            rjTextBox9.Name = "rjTextBox9";
-            rjTextBox9.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox9.PasswordChar = false;
-            rjTextBox9.PlaceholderColor = Color.DarkGray;
-            rjTextBox9.PlaceholderText = "Qty.";
-            rjTextBox9.Size = new Size(76, 31);
-            rjTextBox9.TabIndex = 65;
-            rjTextBox9.Texts = "";
-            rjTextBox9.UnderlinedStyle = false;
-            // 
-            // rjTextBox10
-            // 
-            rjTextBox10.BackColor = Color.White;
-            rjTextBox10.BorderColor = Color.Gray;
-            rjTextBox10.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox10.BorderRadius = 10;
-            rjTextBox10.BorderSize = 2;
-            rjTextBox10.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox10.ForeColor = Color.Black;
-            rjTextBox10.Location = new Point(623, 343);
-            rjTextBox10.Margin = new Padding(4);
-            rjTextBox10.Multiline = false;
-            rjTextBox10.Name = "rjTextBox10";
-            rjTextBox10.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox10.PasswordChar = false;
-            rjTextBox10.PlaceholderColor = Color.DarkGray;
-            rjTextBox10.PlaceholderText = "Qty.";
-            rjTextBox10.Size = new Size(76, 31);
-            rjTextBox10.TabIndex = 66;
-            rjTextBox10.Texts = "";
-            rjTextBox10.UnderlinedStyle = false;
-            // 
-            // rjTextBox11
-            // 
-            rjTextBox11.BackColor = Color.White;
-            rjTextBox11.BorderColor = Color.Gray;
-            rjTextBox11.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox11.BorderRadius = 10;
-            rjTextBox11.BorderSize = 2;
-            rjTextBox11.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox11.ForeColor = Color.Black;
-            rjTextBox11.Location = new Point(623, 382);
-            rjTextBox11.Margin = new Padding(4);
-            rjTextBox11.Multiline = false;
-            rjTextBox11.Name = "rjTextBox11";
-            rjTextBox11.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox11.PasswordChar = false;
-            rjTextBox11.PlaceholderColor = Color.DarkGray;
-            rjTextBox11.PlaceholderText = "Qty.";
-            rjTextBox11.Size = new Size(76, 31);
-            rjTextBox11.TabIndex = 67;
-            rjTextBox11.Texts = "";
-            rjTextBox11.UnderlinedStyle = false;
-            // 
-            // rjTextBox12
-            // 
-            rjTextBox12.BackColor = Color.White;
-            rjTextBox12.BorderColor = Color.Gray;
-            rjTextBox12.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox12.BorderRadius = 10;
-            rjTextBox12.BorderSize = 2;
-            rjTextBox12.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox12.ForeColor = Color.Black;
-            rjTextBox12.Location = new Point(623, 421);
-            rjTextBox12.Margin = new Padding(4);
-            rjTextBox12.Multiline = false;
-            rjTextBox12.Name = "rjTextBox12";
-            rjTextBox12.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox12.PasswordChar = false;
-            rjTextBox12.PlaceholderColor = Color.DarkGray;
-            rjTextBox12.PlaceholderText = "Qty.";
-            rjTextBox12.Size = new Size(76, 31);
-            rjTextBox12.TabIndex = 68;
-            rjTextBox12.Texts = "";
-            rjTextBox12.UnderlinedStyle = false;
-            // 
-            // rjButton5
-            // 
-            rjButton5.BackColor = SystemColors.HotTrack;
-            rjButton5.BackgroundColor = SystemColors.HotTrack;
-            rjButton5.BorderColor = Color.PaleVioletRed;
-            rjButton5.BorderRadius = 20;
-            rjButton5.BorderSize = 0;
-            rjButton5.FlatStyle = FlatStyle.Flat;
-            rjButton5.ForeColor = Color.White;
-            rjButton5.Location = new Point(201, 477);
-            rjButton5.Name = "rjButton5";
-            rjButton5.Size = new Size(168, 35);
-            rjButton5.TabIndex = 69;
-            rjButton5.Text = "<< Back";
-            rjButton5.TextColor = Color.White;
-            rjButton5.UseVisualStyleBackColor = false;
+            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton1.BackColor = Color.MidnightBlue;
+            rjButton1.BackgroundColor = Color.MidnightBlue;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 0;
+            rjButton1.CausesValidation = false;
+            rjButton1.FlatStyle = FlatStyle.Popup;
+            rjButton1.ForeColor = Color.Transparent;
+            rjButton1.Location = new Point(159, 6);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(75, 34);
+            rjButton1.TabIndex = 27;
+            rjButton1.Text = "Customer";
+            rjButton1.TextColor = Color.Transparent;
+            rjButton1.UseVisualStyleBackColor = false;
             // 
             // customerForm3Confirm
             // 
@@ -854,6 +981,7 @@
             Controls.Add(buttonSave);
             Controls.Add(panel1);
             Name = "customerForm3Confirm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Confirmation ";
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
@@ -866,9 +994,7 @@
         #endregion
 
         private RJCodeAdvance.RJControls.RJButton rjButton3;
-        private RJCodeAdvance.RJControls.RJButton rjButton1;
         private Panel panel2;
-        private RJCodeAdvance.RJControls.RJButton rjButton2;
         private RJCodeAdvance.RJControls.RJButton rjButton4;
         private Panel panel3;
         private Label label3;
@@ -906,5 +1032,13 @@
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox10;
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox9;
         private RJCodeAdvance.RJControls.RJButton rjButton5;
+        private RJCodeAdvance.RJControls.RJButton rjButton8;
+        private RJCodeAdvance.RJControls.RJButton rjButton7;
+        private RJCodeAdvance.RJControls.RJButton rjButton6;
+        private RJCodeAdvance.RJControls.RJButton rjButton11;
+        private RJCodeAdvance.RJControls.RJButton rjButton10;
+        private RJCodeAdvance.RJControls.RJButton rjButton9;
+        private RJCodeAdvance.RJControls.RJButton rjButton2;
+        private RJCodeAdvance.RJControls.RJButton rjButton1;
     }
 }
