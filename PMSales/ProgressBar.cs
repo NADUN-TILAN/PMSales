@@ -1,3 +1,4 @@
+using PMSales.PresentationLayer;
 using System;
 using System.Windows.Forms;
 
@@ -41,6 +42,14 @@ namespace PMSales
                 else
                 {
                     progressTimer.Stop();
+
+                    // Redirect to Dashboard
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+
+                    // Hide the ProgressBar form instead of closing it
+                    this.Hide();
+
                 }
             }
             catch (Exception ex)

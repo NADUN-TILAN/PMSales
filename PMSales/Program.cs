@@ -1,3 +1,4 @@
+using PMSales.PresentationLayer;
 using PMSales.PresentationLayer.UserForm;
 
 namespace PMSales
@@ -13,7 +14,7 @@ namespace PMSales
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new customerForm1Add());
+            Application.Run(new ProgressBar());
         }
     }
 }

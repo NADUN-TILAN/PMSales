@@ -44,21 +44,21 @@
             rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
-            labelCustomerCount = new Label();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            label1 = new Label();
-            flowLayoutPanel2 = new FlowLayoutPanel();
-            flowLayoutPanel3 = new FlowLayoutPanel();
-            label2 = new Label();
             flowLayoutPanel4 = new FlowLayoutPanel();
             label4 = new Label();
+            flowLayoutPanel3 = new FlowLayoutPanel();
+            label2 = new Label();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            label1 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            labelCustomerCount = new Label();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
-            flowLayoutPanel2.SuspendLayout();
-            flowLayoutPanel3.SuspendLayout();
             flowLayoutPanel4.SuspendLayout();
+            flowLayoutPanel3.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label3
@@ -90,14 +90,15 @@
             // rjButton11
             // 
             rjButton11.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton11.BackColor = Color.MidnightBlue;
-            rjButton11.BackgroundColor = Color.MidnightBlue;
+            rjButton11.BackColor = Color.White;
+            rjButton11.BackgroundColor = Color.White;
             rjButton11.BackgroundImage = (Image)resources.GetObject("rjButton11.BackgroundImage");
             rjButton11.BackgroundImageLayout = ImageLayout.Zoom;
             rjButton11.BorderColor = Color.PaleVioletRed;
             rjButton11.BorderRadius = 10;
             rjButton11.BorderSize = 0;
             rjButton11.CausesValidation = false;
+            rjButton11.Cursor = Cursors.Hand;
             rjButton11.FlatStyle = FlatStyle.Flat;
             rjButton11.ForeColor = Color.Transparent;
             rjButton11.Location = new Point(10, 305);
@@ -110,14 +111,15 @@
             // rjButton10
             // 
             rjButton10.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton10.BackColor = Color.MidnightBlue;
-            rjButton10.BackgroundColor = Color.MidnightBlue;
+            rjButton10.BackColor = Color.White;
+            rjButton10.BackgroundColor = Color.White;
             rjButton10.BackgroundImage = (Image)resources.GetObject("rjButton10.BackgroundImage");
             rjButton10.BackgroundImageLayout = ImageLayout.Zoom;
             rjButton10.BorderColor = Color.PaleVioletRed;
             rjButton10.BorderRadius = 10;
             rjButton10.BorderSize = 0;
             rjButton10.CausesValidation = false;
+            rjButton10.Cursor = Cursors.Hand;
             rjButton10.FlatStyle = FlatStyle.Flat;
             rjButton10.ForeColor = Color.Transparent;
             rjButton10.Location = new Point(10, 255);
@@ -130,14 +132,15 @@
             // rjButton9
             // 
             rjButton9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton9.BackColor = Color.MidnightBlue;
-            rjButton9.BackgroundColor = Color.MidnightBlue;
+            rjButton9.BackColor = Color.White;
+            rjButton9.BackgroundColor = Color.White;
             rjButton9.BackgroundImage = (Image)resources.GetObject("rjButton9.BackgroundImage");
             rjButton9.BackgroundImageLayout = ImageLayout.Zoom;
             rjButton9.BorderColor = Color.PaleVioletRed;
             rjButton9.BorderRadius = 10;
             rjButton9.BorderSize = 0;
             rjButton9.CausesValidation = false;
+            rjButton9.Cursor = Cursors.Hand;
             rjButton9.FlatStyle = FlatStyle.Flat;
             rjButton9.ForeColor = Color.Transparent;
             rjButton9.Location = new Point(10, 205);
@@ -150,14 +153,15 @@
             // rjButton8
             // 
             rjButton8.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton8.BackColor = Color.MidnightBlue;
-            rjButton8.BackgroundColor = Color.MidnightBlue;
+            rjButton8.BackColor = Color.White;
+            rjButton8.BackgroundColor = Color.White;
             rjButton8.BackgroundImage = (Image)resources.GetObject("rjButton8.BackgroundImage");
             rjButton8.BackgroundImageLayout = ImageLayout.Zoom;
             rjButton8.BorderColor = Color.PaleVioletRed;
             rjButton8.BorderRadius = 10;
             rjButton8.BorderSize = 0;
             rjButton8.CausesValidation = false;
+            rjButton8.Cursor = Cursors.Hand;
             rjButton8.FlatStyle = FlatStyle.Flat;
             rjButton8.ForeColor = Color.Transparent;
             rjButton8.Location = new Point(10, 155);
@@ -170,14 +174,15 @@
             // rjButton7
             // 
             rjButton7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton7.BackColor = Color.MidnightBlue;
-            rjButton7.BackgroundColor = Color.MidnightBlue;
+            rjButton7.BackColor = Color.White;
+            rjButton7.BackgroundColor = Color.White;
             rjButton7.BackgroundImage = (Image)resources.GetObject("rjButton7.BackgroundImage");
             rjButton7.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton7.BorderColor = Color.PaleVioletRed;
+            rjButton7.BorderColor = Color.White;
             rjButton7.BorderRadius = 10;
             rjButton7.BorderSize = 0;
             rjButton7.CausesValidation = false;
+            rjButton7.Cursor = Cursors.Hand;
             rjButton7.FlatStyle = FlatStyle.Flat;
             rjButton7.ForeColor = Color.Transparent;
             rjButton7.Location = new Point(10, 105);
@@ -186,18 +191,24 @@
             rjButton7.TabIndex = 39;
             rjButton7.TextColor = Color.Transparent;
             rjButton7.UseVisualStyleBackColor = false;
+            rjButton7.MouseClick += rjButton7_MouseClick;
+            rjButton7.MouseDown += rjButton7_MouseDown;
+            rjButton7.MouseLeave += rjButton7_MouseLeave;
+            rjButton7.MouseHover += rjButton7_MouseHover;
+            rjButton7.MouseUp += rjButton7_MouseUp;
             // 
             // rjButton6
             // 
             rjButton6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton6.BackColor = Color.MidnightBlue;
-            rjButton6.BackgroundColor = Color.MidnightBlue;
+            rjButton6.BackColor = Color.White;
+            rjButton6.BackgroundColor = Color.White;
             rjButton6.BackgroundImage = (Image)resources.GetObject("rjButton6.BackgroundImage");
             rjButton6.BackgroundImageLayout = ImageLayout.Zoom;
             rjButton6.BorderColor = Color.PaleVioletRed;
             rjButton6.BorderRadius = 10;
             rjButton6.BorderSize = 0;
             rjButton6.CausesValidation = false;
+            rjButton6.Cursor = Cursors.Hand;
             rjButton6.FlatStyle = FlatStyle.Flat;
             rjButton6.ForeColor = Color.Transparent;
             rjButton6.Location = new Point(10, 55);
@@ -206,18 +217,23 @@
             rjButton6.TabIndex = 38;
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
+            rjButton6.Click += rjButton6_Click;
+            rjButton6.MouseClick += rjButton6_MouseClick;
+            rjButton6.MouseDown += rjButton6_MouseDown;
+            rjButton6.MouseUp += rjButton6_MouseUp;
             // 
             // rjButton4
             // 
             rjButton4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton4.BackColor = Color.MidnightBlue;
-            rjButton4.BackgroundColor = Color.MidnightBlue;
+            rjButton4.BackColor = Color.White;
+            rjButton4.BackgroundColor = Color.White;
             rjButton4.BackgroundImage = Properties.Resources.cus;
             rjButton4.BackgroundImageLayout = ImageLayout.Zoom;
             rjButton4.BorderColor = Color.PaleVioletRed;
             rjButton4.BorderRadius = 10;
             rjButton4.BorderSize = 0;
             rjButton4.CausesValidation = false;
+            rjButton4.Cursor = Cursors.Hand;
             rjButton4.FlatStyle = FlatStyle.Flat;
             rjButton4.ForeColor = Color.Transparent;
             rjButton4.Location = new Point(10, 6);
@@ -226,6 +242,10 @@
             rjButton4.TabIndex = 37;
             rjButton4.TextColor = Color.Transparent;
             rjButton4.UseVisualStyleBackColor = false;
+            rjButton4.Click += rjButton4_Click;
+            rjButton4.MouseClick += rjButton4_MouseClick;
+            rjButton4.MouseDown += rjButton4_MouseDown;
+            rjButton4.MouseUp += rjButton4_MouseUp;
             // 
             // rjButton12
             // 
@@ -234,7 +254,7 @@
             rjButton12.BorderColor = Color.PaleVioletRed;
             rjButton12.BorderRadius = 10;
             rjButton12.BorderSize = 0;
-            rjButton12.FlatStyle = FlatStyle.Flat;
+            rjButton12.FlatStyle = FlatStyle.Popup;
             rjButton12.ForeColor = Color.White;
             rjButton12.Location = new Point(6, 355);
             rjButton12.Name = "rjButton12";
@@ -325,57 +345,31 @@
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 47;
             // 
-            // labelCustomerCount
+            // flowLayoutPanel4
             // 
-            labelCustomerCount.AutoSize = true;
-            labelCustomerCount.BackColor = Color.Transparent;
-            labelCustomerCount.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
-            labelCustomerCount.ForeColor = Color.Black;
-            labelCustomerCount.Location = new Point(3, 0);
-            labelCustomerCount.Name = "labelCustomerCount";
-            labelCustomerCount.Size = new Size(83, 30);
-            labelCustomerCount.TabIndex = 50;
-            labelCustomerCount.Text = "Sales: 0";
+            flowLayoutPanel4.BackColor = Color.SteelBlue;
+            flowLayoutPanel4.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel4.BackgroundImage");
+            flowLayoutPanel4.BackgroundImageLayout = ImageLayout.Stretch;
+            flowLayoutPanel4.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel4.Controls.Add(label4);
+            flowLayoutPanel4.Font = new Font("Segoe UI", 8.25F);
+            flowLayoutPanel4.ForeColor = Color.White;
+            flowLayoutPanel4.Location = new Point(81, 170);
+            flowLayoutPanel4.Name = "flowLayoutPanel4";
+            flowLayoutPanel4.Size = new Size(267, 85);
+            flowLayoutPanel4.TabIndex = 54;
             // 
-            // flowLayoutPanel1
+            // label4
             // 
-            flowLayoutPanel1.BackColor = Color.SteelBlue;
-            flowLayoutPanel1.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel1.BackgroundImage");
-            flowLayoutPanel1.BackgroundImageLayout = ImageLayout.Stretch;
-            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
-            flowLayoutPanel1.Controls.Add(labelCustomerCount);
-            flowLayoutPanel1.Font = new Font("Segoe UI", 8.25F);
-            flowLayoutPanel1.ForeColor = Color.White;
-            flowLayoutPanel1.Location = new Point(81, 77);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(267, 87);
-            flowLayoutPanel1.TabIndex = 51;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(3, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(89, 30);
-            label1.TabIndex = 50;
-            label1.Text = "Profit: 0";
-            // 
-            // flowLayoutPanel2
-            // 
-            flowLayoutPanel2.BackColor = Color.SteelBlue;
-            flowLayoutPanel2.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel2.BackgroundImage");
-            flowLayoutPanel2.BackgroundImageLayout = ImageLayout.Stretch;
-            flowLayoutPanel2.BorderStyle = BorderStyle.FixedSingle;
-            flowLayoutPanel2.Controls.Add(label1);
-            flowLayoutPanel2.Font = new Font("Segoe UI", 8.25F);
-            flowLayoutPanel2.ForeColor = Color.White;
-            flowLayoutPanel2.Location = new Point(354, 77);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(267, 86);
-            flowLayoutPanel2.TabIndex = 52;
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(121, 30);
+            label4.TabIndex = 50;
+            label4.Text = "Products: 0";
             // 
             // flowLayoutPanel3
             // 
@@ -403,54 +397,82 @@
             label2.TabIndex = 50;
             label2.Text = "Customers: 0";
             // 
-            // flowLayoutPanel4
+            // flowLayoutPanel2
             // 
-            flowLayoutPanel4.BackColor = Color.SteelBlue;
-            flowLayoutPanel4.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel4.BackgroundImage");
-            flowLayoutPanel4.BackgroundImageLayout = ImageLayout.Stretch;
-            flowLayoutPanel4.BorderStyle = BorderStyle.FixedSingle;
-            flowLayoutPanel4.Controls.Add(label4);
-            flowLayoutPanel4.Font = new Font("Segoe UI", 8.25F);
-            flowLayoutPanel4.ForeColor = Color.White;
-            flowLayoutPanel4.Location = new Point(81, 170);
-            flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(267, 85);
-            flowLayoutPanel4.TabIndex = 54;
+            flowLayoutPanel2.BackColor = Color.SteelBlue;
+            flowLayoutPanel2.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel2.BackgroundImage");
+            flowLayoutPanel2.BackgroundImageLayout = ImageLayout.Stretch;
+            flowLayoutPanel2.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel2.Controls.Add(label1);
+            flowLayoutPanel2.Font = new Font("Segoe UI", 8.25F);
+            flowLayoutPanel2.ForeColor = Color.White;
+            flowLayoutPanel2.Location = new Point(354, 77);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(267, 86);
+            flowLayoutPanel2.TabIndex = 52;
             // 
-            // label4
+            // label1
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(3, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(121, 30);
-            label4.TabIndex = 50;
-            label4.Text = "Products: 0";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 30);
+            label1.TabIndex = 50;
+            label1.Text = "Profit: 0";
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = Color.SteelBlue;
+            flowLayoutPanel1.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel1.BackgroundImage");
+            flowLayoutPanel1.BackgroundImageLayout = ImageLayout.Stretch;
+            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel1.Controls.Add(labelCustomerCount);
+            flowLayoutPanel1.Font = new Font("Segoe UI", 8.25F);
+            flowLayoutPanel1.ForeColor = Color.White;
+            flowLayoutPanel1.Location = new Point(81, 77);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(267, 87);
+            flowLayoutPanel1.TabIndex = 51;
+            // 
+            // labelCustomerCount
+            // 
+            labelCustomerCount.AutoSize = true;
+            labelCustomerCount.BackColor = Color.Transparent;
+            labelCustomerCount.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
+            labelCustomerCount.ForeColor = Color.Black;
+            labelCustomerCount.Location = new Point(3, 0);
+            labelCustomerCount.Name = "labelCustomerCount";
+            labelCustomerCount.Size = new Size(83, 30);
+            labelCustomerCount.TabIndex = 50;
+            labelCustomerCount.Text = "Sales: 0";
             // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "Dashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
             panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
-            flowLayoutPanel2.ResumeLayout(false);
-            flowLayoutPanel2.PerformLayout();
-            flowLayoutPanel3.ResumeLayout(false);
-            flowLayoutPanel3.PerformLayout();
             flowLayoutPanel4.ResumeLayout(false);
             flowLayoutPanel4.PerformLayout();
+            flowLayoutPanel3.ResumeLayout(false);
+            flowLayoutPanel3.PerformLayout();
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             ResumeLayout(false);
         }
 
