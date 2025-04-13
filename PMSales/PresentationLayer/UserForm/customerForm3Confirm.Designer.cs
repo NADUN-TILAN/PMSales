@@ -31,8 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customerForm3Confirm));
             rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             panel2 = new Panel();
+            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             panel3 = new Panel();
+            rjButton11 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton10 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton9 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton8 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton7 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton6 = new RJCodeAdvance.RJControls.RJButton();
             label3 = new Label();
             buttonSave = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
@@ -68,14 +76,6 @@
             textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
             textBoxAddress = new RJCodeAdvance.RJControls.RJTextBox();
             labelCity = new Label();
-            rjButton6 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton7 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton8 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton9 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton10 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton11 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
@@ -92,6 +92,7 @@
             rjButton3.BorderRadius = 10;
             rjButton3.BorderSize = 0;
             rjButton3.CausesValidation = false;
+            rjButton3.FlatStyle = FlatStyle.Flat;
             rjButton3.ForeColor = Color.Transparent;
             rjButton3.Location = new Point(11, 6);
             rjButton3.Name = "rjButton3";
@@ -110,6 +111,44 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(949, 45);
             panel2.TabIndex = 48;
+            // 
+            // rjButton2
+            // 
+            rjButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton2.BackColor = Color.MidnightBlue;
+            rjButton2.BackgroundColor = Color.MidnightBlue;
+            rjButton2.BorderColor = Color.PaleVioletRed;
+            rjButton2.BorderRadius = 10;
+            rjButton2.BorderSize = 0;
+            rjButton2.CausesValidation = false;
+            rjButton2.FlatStyle = FlatStyle.Popup;
+            rjButton2.ForeColor = Color.Transparent;
+            rjButton2.Location = new Point(236, 6);
+            rjButton2.Name = "rjButton2";
+            rjButton2.Size = new Size(75, 34);
+            rjButton2.TabIndex = 28;
+            rjButton2.Text = "Sales";
+            rjButton2.TextColor = Color.Transparent;
+            rjButton2.UseVisualStyleBackColor = false;
+            // 
+            // rjButton1
+            // 
+            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton1.BackColor = Color.MidnightBlue;
+            rjButton1.BackgroundColor = Color.MidnightBlue;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 0;
+            rjButton1.CausesValidation = false;
+            rjButton1.FlatStyle = FlatStyle.Popup;
+            rjButton1.ForeColor = Color.Transparent;
+            rjButton1.Location = new Point(159, 6);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(75, 34);
+            rjButton1.TabIndex = 27;
+            rjButton1.Text = "Customer";
+            rjButton1.TextColor = Color.Transparent;
+            rjButton1.UseVisualStyleBackColor = false;
             // 
             // rjButton4
             // 
@@ -143,6 +182,126 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(160, 556);
             panel3.TabIndex = 49;
+            // 
+            // rjButton11
+            // 
+            rjButton11.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton11.BackColor = Color.MidnightBlue;
+            rjButton11.BackgroundColor = Color.MidnightBlue;
+            rjButton11.BackgroundImage = (Image)resources.GetObject("rjButton11.BackgroundImage");
+            rjButton11.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton11.BorderColor = Color.PaleVioletRed;
+            rjButton11.BorderRadius = 10;
+            rjButton11.BorderSize = 0;
+            rjButton11.CausesValidation = false;
+            rjButton11.FlatStyle = FlatStyle.Flat;
+            rjButton11.ForeColor = Color.Transparent;
+            rjButton11.Location = new Point(11, 305);
+            rjButton11.Name = "rjButton11";
+            rjButton11.Size = new Size(47, 44);
+            rjButton11.TabIndex = 35;
+            rjButton11.TextColor = Color.Transparent;
+            rjButton11.UseVisualStyleBackColor = false;
+            // 
+            // rjButton10
+            // 
+            rjButton10.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton10.BackColor = Color.MidnightBlue;
+            rjButton10.BackgroundColor = Color.MidnightBlue;
+            rjButton10.BackgroundImage = (Image)resources.GetObject("rjButton10.BackgroundImage");
+            rjButton10.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton10.BorderColor = Color.PaleVioletRed;
+            rjButton10.BorderRadius = 10;
+            rjButton10.BorderSize = 0;
+            rjButton10.CausesValidation = false;
+            rjButton10.FlatStyle = FlatStyle.Flat;
+            rjButton10.ForeColor = Color.Transparent;
+            rjButton10.Location = new Point(11, 255);
+            rjButton10.Name = "rjButton10";
+            rjButton10.Size = new Size(47, 44);
+            rjButton10.TabIndex = 34;
+            rjButton10.TextColor = Color.Transparent;
+            rjButton10.UseVisualStyleBackColor = false;
+            // 
+            // rjButton9
+            // 
+            rjButton9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton9.BackColor = Color.MidnightBlue;
+            rjButton9.BackgroundColor = Color.MidnightBlue;
+            rjButton9.BackgroundImage = (Image)resources.GetObject("rjButton9.BackgroundImage");
+            rjButton9.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton9.BorderColor = Color.PaleVioletRed;
+            rjButton9.BorderRadius = 10;
+            rjButton9.BorderSize = 0;
+            rjButton9.CausesValidation = false;
+            rjButton9.FlatStyle = FlatStyle.Flat;
+            rjButton9.ForeColor = Color.Transparent;
+            rjButton9.Location = new Point(11, 205);
+            rjButton9.Name = "rjButton9";
+            rjButton9.Size = new Size(47, 44);
+            rjButton9.TabIndex = 33;
+            rjButton9.TextColor = Color.Transparent;
+            rjButton9.UseVisualStyleBackColor = false;
+            // 
+            // rjButton8
+            // 
+            rjButton8.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton8.BackColor = Color.MidnightBlue;
+            rjButton8.BackgroundColor = Color.MidnightBlue;
+            rjButton8.BackgroundImage = (Image)resources.GetObject("rjButton8.BackgroundImage");
+            rjButton8.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton8.BorderColor = Color.PaleVioletRed;
+            rjButton8.BorderRadius = 10;
+            rjButton8.BorderSize = 0;
+            rjButton8.CausesValidation = false;
+            rjButton8.FlatStyle = FlatStyle.Flat;
+            rjButton8.ForeColor = Color.Transparent;
+            rjButton8.Location = new Point(11, 155);
+            rjButton8.Name = "rjButton8";
+            rjButton8.Size = new Size(47, 44);
+            rjButton8.TabIndex = 32;
+            rjButton8.TextColor = Color.Transparent;
+            rjButton8.UseVisualStyleBackColor = false;
+            // 
+            // rjButton7
+            // 
+            rjButton7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton7.BackColor = Color.MidnightBlue;
+            rjButton7.BackgroundColor = Color.MidnightBlue;
+            rjButton7.BackgroundImage = (Image)resources.GetObject("rjButton7.BackgroundImage");
+            rjButton7.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton7.BorderColor = Color.PaleVioletRed;
+            rjButton7.BorderRadius = 10;
+            rjButton7.BorderSize = 0;
+            rjButton7.CausesValidation = false;
+            rjButton7.FlatStyle = FlatStyle.Flat;
+            rjButton7.ForeColor = Color.Transparent;
+            rjButton7.Location = new Point(11, 105);
+            rjButton7.Name = "rjButton7";
+            rjButton7.Size = new Size(47, 44);
+            rjButton7.TabIndex = 31;
+            rjButton7.TextColor = Color.Transparent;
+            rjButton7.UseVisualStyleBackColor = false;
+            // 
+            // rjButton6
+            // 
+            rjButton6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton6.BackColor = Color.MidnightBlue;
+            rjButton6.BackgroundColor = Color.MidnightBlue;
+            rjButton6.BackgroundImage = (Image)resources.GetObject("rjButton6.BackgroundImage");
+            rjButton6.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton6.BorderColor = Color.PaleVioletRed;
+            rjButton6.BorderRadius = 10;
+            rjButton6.BorderSize = 0;
+            rjButton6.CausesValidation = false;
+            rjButton6.FlatStyle = FlatStyle.Flat;
+            rjButton6.ForeColor = Color.Transparent;
+            rjButton6.Location = new Point(11, 55);
+            rjButton6.Name = "rjButton6";
+            rjButton6.Size = new Size(47, 44);
+            rjButton6.TabIndex = 30;
+            rjButton6.TextColor = Color.Transparent;
+            rjButton6.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -408,7 +567,7 @@
             rjTextBox5.Padding = new Padding(10, 7, 10, 7);
             rjTextBox5.PasswordChar = false;
             rjTextBox5.PlaceholderColor = Color.DarkGray;
-            rjTextBox5.PlaceholderText = "Item";
+            rjTextBox5.PlaceholderText = "Item 8";
             rjTextBox5.Size = new Size(165, 31);
             rjTextBox5.TabIndex = 56;
             rjTextBox5.Texts = "";
@@ -430,7 +589,7 @@
             rjTextBox6.Padding = new Padding(10, 7, 10, 7);
             rjTextBox6.PasswordChar = false;
             rjTextBox6.PlaceholderColor = Color.DarkGray;
-            rjTextBox6.PlaceholderText = "Item";
+            rjTextBox6.PlaceholderText = "Item 6";
             rjTextBox6.Size = new Size(165, 31);
             rjTextBox6.TabIndex = 55;
             rjTextBox6.Texts = "";
@@ -452,7 +611,7 @@
             rjTextBox7.Padding = new Padding(10, 7, 10, 7);
             rjTextBox7.PasswordChar = false;
             rjTextBox7.PlaceholderColor = Color.DarkGray;
-            rjTextBox7.PlaceholderText = "Item";
+            rjTextBox7.PlaceholderText = "Item 4";
             rjTextBox7.Size = new Size(165, 31);
             rjTextBox7.TabIndex = 54;
             rjTextBox7.Texts = "";
@@ -474,7 +633,7 @@
             rjTextBox8.Padding = new Padding(10, 7, 10, 7);
             rjTextBox8.PasswordChar = false;
             rjTextBox8.PlaceholderColor = Color.DarkGray;
-            rjTextBox8.PlaceholderText = "Item";
+            rjTextBox8.PlaceholderText = "Item 2";
             rjTextBox8.Size = new Size(165, 31);
             rjTextBox8.TabIndex = 53;
             rjTextBox8.Texts = "";
@@ -496,7 +655,7 @@
             rjTextBox3.Padding = new Padding(10, 7, 10, 7);
             rjTextBox3.PasswordChar = false;
             rjTextBox3.PlaceholderColor = Color.DarkGray;
-            rjTextBox3.PlaceholderText = "Item";
+            rjTextBox3.PlaceholderText = "Item 7";
             rjTextBox3.Size = new Size(165, 31);
             rjTextBox3.TabIndex = 52;
             rjTextBox3.Texts = "";
@@ -518,7 +677,7 @@
             rjTextBox4.Padding = new Padding(10, 7, 10, 7);
             rjTextBox4.PasswordChar = false;
             rjTextBox4.PlaceholderColor = Color.DarkGray;
-            rjTextBox4.PlaceholderText = "Item";
+            rjTextBox4.PlaceholderText = "Item 5";
             rjTextBox4.Size = new Size(165, 31);
             rjTextBox4.TabIndex = 51;
             rjTextBox4.Texts = "";
@@ -540,7 +699,7 @@
             rjTextBox2.Padding = new Padding(10, 7, 10, 7);
             rjTextBox2.PasswordChar = false;
             rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "Item";
+            rjTextBox2.PlaceholderText = "Item 3";
             rjTextBox2.Size = new Size(165, 31);
             rjTextBox2.TabIndex = 50;
             rjTextBox2.Texts = "";
@@ -571,7 +730,7 @@
             rjTextBox1.Padding = new Padding(10, 7, 10, 7);
             rjTextBox1.PasswordChar = false;
             rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "Item";
+            rjTextBox1.PlaceholderText = "Item 1";
             rjTextBox1.Size = new Size(165, 31);
             rjTextBox1.TabIndex = 48;
             rjTextBox1.Texts = "";
@@ -806,158 +965,6 @@
             labelCity.Size = new Size(34, 15);
             labelCity.TabIndex = 40;
             labelCity.Text = "City :";
-            // 
-            // rjButton6
-            // 
-            rjButton6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton6.BackColor = Color.MidnightBlue;
-            rjButton6.BackgroundColor = Color.MidnightBlue;
-            rjButton6.BackgroundImage = (Image)resources.GetObject("rjButton6.BackgroundImage");
-            rjButton6.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton6.BorderColor = Color.PaleVioletRed;
-            rjButton6.BorderRadius = 10;
-            rjButton6.BorderSize = 0;
-            rjButton6.CausesValidation = false;
-            rjButton6.ForeColor = Color.Transparent;
-            rjButton6.Location = new Point(11, 55);
-            rjButton6.Name = "rjButton6";
-            rjButton6.Size = new Size(47, 44);
-            rjButton6.TabIndex = 30;
-            rjButton6.TextColor = Color.Transparent;
-            rjButton6.UseVisualStyleBackColor = false;
-            // 
-            // rjButton7
-            // 
-            rjButton7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton7.BackColor = Color.MidnightBlue;
-            rjButton7.BackgroundColor = Color.MidnightBlue;
-            rjButton7.BackgroundImage = (Image)resources.GetObject("rjButton7.BackgroundImage");
-            rjButton7.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton7.BorderColor = Color.PaleVioletRed;
-            rjButton7.BorderRadius = 10;
-            rjButton7.BorderSize = 0;
-            rjButton7.CausesValidation = false;
-            rjButton7.ForeColor = Color.Transparent;
-            rjButton7.Location = new Point(11, 105);
-            rjButton7.Name = "rjButton7";
-            rjButton7.Size = new Size(47, 44);
-            rjButton7.TabIndex = 31;
-            rjButton7.TextColor = Color.Transparent;
-            rjButton7.UseVisualStyleBackColor = false;
-            // 
-            // rjButton8
-            // 
-            rjButton8.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton8.BackColor = Color.MidnightBlue;
-            rjButton8.BackgroundColor = Color.MidnightBlue;
-            rjButton8.BackgroundImage = (Image)resources.GetObject("rjButton8.BackgroundImage");
-            rjButton8.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton8.BorderColor = Color.PaleVioletRed;
-            rjButton8.BorderRadius = 10;
-            rjButton8.BorderSize = 0;
-            rjButton8.CausesValidation = false;
-            rjButton8.ForeColor = Color.Transparent;
-            rjButton8.Location = new Point(11, 155);
-            rjButton8.Name = "rjButton8";
-            rjButton8.Size = new Size(47, 44);
-            rjButton8.TabIndex = 32;
-            rjButton8.TextColor = Color.Transparent;
-            rjButton8.UseVisualStyleBackColor = false;
-            // 
-            // rjButton9
-            // 
-            rjButton9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton9.BackColor = Color.MidnightBlue;
-            rjButton9.BackgroundColor = Color.MidnightBlue;
-            rjButton9.BackgroundImage = (Image)resources.GetObject("rjButton9.BackgroundImage");
-            rjButton9.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton9.BorderColor = Color.PaleVioletRed;
-            rjButton9.BorderRadius = 10;
-            rjButton9.BorderSize = 0;
-            rjButton9.CausesValidation = false;
-            rjButton9.ForeColor = Color.Transparent;
-            rjButton9.Location = new Point(11, 205);
-            rjButton9.Name = "rjButton9";
-            rjButton9.Size = new Size(47, 44);
-            rjButton9.TabIndex = 33;
-            rjButton9.TextColor = Color.Transparent;
-            rjButton9.UseVisualStyleBackColor = false;
-            // 
-            // rjButton10
-            // 
-            rjButton10.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton10.BackColor = Color.MidnightBlue;
-            rjButton10.BackgroundColor = Color.MidnightBlue;
-            rjButton10.BackgroundImage = (Image)resources.GetObject("rjButton10.BackgroundImage");
-            rjButton10.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton10.BorderColor = Color.PaleVioletRed;
-            rjButton10.BorderRadius = 10;
-            rjButton10.BorderSize = 0;
-            rjButton10.CausesValidation = false;
-            rjButton10.ForeColor = Color.Transparent;
-            rjButton10.Location = new Point(11, 255);
-            rjButton10.Name = "rjButton10";
-            rjButton10.Size = new Size(47, 44);
-            rjButton10.TabIndex = 34;
-            rjButton10.TextColor = Color.Transparent;
-            rjButton10.UseVisualStyleBackColor = false;
-            // 
-            // rjButton11
-            // 
-            rjButton11.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton11.BackColor = Color.MidnightBlue;
-            rjButton11.BackgroundColor = Color.MidnightBlue;
-            rjButton11.BackgroundImage = (Image)resources.GetObject("rjButton11.BackgroundImage");
-            rjButton11.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton11.BorderColor = Color.PaleVioletRed;
-            rjButton11.BorderRadius = 10;
-            rjButton11.BorderSize = 0;
-            rjButton11.CausesValidation = false;
-            rjButton11.ForeColor = Color.Transparent;
-            rjButton11.Location = new Point(11, 305);
-            rjButton11.Name = "rjButton11";
-            rjButton11.Size = new Size(47, 44);
-            rjButton11.TabIndex = 35;
-            rjButton11.TextColor = Color.Transparent;
-            rjButton11.UseVisualStyleBackColor = false;
-            // 
-            // rjButton2
-            // 
-            rjButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton2.BackColor = Color.MidnightBlue;
-            rjButton2.BackgroundColor = Color.MidnightBlue;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 10;
-            rjButton2.BorderSize = 0;
-            rjButton2.CausesValidation = false;
-            rjButton2.FlatStyle = FlatStyle.Popup;
-            rjButton2.ForeColor = Color.Transparent;
-            rjButton2.Location = new Point(236, 6);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(75, 34);
-            rjButton2.TabIndex = 28;
-            rjButton2.Text = "Sales";
-            rjButton2.TextColor = Color.Transparent;
-            rjButton2.UseVisualStyleBackColor = false;
-            // 
-            // rjButton1
-            // 
-            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton1.BackColor = Color.MidnightBlue;
-            rjButton1.BackgroundColor = Color.MidnightBlue;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.CausesValidation = false;
-            rjButton1.FlatStyle = FlatStyle.Popup;
-            rjButton1.ForeColor = Color.Transparent;
-            rjButton1.Location = new Point(159, 6);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(75, 34);
-            rjButton1.TabIndex = 27;
-            rjButton1.Text = "Customer";
-            rjButton1.TextColor = Color.Transparent;
-            rjButton1.UseVisualStyleBackColor = false;
             // 
             // customerForm3Confirm
             // 
