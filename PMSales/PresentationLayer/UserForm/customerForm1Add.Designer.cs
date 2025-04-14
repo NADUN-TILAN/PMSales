@@ -577,6 +577,7 @@
             rjButton6.TabIndex = 45;
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
+            rjButton6.Click += rjButton6_Click;
             // 
             // rjButton4
             // 
@@ -713,6 +714,8 @@
             Controls.Add(textBoxCity);
             Controls.Add(buttonSave);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "customerForm1Add";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add Customer";

@@ -1,10 +1,12 @@
-﻿using RJCodeAdvance.RJControls;
+﻿using PMSales.PresentationLayer.UserForm;
+using RJCodeAdvance.RJControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,13 @@ namespace PMSales.PresentationLayer
         public Dashboard()
         {
             InitializeComponent();
+            DisplayAssemblyVersion();
+        }
+
+        private void DisplayAssemblyVersion()
+        {
+            var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "Unknown Version";
+            labelCustomerCounttx.Text = $"Vs.{version}";
         }
 
         #region btn 4 and 6
@@ -139,18 +148,19 @@ namespace PMSales.PresentationLayer
         //Customers 
         private void rjButton4_Click(object sender, EventArgs e)
         {
+            // Instantiate the customerForm1Add form
+            var customerForm = new customerForm1Add();
 
-        }
+            // Show the customerForm1Add form
+            customerForm.Show();
 
-        //Home
-        private void rjButton6_Click(object sender, EventArgs e)
-        {
-
+            // Close the current Dashboard form
+            this.Close();
         }
 
         #endregion
 
-
+        
 
     }
 }

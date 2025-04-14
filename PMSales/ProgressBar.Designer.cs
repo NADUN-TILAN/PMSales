@@ -11,6 +11,7 @@ namespace PMSales
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgressBar));
             hopeProgressBar1 = new HopeProgressBar();
             label1 = new Label();
             panel1 = new System.Windows.Forms.Panel();
@@ -69,6 +70,7 @@ namespace PMSales
             Controls.Add(panel1);
             Cursor = Cursors.AppStarting;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ProgressBar";
             StartPosition = FormStartPosition.CenterScreen;
             panel1.ResumeLayout(false);

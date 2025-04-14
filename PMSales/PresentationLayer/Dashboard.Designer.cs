@@ -1,4 +1,6 @@
-﻿namespace PMSales.PresentationLayer
+﻿using System.Reflection;
+
+namespace PMSales.PresentationLayer
 {
     partial class Dashboard
     {
@@ -52,6 +54,7 @@
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             labelCustomerCount = new Label();
+            labelCustomerCounttx = new Label();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -217,7 +220,7 @@
             rjButton6.TabIndex = 38;
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
-            rjButton6.Click += rjButton6_Click;
+            //rjButton6.Click += rjButton6_Click;
             rjButton6.MouseClick += rjButton6_MouseClick;
             rjButton6.MouseDown += rjButton6_MouseDown;
             rjButton6.MouseUp += rjButton6_MouseUp;
@@ -340,6 +343,7 @@
             panel1.Controls.Add(flowLayoutPanel2);
             panel1.Controls.Add(flowLayoutPanel1);
             panel1.Controls.Add(label3);
+            panel1.Controls.Add(labelCustomerCounttx);
             panel1.Location = new Point(160, 46);
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 556);
@@ -449,6 +453,16 @@
             labelCustomerCount.TabIndex = 50;
             labelCustomerCount.Text = "Sales: 0";
             // 
+            // labelCustomerCounttx
+            // 
+            labelCustomerCounttx.AutoSize = true;
+            labelCustomerCounttx.Font = new Font("Yu Gothic UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelCustomerCounttx.Location = new Point(680, 29);
+            labelCustomerCounttx.Name = "labelCustomerCounttx";
+            labelCustomerCounttx.Size = new Size(98, 21);
+            labelCustomerCounttx.TabIndex = 55;
+            labelCustomerCounttx.Text = "Vs.Unknown";
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -458,6 +472,8 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
@@ -500,5 +516,6 @@
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel4;
         private Label label4;
+        private Label labelCustomerCounttx;
     }
 }

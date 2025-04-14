@@ -27,5 +27,13 @@ namespace PMSales.PresentationLayer.UserForm
         {
 
         }
+
+        private void rjButton6_Click(object sender, EventArgs e)
+        {
+            var homeForm = new Dashboard();
+            homeForm.Show();
+
+            this.Close();
+        }
     }
 }

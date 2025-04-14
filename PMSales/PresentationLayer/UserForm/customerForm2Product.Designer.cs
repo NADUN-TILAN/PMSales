@@ -881,6 +881,8 @@
             Controls.Add(buttonSave);
             Controls.Add(panel1);
             Cursor = Cursors.Hand;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "customerForm2Product";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Choose Product";
