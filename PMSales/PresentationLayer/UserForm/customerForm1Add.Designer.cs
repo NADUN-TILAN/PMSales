@@ -47,9 +47,9 @@
             textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
             buttonSave = new RJCodeAdvance.RJControls.RJButton();
             label1 = new Label();
-            rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
+            textBoxSName = new RJCodeAdvance.RJControls.RJTextBox();
             label2 = new Label();
-            rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
+            textBoxLName = new RJCodeAdvance.RJControls.RJTextBox();
             panel1 = new Panel();
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             label3 = new Label();
@@ -346,27 +346,27 @@
             label1.TabIndex = 19;
             label1.Text = "SecondName:";
             // 
-            // rjTextBox1
+            // textBoxSName
             // 
-            rjTextBox1.BackColor = Color.White;
-            rjTextBox1.BorderColor = Color.Gray;
-            rjTextBox1.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox1.BorderRadius = 10;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox1.ForeColor = Color.Black;
-            rjTextBox1.Location = new Point(361, 155);
-            rjTextBox1.Margin = new Padding(4);
-            rjTextBox1.Multiline = false;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "Enter Customer SecondName";
-            rjTextBox1.Size = new Size(498, 31);
-            rjTextBox1.TabIndex = 20;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = false;
+            textBoxSName.BackColor = Color.White;
+            textBoxSName.BorderColor = Color.Gray;
+            textBoxSName.BorderFocusColor = Color.DodgerBlue;
+            textBoxSName.BorderRadius = 10;
+            textBoxSName.BorderSize = 2;
+            textBoxSName.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxSName.ForeColor = Color.Black;
+            textBoxSName.Location = new Point(361, 155);
+            textBoxSName.Margin = new Padding(4);
+            textBoxSName.Multiline = false;
+            textBoxSName.Name = "textBoxSName";
+            textBoxSName.Padding = new Padding(10, 7, 10, 7);
+            textBoxSName.PasswordChar = false;
+            textBoxSName.PlaceholderColor = Color.DarkGray;
+            textBoxSName.PlaceholderText = "Enter Customer SecondName";
+            textBoxSName.Size = new Size(498, 31);
+            textBoxSName.TabIndex = 20;
+            textBoxSName.Texts = "";
+            textBoxSName.UnderlinedStyle = false;
             // 
             // label2
             // 
@@ -377,27 +377,27 @@
             label2.TabIndex = 21;
             label2.Text = "LastName:";
             // 
-            // rjTextBox2
+            // textBoxLName
             // 
-            rjTextBox2.BackColor = Color.White;
-            rjTextBox2.BorderColor = Color.Gray;
-            rjTextBox2.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox2.BorderRadius = 10;
-            rjTextBox2.BorderSize = 2;
-            rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox2.ForeColor = Color.Black;
-            rjTextBox2.Location = new Point(361, 194);
-            rjTextBox2.Margin = new Padding(4);
-            rjTextBox2.Multiline = false;
-            rjTextBox2.Name = "rjTextBox2";
-            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox2.PasswordChar = false;
-            rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "Enter Customer LastName";
-            rjTextBox2.Size = new Size(498, 31);
-            rjTextBox2.TabIndex = 22;
-            rjTextBox2.Texts = "";
-            rjTextBox2.UnderlinedStyle = false;
+            textBoxLName.BackColor = Color.White;
+            textBoxLName.BorderColor = Color.Gray;
+            textBoxLName.BorderFocusColor = Color.DodgerBlue;
+            textBoxLName.BorderRadius = 10;
+            textBoxLName.BorderSize = 2;
+            textBoxLName.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxLName.ForeColor = Color.Black;
+            textBoxLName.Location = new Point(361, 194);
+            textBoxLName.Margin = new Padding(4);
+            textBoxLName.Multiline = false;
+            textBoxLName.Name = "textBoxLName";
+            textBoxLName.Padding = new Padding(10, 7, 10, 7);
+            textBoxLName.PasswordChar = false;
+            textBoxLName.PlaceholderColor = Color.DarkGray;
+            textBoxLName.PlaceholderText = "Enter Customer LastName";
+            textBoxLName.Size = new Size(498, 31);
+            textBoxLName.TabIndex = 22;
+            textBoxLName.Texts = "";
+            textBoxLName.UnderlinedStyle = false;
             // 
             // panel1
             // 
@@ -407,7 +407,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 23;
-            panel1.Paint += panel1_Paint;
             // 
             // rjButton5
             // 
@@ -692,10 +691,10 @@
             ClientSize = new Size(950, 602);
             Controls.Add(label2);
             Controls.Add(panel3);
-            Controls.Add(rjTextBox2);
+            Controls.Add(textBoxLName);
             Controls.Add(panel2);
             Controls.Add(label1);
-            Controls.Add(rjTextBox1);
+            Controls.Add(textBoxSName);
             Controls.Add(labelName);
             Controls.Add(textBoxName);
             Controls.Add(labelPhone1);
@@ -719,7 +718,6 @@
             Name = "customerForm1Add";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add Customer";
-            Load += customerForm1Add_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
@@ -747,15 +745,10 @@
         private RJCodeAdvance.RJControls.RJTextBox textBoxCity;
         private RJCodeAdvance.RJControls.RJButton buttonSave;
 
-        // Event handler for Save button
-        private void buttonSave_Click(object sender, EventArgs e)
-        {
-            // Save customer data logic goes here
-        }
         private Label label1;
-        private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxSName;
         private Label label2;
-        private RJCodeAdvance.RJControls.RJTextBox rjTextBox2;
+        private RJCodeAdvance.RJControls.RJTextBox textBoxLName;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
