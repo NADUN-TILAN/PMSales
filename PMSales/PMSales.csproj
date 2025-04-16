@@ -1,5 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<PropertyGroup>
+  <NoWarn>NU1701</NoWarn>
+</PropertyGroup>
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
@@ -24,8 +26,14 @@
     <PackageReference Include="FastReport.DataVisualization" Version="2025.2.0" />
     <PackageReference Include="FontAwesome" Version="4.7.0" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.4" />
     <PackageReference Include="ReaLTaiizor" Version="3.8.1.2" />
     <PackageReference Include="RJCodeAdvance.RJControls" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMSalesBLL\PMSalesBLL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

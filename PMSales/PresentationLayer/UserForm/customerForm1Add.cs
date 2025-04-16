@@ -2,15 +2,19 @@
 using System.Drawing;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using PMSales.BusinessLayer;
 using RJCodeAdvance.RJControls;
 
 namespace PMSales.PresentationLayer.UserForm
 {
     public partial class customerForm1Add : Form
     {
+        private readonly CustomerBL customerBL; // Declare a CustomerBL instance
+
         public customerForm1Add()
         {
             InitializeComponent();
+            customerBL = new CustomerBL(); // Initialize the CustomerBL instance
         }
 
         #region btn 6
@@ -22,10 +26,9 @@ namespace PMSales.PresentationLayer.UserForm
 
             this.Close();
         }
-        #endregion 
+        #endregion
 
         // Event handler for Save button
-            // Save customer data logic goes here
         private void buttonSave_Click(object sender, EventArgs e)
         {
             try
@@ -99,14 +102,13 @@ namespace PMSales.PresentationLayer.UserForm
 
                 if (string.IsNullOrWhiteSpace(customerCity))
                 {
-                    MessageBox.Show("Customer cityr is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Customer city is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Step 3: Save Data (Example: Save to a database or file)
-                // Assuming a method SaveCustomer exists in a data access layer
-                bool isSaved = SaveCustomer(customerName, customerSName, customerLName, customerPhone1, customerPhone2, 
-                                            customerPhone3, customerEmail1, customerEmail2, customerAddress, customerCity);
+                // Step 3: Save Data
+                bool isSaved = customerBL.SaveCustomer(customerName, customerSName, customerLName, customerPhone1, customerPhone2,
+                                                       customerPhone3, customerEmail1, customerEmail2, customerAddress, customerCity);
 
                 if (isSaved)
                 {
@@ -139,5 +141,4 @@ namespace PMSales.PresentationLayer.UserForm
             }
         }
     }
-
-        }
+}

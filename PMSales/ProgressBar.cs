@@ -6,7 +6,7 @@ namespace PMSales
 {
     public partial class ProgressBar : Form
     {
-        private System.Windows.Forms.Timer progressTimer;
+        private System.Windows.Forms.Timer? progressTimer;
 
         public ProgressBar()
         {
@@ -14,7 +14,7 @@ namespace PMSales
             Load += Form1_Load;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object? sender, EventArgs e) // Updated nullability of 'sender'
         {
             // Initialize progress bar properties
             hopeProgressBar1.ValueNumber = 0;
@@ -31,15 +31,15 @@ namespace PMSales
             progressTimer.Start();
         }
 
-        private void ProgressTimer_Tick(object sender, EventArgs e)
+        private void ProgressTimer_Tick(object? sender, EventArgs e)
         {
             try
             {
-                if (hopeProgressBar1.ValueNumber < 100)
+                if (progressTimer != null && hopeProgressBar1.ValueNumber < 100)
                 {
                     hopeProgressBar1.ValueNumber += 1;
                 }
-                else
+                else if (progressTimer != null)
                 {
                     progressTimer.Stop();
 
@@ -49,13 +49,12 @@ namespace PMSales
 
                     // Hide the ProgressBar form instead of closing it
                     this.Hide();
-
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                progressTimer.Stop();
+                progressTimer?.Stop();
             }
         }
 
