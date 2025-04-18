@@ -12,16 +12,19 @@ namespace PMSales.PresentationLayer.UserForm
 {
     public partial class customerForm2Product : Form
     {
-        public customerForm2Product()
+        private readonly customerForm1Add previousForm;
+
+        // Constructor that takes the previous form as a parameter
+        public customerForm2Product(customerForm1Add form)
         {
             InitializeComponent();
+            previousForm = form;
         }
 
         private void rjButton5_Click(object sender, EventArgs e)
-        {            
+        {
             this.Hide();
-            var customerForm1 = new customerForm1Add();
-            customerForm1.Show();
+            previousForm.Show(); // Show the previous form with filled data
         }
     }
 }

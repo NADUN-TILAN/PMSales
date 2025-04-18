@@ -10,6 +10,7 @@ namespace PMSales.PresentationLayer.UserForm
     public partial class customerForm1Add : Form
     {
         private readonly CustomerBL customerBL; // Declare a CustomerBL instance
+        private bool isAlreadySaved;
 
         public customerForm1Add()
         {
@@ -158,7 +159,14 @@ namespace PMSales.PresentationLayer.UserForm
         // Event handler for Save button
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            var customerForm2 = new customerForm2Product();
+            // Prevent saving again if already saved
+            if (isAlreadySaved)
+            {
+                this.Hide();
+                var customerForm2 = new customerForm2Product(this);
+                customerForm2.Show();
+                return;
+            }
 
             try
             {
@@ -240,9 +248,12 @@ namespace PMSales.PresentationLayer.UserForm
 
                 if (isSaved)
                 {
+                    isAlreadySaved = true;
+
                     // Step 4: Provide Feedback
                     //MessageBox.Show("Customer data saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);               
                     this.Hide();
+                    var customerForm2 = new customerForm2Product(this); // pass current form
                     customerForm2.Show();
                 }
                 else
