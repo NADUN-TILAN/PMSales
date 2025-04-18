@@ -208,7 +208,7 @@ namespace PMSales.PresentationLayer
             rjButton6.BackgroundColor = Color.White;
             rjButton6.BackgroundImage = (Image)resources.GetObject("rjButton6.BackgroundImage");
             rjButton6.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton6.BorderColor = Color.PaleVioletRed;
+            rjButton6.BorderColor = Color.Transparent;
             rjButton6.BorderRadius = 10;
             rjButton6.BorderSize = 0;
             rjButton6.CausesValidation = false;
@@ -223,6 +223,8 @@ namespace PMSales.PresentationLayer
             rjButton6.UseVisualStyleBackColor = false;
             rjButton6.MouseClick += rjButton6_MouseClick;
             rjButton6.MouseDown += rjButton6_MouseDown;
+            rjButton6.MouseLeave += rjButton6_MouseLeave;
+            rjButton6.MouseHover += rjButton6_MouseHover;
             rjButton6.MouseUp += rjButton6_MouseUp;
             // 
             // rjButton4
@@ -232,7 +234,7 @@ namespace PMSales.PresentationLayer
             rjButton4.BackgroundColor = Color.White;
             rjButton4.BackgroundImage = Properties.Resources.cus;
             rjButton4.BackgroundImageLayout = ImageLayout.Zoom;
-            rjButton4.BorderColor = Color.PaleVioletRed;
+            rjButton4.BorderColor = Color.White;
             rjButton4.BorderRadius = 10;
             rjButton4.BorderSize = 0;
             rjButton4.CausesValidation = false;
@@ -248,6 +250,8 @@ namespace PMSales.PresentationLayer
             rjButton4.Click += rjButton4_Click;
             rjButton4.MouseClick += rjButton4_MouseClick;
             rjButton4.MouseDown += rjButton4_MouseDown;
+            rjButton4.MouseLeave += rjButton4_MouseLeave;
+            rjButton4.MouseHover += rjButton4_MouseHover;
             rjButton4.MouseUp += rjButton4_MouseUp;
             // 
             // rjButton12

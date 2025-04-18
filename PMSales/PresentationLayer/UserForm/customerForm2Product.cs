@@ -16,5 +16,12 @@ namespace PMSales.PresentationLayer.UserForm
         {
             InitializeComponent();
         }
+
+        private void rjButton5_Click(object sender, EventArgs e)
+        {            
+            this.Hide();
+            var customerForm1 = new customerForm1Add();
+            customerForm1.Show();
+        }
     }
 }

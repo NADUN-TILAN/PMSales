@@ -69,5 +69,22 @@ namespace PMSalesDAL.DatabaseHelper
             }
 
         }
+
+
+        #region Get the total count of customers
+        public int GetCustomerCount()
+        {
+            const string query = "SELECT COUNT(*) FROM Customers"; // Replace 'Customers' with your actual table name
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    return (int)command.ExecuteScalar();
+                }
+            }
+        }
+        #endregion
     }
 }

@@ -38,5 +38,20 @@ namespace PMSales.BusinessLayer
                 return false;
             }
         }
+
+        #region Dashboard Count
+        public int GetCustomerCount()
+        {
+            try
+            {
+                return customerDAL.GetCustomerCount();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving customer count: {ex.Message}");
+                return 0; // Return 0 in case of an error
+            }
+        }
+        #endregion
     }
 }

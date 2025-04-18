@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using PMSales.BusinessLayer;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,7 @@ namespace PMSales.PresentationLayer
         {
             InitializeComponent();
             DisplayAssemblyVersion();
+            DisplayCustomerCount();
         }
 
         private void DisplayAssemblyVersion()
@@ -110,37 +112,37 @@ namespace PMSales.PresentationLayer
         #region btn design methods
         private void ApplyHoverStyle(RJButton button)
         {
-            button.BackColor = Color.FromArgb(173, 216, 230); // LightBlue with transparency
-            //button.BorderColor = Color.Red;
+            button.BackColor = Color.FromArgb(77, 182, 172); // Teal for hover effect
+            button.BorderColor = Color.FromArgb(153, 233, 255); // Slightly darker teal for border
             button.BorderSize = 3;
-            button.ForeColor = Color.White; // Change text color for better contrast
+            button.ForeColor = Color.White; // White text for contrast
             button.Font = new Font(button.Font.FontFamily, button.Font.Size, FontStyle.Bold); // Bold text
-            button.Cursor = Cursors.Hand; // Change cursor to hand for better UX
+            button.Cursor = Cursors.Hand; // Hand cursor for better UX
         }
 
         private void ApplyLeaveStyle(RJButton button)
         {
-            button.BackColor = SystemColors.Control; // Reset to default
-            button.BorderColor = Color.BlueViolet;
+            button.BackColor = Color.FromArgb(245, 245, 245); // Light Gray for neutral state
+            button.BorderColor = Color.FromArgb(200, 200, 200); // Subtle Gray border
             button.BorderSize = 2;
-            button.ForeColor = Color.Black; // Reset text color
+            button.ForeColor = Color.Black; // Black text for readability
             button.Font = new Font(button.Font.FontFamily, button.Font.Size, FontStyle.Regular); // Regular text
         }
 
         private void ApplyClickStyle(RJButton button)
         {
-            button.BackColor = Color.FromArgb(100, 149, 237); // CornflowerBlue for click effect
-            button.BorderColor = Color.DarkBlue;
+            button.BackColor = Color.FromArgb(33, 150, 243); // Vibrant Blue for click effect
+            button.BorderColor = Color.FromArgb(25, 118, 210); // Darker Blue for border
             button.BorderSize = 4;
-            button.ForeColor = Color.White;
+            button.ForeColor = Color.White; // White text for contrast
         }
 
         private void ApplyPressedStyle(RJButton button)
         {
-            button.BackColor = Color.FromArgb(70, 130, 180); // SteelBlue for pressed effect
-            button.BorderColor = Color.DarkRed;
+            button.BackColor = Color.FromArgb(30, 136, 229); // Slightly darker blue for pressed effect
+            button.BorderColor = Color.FromArgb(21, 101, 192); // Even darker border
             button.BorderSize = 5;
-            button.ForeColor = Color.White;
+            button.ForeColor = Color.White; // White text for contrast
         }
         #endregion
 
@@ -160,7 +162,21 @@ namespace PMSales.PresentationLayer
 
         #endregion
 
-        
+        #region Dashboard Functions
 
+        private void DisplayCustomerCount()
+        {
+            // Assuming GetCustomerCount() retrieves the number of customers
+            int customerCount = GetCustomerCount();
+            labelCustomerCount.Text = $"Customers: {customerCount}";
+        }
+
+        // method to retrieve customer count (replace with actual implementation)
+        private int GetCustomerCount()
+        {
+            var customerBL = new PMSales.BusinessLayer.CustomerBL();
+            return customerBL.GetCustomerCount();
+        }
+        #endregion
     }
 }
