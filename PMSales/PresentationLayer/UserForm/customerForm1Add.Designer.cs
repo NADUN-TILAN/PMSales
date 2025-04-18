@@ -556,6 +556,11 @@
             rjButton7.TabIndex = 46;
             rjButton7.TextColor = Color.Transparent;
             rjButton7.UseVisualStyleBackColor = false;
+            rjButton7.Click += rjButton7_Click;
+            rjButton7.MouseDown += rjButton7_MouseDown;
+            rjButton7.MouseLeave += rjButton7_MouseLeave;
+            rjButton7.MouseHover += rjButton7_MouseHover;
+            rjButton7.MouseUp += rjButton7_MouseUp;
             // 
             // rjButton6
             // 
@@ -578,6 +583,10 @@
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
             rjButton6.Click += rjButton6_Click;
+            rjButton6.MouseDown += rjButton6_MouseDown;
+            rjButton6.MouseLeave += rjButton6_MouseLeave;
+            rjButton6.MouseHover += rjButton6_MouseHover;
+            rjButton6.MouseUp += rjButton6_MouseUp;
             // 
             // rjButton4
             // 
@@ -599,6 +608,11 @@
             rjButton4.TabIndex = 44;
             rjButton4.TextColor = Color.Transparent;
             rjButton4.UseVisualStyleBackColor = false;
+            rjButton4.Click += rjButton4_Click;
+            rjButton4.MouseDown += rjButton4_MouseDown;
+            rjButton4.MouseLeave += rjButton4_MouseLeave;
+            rjButton4.MouseHover += rjButton4_MouseHover;
+            rjButton4.MouseUp += rjButton4_MouseUp;
             // 
             // rjButton12
             // 

@@ -221,7 +221,7 @@ namespace PMSales.PresentationLayer
             rjButton6.TabIndex = 38;
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
-            rjButton6.MouseClick += rjButton6_MouseClick;
+            rjButton6.Click += rjButton4_Click;
             rjButton6.MouseDown += rjButton6_MouseDown;
             rjButton6.MouseLeave += rjButton6_MouseLeave;
             rjButton6.MouseHover += rjButton6_MouseHover;
@@ -248,7 +248,6 @@ namespace PMSales.PresentationLayer
             rjButton4.TextColor = Color.Transparent;
             rjButton4.UseVisualStyleBackColor = false;
             rjButton4.Click += rjButton4_Click;
-            rjButton4.MouseClick += rjButton4_MouseClick;
             rjButton4.MouseDown += rjButton4_MouseDown;
             rjButton4.MouseLeave += rjButton4_MouseLeave;
             rjButton4.MouseHover += rjButton4_MouseHover;
@@ -411,9 +410,9 @@ namespace PMSales.PresentationLayer
             label2.ForeColor = Color.Black;
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(138, 30);
+            label2.Size = new Size(83, 30);
             label2.TabIndex = 50;
-            label2.Text = "Customers: 0";
+            label2.Text = "Sales: 0";
             // 
             // flowLayoutPanel2
             // 
@@ -463,9 +462,9 @@ namespace PMSales.PresentationLayer
             labelCustomerCount.ForeColor = Color.Black;
             labelCustomerCount.Location = new Point(3, 0);
             labelCustomerCount.Name = "labelCustomerCount";
-            labelCustomerCount.Size = new Size(83, 30);
+            labelCustomerCount.Size = new Size(138, 30);
             labelCustomerCount.TabIndex = 50;
-            labelCustomerCount.Text = "Sales: 0";
+            labelCustomerCount.Text = "Customers: 0";
             // 
             // labelCustomerCounttx
             // 

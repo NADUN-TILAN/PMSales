@@ -29,7 +29,7 @@ namespace PMSales.PresentationLayer
             labelCustomerCounttx.Text = $"Vs.{version}";
         }
 
-        #region btn 4 and 6
+        #region btn 4 and 6 and 7
         //btn 4
         private void rjButton4_MouseHover(object sender, EventArgs e) //eveent 1
         {
@@ -67,10 +67,10 @@ namespace PMSales.PresentationLayer
             ApplyLeaveStyle(rjButton6);
         }
 
-        private void rjButton6_MouseClick(object sender, MouseEventArgs e) //eveent 3
-        {
-            ApplyClickStyle(rjButton6);
-        }
+        //private void rjButton6_MouseClick(object sender, MouseEventArgs e) //eveent 3
+        //{
+        //    ApplyClickStyle(rjButton6);
+        //}
 
         private void rjButton6_MouseDown(object sender, MouseEventArgs e) //eveent 4
         {
@@ -178,5 +178,7 @@ namespace PMSales.PresentationLayer
             return customerBL.GetCustomerCount();
         }
         #endregion
+
+        
     }
 }

@@ -16,6 +16,7 @@ namespace PMSales
             label1 = new Label();
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // hopeProgressBar1
@@ -43,7 +44,7 @@ namespace PMSales
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(163, 210);
+            label1.Location = new Point(38, 141);
             label1.Name = "label1";
             label1.Size = new Size(213, 16);
             label1.TabIndex = 1;
@@ -53,18 +54,19 @@ namespace PMSales
             // 
             panel1.BackgroundImage = Properties.Resources.NewSoft___Copy;
             panel1.BackgroundImageLayout = ImageLayout.Zoom;
-            panel1.Location = new Point(155, 83);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(125, 70);
             panel1.Name = "panel1";
-            panel1.Size = new Size(221, 179);
+            panel1.Size = new Size(278, 214);
             panel1.TabIndex = 2;
             // 
             // panel2
             // 
             panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
-            panel2.Location = new Point(176, -3);
+            panel2.Location = new Point(177, -26);
             panel2.Name = "panel2";
-            panel2.Size = new Size(190, 167);
+            panel2.Size = new Size(187, 172);
             panel2.TabIndex = 3;
             // 
             // ProgressBar
@@ -74,17 +76,17 @@ namespace PMSales
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(556, 263);
-            Controls.Add(panel2);
-            Controls.Add(label1);
             Controls.Add(hopeProgressBar1);
+            Controls.Add(panel2);
             Controls.Add(panel1);
-            Cursor = Cursors.AppStarting;
+            Cursor = Cursors.WaitCursor;
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ProgressBar";
             StartPosition = FormStartPosition.CenterScreen;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
         private Label label1;
         private System.Windows.Forms.Panel panel1;
