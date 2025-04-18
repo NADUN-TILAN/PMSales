@@ -63,6 +63,7 @@
             rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             rjButton12 = new RJCodeAdvance.RJControls.RJButton();
             panel2 = new Panel();
+            panel4 = new Panel();
             rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             rjButton1 = new RJCodeAdvance.RJControls.RJButton();
@@ -465,7 +466,7 @@
             rjButton11.Cursor = Cursors.Hand;
             rjButton11.FlatStyle = FlatStyle.Flat;
             rjButton11.ForeColor = Color.Transparent;
-            rjButton11.Location = new Point(10, 305);
+            rjButton11.Location = new Point(10, 309);
             rjButton11.Name = "rjButton11";
             rjButton11.Size = new Size(47, 44);
             rjButton11.TabIndex = 50;
@@ -486,7 +487,7 @@
             rjButton10.Cursor = Cursors.Hand;
             rjButton10.FlatStyle = FlatStyle.Flat;
             rjButton10.ForeColor = Color.Transparent;
-            rjButton10.Location = new Point(10, 255);
+            rjButton10.Location = new Point(10, 259);
             rjButton10.Name = "rjButton10";
             rjButton10.Size = new Size(47, 44);
             rjButton10.TabIndex = 49;
@@ -507,7 +508,7 @@
             rjButton9.Cursor = Cursors.Hand;
             rjButton9.FlatStyle = FlatStyle.Flat;
             rjButton9.ForeColor = Color.Transparent;
-            rjButton9.Location = new Point(10, 205);
+            rjButton9.Location = new Point(10, 209);
             rjButton9.Name = "rjButton9";
             rjButton9.Size = new Size(47, 44);
             rjButton9.TabIndex = 48;
@@ -528,7 +529,7 @@
             rjButton8.Cursor = Cursors.Hand;
             rjButton8.FlatStyle = FlatStyle.Flat;
             rjButton8.ForeColor = Color.Transparent;
-            rjButton8.Location = new Point(10, 155);
+            rjButton8.Location = new Point(10, 159);
             rjButton8.Name = "rjButton8";
             rjButton8.Size = new Size(47, 44);
             rjButton8.TabIndex = 47;
@@ -549,7 +550,7 @@
             rjButton7.Cursor = Cursors.Hand;
             rjButton7.FlatStyle = FlatStyle.Flat;
             rjButton7.ForeColor = Color.Transparent;
-            rjButton7.Location = new Point(10, 105);
+            rjButton7.Location = new Point(10, 109);
             rjButton7.Name = "rjButton7";
             rjButton7.Size = new Size(47, 44);
             rjButton7.TabIndex = 46;
@@ -570,7 +571,7 @@
             rjButton6.Cursor = Cursors.Hand;
             rjButton6.FlatStyle = FlatStyle.Flat;
             rjButton6.ForeColor = Color.Transparent;
-            rjButton6.Location = new Point(10, 55);
+            rjButton6.Location = new Point(10, 59);
             rjButton6.Name = "rjButton6";
             rjButton6.Size = new Size(47, 44);
             rjButton6.TabIndex = 45;
@@ -592,7 +593,7 @@
             rjButton4.Cursor = Cursors.Hand;
             rjButton4.FlatStyle = FlatStyle.Flat;
             rjButton4.ForeColor = Color.Transparent;
-            rjButton4.Location = new Point(10, 6);
+            rjButton4.Location = new Point(10, 10);
             rjButton4.Name = "rjButton4";
             rjButton4.Size = new Size(47, 44);
             rjButton4.TabIndex = 44;
@@ -608,7 +609,7 @@
             rjButton12.BorderSize = 0;
             rjButton12.FlatStyle = FlatStyle.Popup;
             rjButton12.ForeColor = Color.White;
-            rjButton12.Location = new Point(6, 355);
+            rjButton12.Location = new Point(6, 359);
             rjButton12.Name = "rjButton12";
             rjButton12.Size = new Size(143, 26);
             rjButton12.TabIndex = 36;
@@ -619,6 +620,7 @@
             // panel2
             // 
             panel2.BackColor = Color.DodgerBlue;
+            panel2.Controls.Add(panel4);
             panel2.Controls.Add(rjButton3);
             panel2.Controls.Add(rjButton2);
             panel2.Controls.Add(rjButton1);
@@ -627,6 +629,15 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(949, 45);
             panel2.TabIndex = 24;
+            // 
+            // panel4
+            // 
+            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
+            panel4.BackgroundImageLayout = ImageLayout.Stretch;
+            panel4.Location = new Point(1, -41);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(159, 127);
+            panel4.TabIndex = 51;
             // 
             // rjButton3
             // 
@@ -639,7 +650,7 @@
             rjButton3.CausesValidation = false;
             rjButton3.FlatStyle = FlatStyle.Popup;
             rjButton3.ForeColor = Color.Transparent;
-            rjButton3.Location = new Point(313, 6);
+            rjButton3.Location = new Point(319, 6);
             rjButton3.Name = "rjButton3";
             rjButton3.Size = new Size(75, 34);
             rjButton3.TabIndex = 29;
@@ -658,7 +669,7 @@
             rjButton2.CausesValidation = false;
             rjButton2.FlatStyle = FlatStyle.Popup;
             rjButton2.ForeColor = Color.Transparent;
-            rjButton2.Location = new Point(236, 6);
+            rjButton2.Location = new Point(242, 6);
             rjButton2.Name = "rjButton2";
             rjButton2.Size = new Size(75, 34);
             rjButton2.TabIndex = 28;
@@ -677,7 +688,7 @@
             rjButton1.CausesValidation = false;
             rjButton1.FlatStyle = FlatStyle.Popup;
             rjButton1.ForeColor = Color.Transparent;
-            rjButton1.Location = new Point(159, 6);
+            rjButton1.Location = new Point(165, 6);
             rjButton1.Name = "rjButton1";
             rjButton1.Size = new Size(75, 34);
             rjButton1.TabIndex = 27;
@@ -765,5 +776,6 @@
         private RJCodeAdvance.RJControls.RJButton rjButton7;
         private RJCodeAdvance.RJControls.RJButton rjButton6;
         private RJCodeAdvance.RJControls.RJButton rjButton4;
+        private Panel panel4;
     }
 }

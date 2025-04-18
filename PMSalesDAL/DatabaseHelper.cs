@@ -1,42 +1,73 @@
-﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Data.SqlClient;
 using PMSalesDomainEntities;
+using System.Data;
 
 namespace PMSalesDAL.DatabaseHelper
 {
     public class CustomerDAL
     {
-        private readonly string connectionString = ConfigurationManager.ConnectionStrings["PMSalesDB"].ConnectionString;
+        private readonly string connectionString;
+
+        public CustomerDAL()
+        {
+            // Load configuration from appsettings.json
+            var config = new ConfigurationBuilder()
+                            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                            .Build();
+
+            string? conn = config.GetConnectionString("PMSalesDB");
+
+            if (string.IsNullOrEmpty(conn))
+            {
+                throw new Exception("Connection string 'PMSalesDB' not found in appsettings.json.");
+            }
+
+            connectionString = conn;
+        }
 
         public bool InsertCustomer(Customer customer)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                using (SqlCommand cmd = new SqlCommand("PM_INSERT_CUSTOMER", conn))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
+                    using (SqlCommand cmd = new SqlCommand("PM_INSERT_CUSTOMER", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
 
-                    // Map the correct properties to the stored procedure parameters
-                    cmd.Parameters.AddWithValue("@FirstName", customer.FirstName ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@SecondName", customer.SecondName ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@LastName", customer.LastName ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Phone1", customer.Phone1 ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Phone2", customer.Phone2 ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Phone3", customer.Phone3 ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Email1", customer.Email1 ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Email2", customer.Email2 ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Address", customer.Address ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@City", customer.City ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@CreatedDate", customer.CreatedDate == default ? DateTime.Now : customer.CreatedDate);
-                    cmd.Parameters.AddWithValue("@UpdatedDate", customer.UpdatedDate == default ? DateTime.Now : customer.UpdatedDate);
+                        // Add your parameters
+                        cmd.Parameters.AddWithValue("@fname", customer.FirstName ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@sname", customer.SecondName ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@lname", customer.LastName ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@phone1", customer.Phone1 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@phone2", customer.Phone2 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@phone3", customer.Phone3 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@email1", customer.Email1 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@email2", customer.Email2 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@address", customer.Address ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@city", customer.City ?? (object)DBNull.Value);
 
-                    conn.Open();
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    return rowsAffected > 0;
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+
+                        Console.WriteLine("Customer inserted successfully.");
+                        return true;
+                    }
                 }
             }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
+
         }
     }
 }

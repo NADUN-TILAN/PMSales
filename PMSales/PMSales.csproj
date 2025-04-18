@@ -10,11 +10,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyVersion>1.0.0.2</AssemblyVersion>
     <FileVersion>1.0.0.2</FileVersion>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationIcon>arzopa.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="icon.ico" />
+    <Content Include="appsettings.json" />
+    <Content Include="arzopa.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +41,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PMSalesBLL\PMSalesBLL.csproj" />
+    <ProjectReference Include="..\PMSalesDAL\PMSalesDAL.csproj" />
+    <ProjectReference Include="..\PMSalesDomainEntities\PMSalesDomainEntities.csproj" />
   </ItemGroup>
 
   <ItemGroup>

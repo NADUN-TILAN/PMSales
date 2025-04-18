@@ -31,19 +31,21 @@ namespace PMSales.PresentationLayer.UserForm
         // Event handler for Save button
         private void buttonSave_Click(object sender, EventArgs e)
         {
+            var customerForm2 = new customerForm2Product();
+
             try
             {
                 // Step 1: Retrieve Input Data
-                string customerName = textBoxName.Text.Trim();
-                string customerSName = textBoxSName.Text.Trim();
-                string customerLName = textBoxLName.Text.Trim();
-                string customerPhone1 = textBoxPhone1.Text.Trim();
-                string customerPhone2 = textBoxPhone2.Text.Trim();
-                string customerPhone3 = textBoxPhone3.Text.Trim();
-                string customerEmail1 = textBoxEmail1.Text.Trim();
-                string customerEmail2 = textBoxEmail2.Text.Trim();
-                string customerAddress = textBoxAddress.Text.Trim();
-                string customerCity = textBoxCity.Text.Trim();
+                string customerName = textBoxName.Texts.Trim();
+                string customerSName = textBoxSName.Texts.Trim();
+                string customerLName = textBoxLName.Texts.Trim();
+                string customerPhone1 = textBoxPhone1.Texts.Trim();
+                string customerPhone2 = textBoxPhone2.Texts.Trim();
+                string customerPhone3 = textBoxPhone3.Texts.Trim();
+                string customerEmail1 = textBoxEmail1.Texts.Trim();
+                string customerEmail2 = textBoxEmail2.Texts.Trim();
+                string customerAddress = textBoxAddress.Texts.Trim();
+                string customerCity = textBoxCity.Texts.Trim();
 
                 // Step 2: Validate Input
                 if (string.IsNullOrWhiteSpace(customerName))
@@ -76,11 +78,11 @@ namespace PMSales.PresentationLayer.UserForm
                     return;
                 }
 
-                if (string.IsNullOrWhiteSpace(customerPhone3))
-                {
-                    MessageBox.Show("Customer phone number 3 is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                //if (string.IsNullOrWhiteSpace(customerPhone3))
+                //{
+                //    MessageBox.Show("Customer phone number 3 is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //    return;
+                //}
 
                 if (string.IsNullOrWhiteSpace(customerEmail1))
                 {
@@ -88,11 +90,11 @@ namespace PMSales.PresentationLayer.UserForm
                     return;
                 }
 
-                if (string.IsNullOrWhiteSpace(customerEmail2))
-                {
-                    MessageBox.Show("Customer email 2 is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                //if (string.IsNullOrWhiteSpace(customerEmail2))
+                //{
+                //    MessageBox.Show("Customer email 2 is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //    return;
+                //}
 
                 if (string.IsNullOrWhiteSpace(customerAddress))
                 {
@@ -113,8 +115,9 @@ namespace PMSales.PresentationLayer.UserForm
                 if (isSaved)
                 {
                     // Step 4: Provide Feedback
-                    MessageBox.Show("Customer data saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close(); // Close the form after saving
+                    //MessageBox.Show("Customer data saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);               
+                    this.Hide();
+                    customerForm2.Show(); 
                 }
                 else
                 {
