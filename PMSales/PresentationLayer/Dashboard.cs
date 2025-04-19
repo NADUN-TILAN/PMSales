@@ -21,6 +21,8 @@ namespace PMSales.PresentationLayer
             InitializeComponent();
             DisplayAssemblyVersion();
             DisplayCustomerCount();
+            PopulateComboBox1(); // Ensure this is called
+
         }
 
         private void DisplayAssemblyVersion()
@@ -177,8 +179,34 @@ namespace PMSales.PresentationLayer
             var customerBL = new PMSales.BusinessLayer.CustomerBL();
             return customerBL.GetCustomerCount();
         }
+
+        // Items dropdown
+        private void PopulateComboBox1()
+        {
+            try
+            {
+                var productBL = new PMSales.BusinessLayer.ProductBLL();
+                List<string> products = productBL.GetProductNames(); // Declare 'products' here
+
+                comboBox1.Items.Clear();
+
+                if (products.Count == 0) // Check after 'products' is declared
+                {
+                    MessageBox.Show("No products available.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    comboBox1.Items.AddRange(products.ToArray());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         #endregion
 
-        
+
+
     }
 }

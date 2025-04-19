@@ -42,10 +42,12 @@ namespace PMSales.PresentationLayer
             rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             rjButton12 = new RJCodeAdvance.RJControls.RJButton();
             panel2 = new Panel();
+            rjButton14 = new RJCodeAdvance.RJControls.RJButton();
+            comboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
             panel4 = new Panel();
-            rjButton3 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            rjComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
+            rjButton13 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
             flowLayoutPanel4 = new FlowLayoutPanel();
             label4 = new Label();
@@ -273,15 +275,53 @@ namespace PMSales.PresentationLayer
             // panel2
             // 
             panel2.BackColor = Color.DodgerBlue;
+            panel2.Controls.Add(rjButton14);
+            panel2.Controls.Add(comboBox1);
             panel2.Controls.Add(panel4);
-            panel2.Controls.Add(rjButton3);
-            panel2.Controls.Add(rjButton2);
-            panel2.Controls.Add(rjButton1);
+            panel2.Controls.Add(rjComboBox1);
+            panel2.Controls.Add(rjButton13);
+            panel2.Controls.Add(rjButton5);
             panel2.ForeColor = Color.White;
             panel2.Location = new Point(1, 1);
             panel2.Name = "panel2";
             panel2.Size = new Size(949, 45);
             panel2.TabIndex = 48;
+            // 
+            // rjButton14
+            // 
+            rjButton14.BackColor = Color.Navy;
+            rjButton14.BackgroundColor = Color.Navy;
+            rjButton14.BorderColor = Color.PaleVioletRed;
+            rjButton14.BorderRadius = 10;
+            rjButton14.BorderSize = 0;
+            rjButton14.FlatStyle = FlatStyle.Popup;
+            rjButton14.ForeColor = Color.White;
+            rjButton14.Location = new Point(386, 9);
+            rjButton14.Name = "rjButton14";
+            rjButton14.Size = new Size(106, 26);
+            rjButton14.TabIndex = 58;
+            rjButton14.Text = "Sales";
+            rjButton14.TextColor = Color.White;
+            rjButton14.UseVisualStyleBackColor = false;
+            // 
+            // comboBox1
+            // 
+            comboBox1.BackColor = Color.DodgerBlue;
+            comboBox1.BorderColor = Color.DodgerBlue;
+            comboBox1.BorderSize = 0;
+            comboBox1.Cursor = Cursors.No;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            comboBox1.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboBox1.ForeColor = Color.White;
+            comboBox1.IconColor = Color.White;
+            comboBox1.ListBackColor = Color.DarkTurquoise;
+            comboBox1.ListTextColor = Color.White;
+            comboBox1.Location = new Point(665, 8);
+            comboBox1.MinimumSize = new Size(200, 30);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(200, 30);
+            comboBox1.TabIndex = 56;
+            comboBox1.Texts = "         Available Products";
             // 
             // panel4
             // 
@@ -292,62 +332,58 @@ namespace PMSales.PresentationLayer
             panel4.Size = new Size(159, 127);
             panel4.TabIndex = 52;
             // 
-            // rjButton3
+            // rjComboBox1
             // 
-            rjButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton3.BackColor = Color.MidnightBlue;
-            rjButton3.BackgroundColor = Color.MidnightBlue;
-            rjButton3.BorderColor = Color.PaleVioletRed;
-            rjButton3.BorderRadius = 10;
-            rjButton3.BorderSize = 0;
-            rjButton3.CausesValidation = false;
-            rjButton3.FlatStyle = FlatStyle.Popup;
-            rjButton3.ForeColor = Color.Transparent;
-            rjButton3.Location = new Point(319, 6);
-            rjButton3.Name = "rjButton3";
-            rjButton3.Size = new Size(75, 34);
-            rjButton3.TabIndex = 29;
-            rjButton3.Text = "Products";
-            rjButton3.TextColor = Color.Transparent;
-            rjButton3.UseVisualStyleBackColor = false;
+            rjComboBox1.BackColor = Color.DodgerBlue;
+            rjComboBox1.BorderColor = Color.DodgerBlue;
+            rjComboBox1.BorderSize = 0;
+            rjComboBox1.Cursor = Cursors.No;
+            rjComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox1.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rjComboBox1.ForeColor = Color.White;
+            rjComboBox1.IconColor = Color.White;
+            rjComboBox1.ListBackColor = Color.DarkTurquoise;
+            rjComboBox1.ListTextColor = Color.White;
+            rjComboBox1.Location = new Point(745, 8);
+            rjComboBox1.MinimumSize = new Size(200, 30);
+            rjComboBox1.Name = "rjComboBox1";
+            rjComboBox1.Size = new Size(200, 30);
+            rjComboBox1.TabIndex = 56;
+            rjComboBox1.Texts = "                             Tax %";
             // 
-            // rjButton2
+            // rjButton13
             // 
-            rjButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton2.BackColor = Color.MidnightBlue;
-            rjButton2.BackgroundColor = Color.MidnightBlue;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 10;
-            rjButton2.BorderSize = 0;
-            rjButton2.CausesValidation = false;
-            rjButton2.FlatStyle = FlatStyle.Popup;
-            rjButton2.ForeColor = Color.Transparent;
-            rjButton2.Location = new Point(242, 6);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(75, 34);
-            rjButton2.TabIndex = 28;
-            rjButton2.Text = "Sales";
-            rjButton2.TextColor = Color.Transparent;
-            rjButton2.UseVisualStyleBackColor = false;
+            rjButton13.BackColor = Color.Navy;
+            rjButton13.BackgroundColor = Color.Navy;
+            rjButton13.BorderColor = Color.PaleVioletRed;
+            rjButton13.BorderRadius = 10;
+            rjButton13.BorderSize = 0;
+            rjButton13.FlatStyle = FlatStyle.Popup;
+            rjButton13.ForeColor = Color.White;
+            rjButton13.Location = new Point(276, 9);
+            rjButton13.Name = "rjButton13";
+            rjButton13.Size = new Size(106, 26);
+            rjButton13.TabIndex = 57;
+            rjButton13.Text = "Products";
+            rjButton13.TextColor = Color.White;
+            rjButton13.UseVisualStyleBackColor = false;
             // 
-            // rjButton1
+            // rjButton5
             // 
-            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton1.BackColor = Color.MidnightBlue;
-            rjButton1.BackgroundColor = Color.MidnightBlue;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.CausesValidation = false;
-            rjButton1.FlatStyle = FlatStyle.Popup;
-            rjButton1.ForeColor = Color.Transparent;
-            rjButton1.Location = new Point(165, 6);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(75, 34);
-            rjButton1.TabIndex = 27;
-            rjButton1.Text = "Customer";
-            rjButton1.TextColor = Color.Transparent;
-            rjButton1.UseVisualStyleBackColor = false;
+            rjButton5.BackColor = Color.Navy;
+            rjButton5.BackgroundColor = Color.Navy;
+            rjButton5.BorderColor = Color.PaleVioletRed;
+            rjButton5.BorderRadius = 10;
+            rjButton5.BorderSize = 0;
+            rjButton5.FlatStyle = FlatStyle.Popup;
+            rjButton5.ForeColor = Color.White;
+            rjButton5.Location = new Point(166, 9);
+            rjButton5.Name = "rjButton5";
+            rjButton5.Size = new Size(106, 26);
+            rjButton5.TabIndex = 56;
+            rjButton5.Text = "Customer";
+            rjButton5.TextColor = Color.White;
+            rjButton5.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -517,9 +553,6 @@ namespace PMSales.PresentationLayer
         private RJCodeAdvance.RJControls.RJButton rjButton4;
         private RJCodeAdvance.RJControls.RJButton rjButton12;
         private Panel panel2;
-        private RJCodeAdvance.RJControls.RJButton rjButton3;
-        private RJCodeAdvance.RJControls.RJButton rjButton2;
-        private RJCodeAdvance.RJControls.RJButton rjButton1;
         private Panel panel1;
         private Label labelCustomerCount;
         private FlowLayoutPanel flowLayoutPanel1;
@@ -531,5 +564,10 @@ namespace PMSales.PresentationLayer
         private Label label4;
         private Label labelCustomerCounttx;
         private Panel panel4;
+        private RJCodeAdvance.RJControls.RJComboBox comboBox1;
+        private RJCodeAdvance.RJControls.RJComboBox rjComboBox1;
+        private RJCodeAdvance.RJControls.RJButton rjButton14;
+        private RJCodeAdvance.RJControls.RJButton rjButton13;
+        private RJCodeAdvance.RJControls.RJButton rjButton5;
     }
 }

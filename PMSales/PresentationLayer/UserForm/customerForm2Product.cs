@@ -14,11 +14,20 @@ namespace PMSales.PresentationLayer.UserForm
     {
         private readonly customerForm1Add previousForm;
 
-        // Constructor that takes the previous form as a parameter
-        public customerForm2Product(customerForm1Add form)
+        // Constructor that takes the previous form and concatenated name as parameters
+        public customerForm2Product(customerForm1Add form, string fullName)
         {
             InitializeComponent();
             previousForm = form;
+
+            // Set the concatenated name in textBoxName
+            textBoxName.Texts = fullName;
+
+            // Disable the textBoxName to make it read-only
+            textBoxName.Enabled = false;
+
+            // Alternatively, you can handle the KeyPress event to prevent input
+            // textBoxName.KeyPress += (s, e) => e.Handled = true;
         }
 
         private void rjButton5_Click(object sender, EventArgs e)

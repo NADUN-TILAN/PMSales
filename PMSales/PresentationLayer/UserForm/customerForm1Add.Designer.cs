@@ -63,10 +63,10 @@
             rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             rjButton12 = new RJCodeAdvance.RJControls.RJButton();
             panel2 = new Panel();
-            panel4 = new Panel();
-            rjButton3 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton14 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton13 = new RJCodeAdvance.RJControls.RJButton();
             rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            panel4 = new Panel();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -634,15 +634,66 @@
             // panel2
             // 
             panel2.BackColor = Color.DodgerBlue;
-            panel2.Controls.Add(panel4);
-            panel2.Controls.Add(rjButton3);
-            panel2.Controls.Add(rjButton2);
+            panel2.Controls.Add(rjButton14);
+            panel2.Controls.Add(rjButton13);
             panel2.Controls.Add(rjButton1);
+            panel2.Controls.Add(panel4);
             panel2.ForeColor = Color.White;
             panel2.Location = new Point(1, 1);
             panel2.Name = "panel2";
             panel2.Size = new Size(949, 45);
             panel2.TabIndex = 24;
+            // 
+            // rjButton14
+            // 
+            rjButton14.BackColor = Color.Navy;
+            rjButton14.BackgroundColor = Color.Navy;
+            rjButton14.BorderColor = Color.PaleVioletRed;
+            rjButton14.BorderRadius = 10;
+            rjButton14.BorderSize = 0;
+            rjButton14.FlatStyle = FlatStyle.Popup;
+            rjButton14.ForeColor = Color.White;
+            rjButton14.Location = new Point(386, 9);
+            rjButton14.Name = "rjButton14";
+            rjButton14.Size = new Size(106, 26);
+            rjButton14.TabIndex = 61;
+            rjButton14.Text = "Sales";
+            rjButton14.TextColor = Color.White;
+            rjButton14.UseVisualStyleBackColor = false;
+            // 
+            // rjButton13
+            // 
+            rjButton13.BackColor = Color.Navy;
+            rjButton13.BackgroundColor = Color.Navy;
+            rjButton13.BorderColor = Color.PaleVioletRed;
+            rjButton13.BorderRadius = 10;
+            rjButton13.BorderSize = 0;
+            rjButton13.FlatStyle = FlatStyle.Popup;
+            rjButton13.ForeColor = Color.White;
+            rjButton13.Location = new Point(276, 9);
+            rjButton13.Name = "rjButton13";
+            rjButton13.Size = new Size(106, 26);
+            rjButton13.TabIndex = 60;
+            rjButton13.Text = "Products";
+            rjButton13.TextColor = Color.White;
+            rjButton13.UseVisualStyleBackColor = false;
+            // 
+            // rjButton1
+            // 
+            rjButton1.BackColor = Color.Navy;
+            rjButton1.BackgroundColor = Color.Navy;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Popup;
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Location = new Point(166, 9);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(106, 26);
+            rjButton1.TabIndex = 59;
+            rjButton1.Text = "Customer";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -652,63 +703,6 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(159, 127);
             panel4.TabIndex = 51;
-            // 
-            // rjButton3
-            // 
-            rjButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton3.BackColor = Color.MidnightBlue;
-            rjButton3.BackgroundColor = Color.MidnightBlue;
-            rjButton3.BorderColor = Color.PaleVioletRed;
-            rjButton3.BorderRadius = 10;
-            rjButton3.BorderSize = 0;
-            rjButton3.CausesValidation = false;
-            rjButton3.FlatStyle = FlatStyle.Popup;
-            rjButton3.ForeColor = Color.Transparent;
-            rjButton3.Location = new Point(319, 6);
-            rjButton3.Name = "rjButton3";
-            rjButton3.Size = new Size(75, 34);
-            rjButton3.TabIndex = 29;
-            rjButton3.Text = "Products";
-            rjButton3.TextColor = Color.Transparent;
-            rjButton3.UseVisualStyleBackColor = false;
-            // 
-            // rjButton2
-            // 
-            rjButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton2.BackColor = Color.MidnightBlue;
-            rjButton2.BackgroundColor = Color.MidnightBlue;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 10;
-            rjButton2.BorderSize = 0;
-            rjButton2.CausesValidation = false;
-            rjButton2.FlatStyle = FlatStyle.Popup;
-            rjButton2.ForeColor = Color.Transparent;
-            rjButton2.Location = new Point(242, 6);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(75, 34);
-            rjButton2.TabIndex = 28;
-            rjButton2.Text = "Sales";
-            rjButton2.TextColor = Color.Transparent;
-            rjButton2.UseVisualStyleBackColor = false;
-            // 
-            // rjButton1
-            // 
-            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            rjButton1.BackColor = Color.MidnightBlue;
-            rjButton1.BackgroundColor = Color.MidnightBlue;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.CausesValidation = false;
-            rjButton1.FlatStyle = FlatStyle.Popup;
-            rjButton1.ForeColor = Color.Transparent;
-            rjButton1.Location = new Point(165, 6);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(75, 34);
-            rjButton1.TabIndex = 27;
-            rjButton1.Text = "Customer";
-            rjButton1.TextColor = Color.Transparent;
-            rjButton1.UseVisualStyleBackColor = false;
             // 
             // customerForm1Add
             // 
@@ -778,9 +772,6 @@
         private Panel panel2;
         private Panel panel3;
         private Label label3;
-        private RJCodeAdvance.RJControls.RJButton rjButton1;
-        private RJCodeAdvance.RJControls.RJButton rjButton3;
-        private RJCodeAdvance.RJControls.RJButton rjButton2;
         private RJCodeAdvance.RJControls.RJButton rjButton5;
         private RJCodeAdvance.RJControls.RJButton rjButton12;
         private RJCodeAdvance.RJControls.RJButton rjButton11;
@@ -791,5 +782,8 @@
         private RJCodeAdvance.RJControls.RJButton rjButton6;
         private RJCodeAdvance.RJControls.RJButton rjButton4;
         private Panel panel4;
+        private RJCodeAdvance.RJControls.RJButton rjButton14;
+        private RJCodeAdvance.RJControls.RJButton rjButton13;
+        private RJCodeAdvance.RJControls.RJButton rjButton1;
     }
 }

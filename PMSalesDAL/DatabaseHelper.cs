@@ -27,6 +27,7 @@ namespace PMSalesDAL.DatabaseHelper
             connectionString = conn;
         }
 
+        #region Insert customers
         public bool InsertCustomer(Customer customer)
         {
             try
@@ -69,12 +70,12 @@ namespace PMSalesDAL.DatabaseHelper
             }
 
         }
-
+        #endregion
 
         #region Get the total count of customers
         public int GetCustomerCount()
         {
-            const string query = "SELECT COUNT(*) FROM Customers"; // Replace 'Customers' with your actual table name
+            const string query = "GET_NUMBER_OF_CUSTOMERS"; // Replace 'Customers' with your actual table name
 
             using (var connection = new SqlConnection(connectionString))
             {
@@ -86,5 +87,51 @@ namespace PMSalesDAL.DatabaseHelper
             }
         }
         #endregion
+
+        #region Get products
+        public List<string> FetchProductNames()
+        {
+            List<string> productNames = new List<string>();
+            const string query = "GET_AVAILABLE_ALL_PRODUCT_NAMES";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string productName = reader["ProductName"].ToString() ?? string.Empty;
+                                Console.WriteLine($"Retrieved Product: {productName}");
+                                productNames.Add(productName);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            if (productNames.Count == 0)
+            {
+                Console.WriteLine("No product names were retrieved from the database.");
+            }
+
+            return productNames;
+        }
+        #endregion
+
+
+
     }
 }

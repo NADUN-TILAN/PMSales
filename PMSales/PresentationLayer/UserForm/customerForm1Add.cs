@@ -163,7 +163,8 @@ namespace PMSales.PresentationLayer.UserForm
             if (isAlreadySaved)
             {
                 this.Hide();
-                var customerForm2 = new customerForm2Product(this);
+                //var customerForm2 = new customerForm2Product(this);
+                var customerForm2 = new customerForm2Product(this, $"{textBoxName.Texts.Trim()} {textBoxSName.Texts.Trim()} {textBoxLName.Texts.Trim()}");
                 customerForm2.Show();
                 return;
             }
@@ -253,7 +254,8 @@ namespace PMSales.PresentationLayer.UserForm
                     // Step 4: Provide Feedback
                     //MessageBox.Show("Customer data saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);               
                     this.Hide();
-                    var customerForm2 = new customerForm2Product(this); // pass current form
+                    //var customerForm2 = new customerForm2Product(this); // pass current form
+                    var customerForm2 = new customerForm2Product(this, $"{customerName} {customerSName} {customerLName}"); // Pass concatenated name
                     customerForm2.Show();
                 }
                 else
