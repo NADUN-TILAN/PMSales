@@ -22,6 +22,7 @@ namespace PMSales.PresentationLayer
             DisplayAssemblyVersion();
             DisplayCustomerCount();
             PopulateComboBox1(); // Ensure this is called
+            DisplayProductCount();
 
         }
 
@@ -178,6 +179,20 @@ namespace PMSales.PresentationLayer
         {
             var customerBL = new PMSales.BusinessLayer.CustomerBL();
             return customerBL.GetCustomerCount();
+        }
+
+        private void DisplayProductCount()
+        {
+            // Assuming GetProductCount() retrieves the number of items
+            int productCount = GetProductCount();
+            labelProductCount.Text = $"Products: {productCount}";
+        }
+
+        // method to retrieve product count (replace with actual implementation)
+        private int GetProductCount()
+        {
+            var customerBL = new PMSales.BusinessLayer.CustomerBL();
+            return customerBL.GetProductCount();
         }
 
         // Items dropdown

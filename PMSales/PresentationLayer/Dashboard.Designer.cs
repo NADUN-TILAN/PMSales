@@ -50,7 +50,7 @@ namespace PMSales.PresentationLayer
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
             flowLayoutPanel4 = new FlowLayoutPanel();
-            label4 = new Label();
+            labelProductCount = new Label();
             flowLayoutPanel3 = new FlowLayoutPanel();
             label2 = new Label();
             flowLayoutPanel2 = new FlowLayoutPanel();
@@ -404,7 +404,7 @@ namespace PMSales.PresentationLayer
             flowLayoutPanel4.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel4.BackgroundImage");
             flowLayoutPanel4.BackgroundImageLayout = ImageLayout.Stretch;
             flowLayoutPanel4.BorderStyle = BorderStyle.FixedSingle;
-            flowLayoutPanel4.Controls.Add(label4);
+            flowLayoutPanel4.Controls.Add(labelProductCount);
             flowLayoutPanel4.Font = new Font("Segoe UI", 8.25F);
             flowLayoutPanel4.ForeColor = Color.White;
             flowLayoutPanel4.Location = new Point(81, 170);
@@ -412,17 +412,17 @@ namespace PMSales.PresentationLayer
             flowLayoutPanel4.Size = new Size(267, 85);
             flowLayoutPanel4.TabIndex = 54;
             // 
-            // label4
+            // labelProductCount
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(3, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(121, 30);
-            label4.TabIndex = 50;
-            label4.Text = "Products: 0";
+            labelProductCount.AutoSize = true;
+            labelProductCount.BackColor = Color.Transparent;
+            labelProductCount.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
+            labelProductCount.ForeColor = Color.Black;
+            labelProductCount.Location = new Point(3, 0);
+            labelProductCount.Name = "labelProductCount";
+            labelProductCount.Size = new Size(121, 30);
+            labelProductCount.TabIndex = 50;
+            labelProductCount.Text = "Products: 0";
             // 
             // flowLayoutPanel3
             // 
@@ -561,7 +561,7 @@ namespace PMSales.PresentationLayer
         private FlowLayoutPanel flowLayoutPanel2;
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel4;
-        private Label label4;
+        private Label labelProductCount;
         private Label labelCustomerCounttx;
         private Panel panel4;
         private RJCodeAdvance.RJControls.RJComboBox comboBox1;

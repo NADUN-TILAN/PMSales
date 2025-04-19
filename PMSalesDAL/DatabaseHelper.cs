@@ -86,6 +86,20 @@ namespace PMSalesDAL.DatabaseHelper
                 }
             }
         }
+
+        public int GetProductCount()
+        {
+            const string query = "GET_NUMBER_OF_PRODUCTS"; // Replace 'Products' with your actual table name
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    return (int)command.ExecuteScalar();
+                }
+            }
+        }
         #endregion
 
         #region Get products

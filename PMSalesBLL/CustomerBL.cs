@@ -52,6 +52,19 @@ namespace PMSales.BusinessLayer
                 return 0; // Return 0 in case of an error
             }
         }
+
+        public int GetProductCount()
+        {
+            try
+            {
+                return customerDAL.GetProductCount();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving product count: {ex.Message}");
+                return 0; // Return 0 in case of an error
+            }
+        }
         #endregion
     }
 }
