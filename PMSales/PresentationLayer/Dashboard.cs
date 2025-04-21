@@ -163,6 +163,18 @@ namespace PMSales.PresentationLayer
             this.Close();
         }
 
+        private void rjButton6_Click(object sender, EventArgs e)
+        {
+            // Instantiate the customerForm1Add form
+            var customerForm = new Dashboard();
+
+            // Show the customerForm1Add form
+            customerForm.Show();
+
+            // Close the current Dashboard form
+            this.Close();
+        }
+
         #endregion
 
         #region Dashboard Functions
@@ -222,6 +234,6 @@ namespace PMSales.PresentationLayer
         #endregion
 
 
-
+        
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PMSales.BusinessLayer;
 
 namespace PMSales.PresentationLayer.UserForm
 {
@@ -28,12 +29,43 @@ namespace PMSales.PresentationLayer.UserForm
 
             // Alternatively, you can handle the KeyPress event to prevent input
             // textBoxName.KeyPress += (s, e) => e.Handled = true;
+
+            PopulateComboBoxes();
         }
 
         private void rjButton5_Click(object sender, EventArgs e)
         {
             this.Hide();
             previousForm.Show(); // Show the previous form with filled data
+        }
+
+        private void PopulateComboBoxes()
+        {
+            try
+            {
+                var productBL = new ProductBLL();
+                List<string> products = productBL.GetProductNames();
+
+                if (products.Count == 0)
+                {
+                    MessageBox.Show("No products available.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Populate all combo boxes
+                comboBox1.Items.AddRange(products.ToArray());
+                rjComboBox1.Items.AddRange(products.ToArray());
+                rjComboBox2.Items.AddRange(products.ToArray());
+                rjComboBox3.Items.AddRange(products.ToArray());
+                rjComboBox4.Items.AddRange(products.ToArray());
+                rjComboBox5.Items.AddRange(products.ToArray());
+                rjComboBox6.Items.AddRange(products.ToArray());
+                rjComboBox7.Items.AddRange(products.ToArray());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

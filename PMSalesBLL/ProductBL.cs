@@ -20,5 +20,19 @@ namespace PMSales.BusinessLayer
                 return new List<string>();
             }
         }
+
+        // Fetch product names
+        public List<string> FetchProductNames()
+        {
+            try
+            {
+                return customerDAL.FetchProductNames();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving product names: {ex.Message}");
+                return new List<string>();
+            }
+        }
     }
 }

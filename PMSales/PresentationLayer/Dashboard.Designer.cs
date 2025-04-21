@@ -223,7 +223,7 @@ namespace PMSales.PresentationLayer
             rjButton6.TabIndex = 38;
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
-            rjButton6.Click += rjButton4_Click;
+            rjButton6.Click += rjButton6_Click;
             rjButton6.MouseDown += rjButton6_MouseDown;
             rjButton6.MouseLeave += rjButton6_MouseLeave;
             rjButton6.MouseHover += rjButton6_MouseHover;
