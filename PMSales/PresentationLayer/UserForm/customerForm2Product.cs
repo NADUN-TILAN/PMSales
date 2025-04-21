@@ -44,28 +44,37 @@ namespace PMSales.PresentationLayer.UserForm
             try
             {
                 var productBL = new ProductBLL();
-                List<string> products = productBL.GetProductNames();
+                // Fetch product names and prices
+                var productsWithPrices = productBL.FetchProductNames();
 
-                if (products.Count == 0)
+                if (productsWithPrices.Count == 0)
                 {
                     MessageBox.Show("No products available.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
-                // Populate all combo boxes
-                comboBox1.Items.AddRange(products.ToArray());
-                rjComboBox1.Items.AddRange(products.ToArray());
-                rjComboBox2.Items.AddRange(products.ToArray());
-                rjComboBox3.Items.AddRange(products.ToArray());
-                rjComboBox4.Items.AddRange(products.ToArray());
-                rjComboBox5.Items.AddRange(products.ToArray());
-                rjComboBox6.Items.AddRange(products.ToArray());
-                rjComboBox7.Items.AddRange(products.ToArray());
+                // Extract product names from the result
+                var productNames = productsWithPrices.Select(product => product.ProductName).ToArray();
+
+                // Populate all combo boxes with product names
+                comboBox1.Items.AddRange(productNames);
+                rjComboBox1.Items.AddRange(productNames);
+                rjComboBox2.Items.AddRange(productNames);
+                rjComboBox3.Items.AddRange(productNames);
+                rjComboBox4.Items.AddRange(productNames);
+                rjComboBox5.Items.AddRange(productNames);
+                rjComboBox6.Items.AddRange(productNames);
+                rjComboBox7.Items.AddRange(productNames);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error loading products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        #region Amount Calculation
+
+
+        #endregion
     }
 }

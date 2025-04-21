@@ -42,6 +42,9 @@
             label2 = new Label();
             rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
             panel2 = new Panel();
+            rjButton14 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton13 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel4 = new Panel();
             label1 = new Label();
             rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
@@ -63,7 +66,6 @@
             buttonSave = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
-            rjTextBox3 = new RJCodeAdvance.RJControls.RJTextBox();
             rjComboBox7 = new RJCodeAdvance.RJControls.RJComboBox();
             rjComboBox6 = new RJCodeAdvance.RJControls.RJComboBox();
             rjComboBox5 = new RJCodeAdvance.RJControls.RJComboBox();
@@ -72,9 +74,7 @@
             rjComboBox2 = new RJCodeAdvance.RJControls.RJComboBox();
             rjComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
             comboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
-            rjButton14 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton13 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            rjTextBox3 = new RJCodeAdvance.RJControls.RJTextBox();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -313,6 +313,57 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(949, 45);
             panel2.TabIndex = 48;
+            // 
+            // rjButton14
+            // 
+            rjButton14.BackColor = Color.Navy;
+            rjButton14.BackgroundColor = Color.Navy;
+            rjButton14.BorderColor = Color.PaleVioletRed;
+            rjButton14.BorderRadius = 10;
+            rjButton14.BorderSize = 0;
+            rjButton14.FlatStyle = FlatStyle.Popup;
+            rjButton14.ForeColor = Color.White;
+            rjButton14.Location = new Point(386, 9);
+            rjButton14.Name = "rjButton14";
+            rjButton14.Size = new Size(106, 26);
+            rjButton14.TabIndex = 61;
+            rjButton14.Text = "Sales";
+            rjButton14.TextColor = Color.White;
+            rjButton14.UseVisualStyleBackColor = false;
+            // 
+            // rjButton13
+            // 
+            rjButton13.BackColor = Color.Navy;
+            rjButton13.BackgroundColor = Color.Navy;
+            rjButton13.BorderColor = Color.PaleVioletRed;
+            rjButton13.BorderRadius = 10;
+            rjButton13.BorderSize = 0;
+            rjButton13.FlatStyle = FlatStyle.Popup;
+            rjButton13.ForeColor = Color.White;
+            rjButton13.Location = new Point(276, 9);
+            rjButton13.Name = "rjButton13";
+            rjButton13.Size = new Size(106, 26);
+            rjButton13.TabIndex = 60;
+            rjButton13.Text = "Products";
+            rjButton13.TextColor = Color.White;
+            rjButton13.UseVisualStyleBackColor = false;
+            // 
+            // rjButton1
+            // 
+            rjButton1.BackColor = Color.Navy;
+            rjButton1.BackgroundColor = Color.Navy;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Popup;
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Location = new Point(166, 9);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(106, 26);
+            rjButton1.TabIndex = 59;
+            rjButton1.Text = "Customer";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -635,29 +686,6 @@
             rjButton5.UseVisualStyleBackColor = false;
             rjButton5.Click += rjButton5_Click;
             // 
-            // rjTextBox3
-            // 
-            rjTextBox3.BackColor = Color.White;
-            rjTextBox3.BorderColor = Color.Gray;
-            rjTextBox3.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox3.BorderRadius = 10;
-            rjTextBox3.BorderSize = 2;
-            rjTextBox3.Cursor = Cursors.No;
-            rjTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox3.ForeColor = Color.Black;
-            rjTextBox3.Location = new Point(201, 427);
-            rjTextBox3.Margin = new Padding(4);
-            rjTextBox3.Multiline = false;
-            rjTextBox3.Name = "rjTextBox3";
-            rjTextBox3.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox3.PasswordChar = false;
-            rjTextBox3.PlaceholderColor = Color.DarkGray;
-            rjTextBox3.PlaceholderText = "Total Price Rs.";
-            rjTextBox3.Size = new Size(498, 31);
-            rjTextBox3.TabIndex = 35;
-            rjTextBox3.Texts = "";
-            rjTextBox3.UnderlinedStyle = false;
-            // 
             // rjComboBox7
             // 
             rjComboBox7.BackColor = Color.WhiteSmoke;
@@ -810,56 +838,28 @@
             comboBox1.TabIndex = 27;
             comboBox1.Texts = "";
             // 
-            // rjButton14
+            // rjTextBox3
             // 
-            rjButton14.BackColor = Color.Navy;
-            rjButton14.BackgroundColor = Color.Navy;
-            rjButton14.BorderColor = Color.PaleVioletRed;
-            rjButton14.BorderRadius = 10;
-            rjButton14.BorderSize = 0;
-            rjButton14.FlatStyle = FlatStyle.Popup;
-            rjButton14.ForeColor = Color.White;
-            rjButton14.Location = new Point(386, 9);
-            rjButton14.Name = "rjButton14";
-            rjButton14.Size = new Size(106, 26);
-            rjButton14.TabIndex = 61;
-            rjButton14.Text = "Sales";
-            rjButton14.TextColor = Color.White;
-            rjButton14.UseVisualStyleBackColor = false;
-            // 
-            // rjButton13
-            // 
-            rjButton13.BackColor = Color.Navy;
-            rjButton13.BackgroundColor = Color.Navy;
-            rjButton13.BorderColor = Color.PaleVioletRed;
-            rjButton13.BorderRadius = 10;
-            rjButton13.BorderSize = 0;
-            rjButton13.FlatStyle = FlatStyle.Popup;
-            rjButton13.ForeColor = Color.White;
-            rjButton13.Location = new Point(276, 9);
-            rjButton13.Name = "rjButton13";
-            rjButton13.Size = new Size(106, 26);
-            rjButton13.TabIndex = 60;
-            rjButton13.Text = "Products";
-            rjButton13.TextColor = Color.White;
-            rjButton13.UseVisualStyleBackColor = false;
-            // 
-            // rjButton1
-            // 
-            rjButton1.BackColor = Color.Navy;
-            rjButton1.BackgroundColor = Color.Navy;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Popup;
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(166, 9);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(106, 26);
-            rjButton1.TabIndex = 59;
-            rjButton1.Text = "Customer";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
+            rjTextBox3.BackColor = Color.White;
+            rjTextBox3.BorderColor = Color.Gray;
+            rjTextBox3.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox3.BorderRadius = 10;
+            rjTextBox3.BorderSize = 2;
+            rjTextBox3.Cursor = Cursors.No;
+            rjTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox3.ForeColor = Color.Black;
+            rjTextBox3.Location = new Point(201, 427);
+            rjTextBox3.Margin = new Padding(4);
+            rjTextBox3.Multiline = false;
+            rjTextBox3.Name = "rjTextBox3";
+            rjTextBox3.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox3.PasswordChar = false;
+            rjTextBox3.PlaceholderColor = Color.DarkGray;
+            rjTextBox3.PlaceholderText = "Total Price Rs.";
+            rjTextBox3.Size = new Size(498, 31);
+            rjTextBox3.TabIndex = 35;
+            rjTextBox3.Texts = "";
+            rjTextBox3.UnderlinedStyle = false;
             // 
             // customerForm2Product
             // 
@@ -935,7 +935,6 @@
         private RJCodeAdvance.RJControls.RJComboBox rjComboBox3;
         private RJCodeAdvance.RJControls.RJComboBox rjComboBox2;
         private RJCodeAdvance.RJControls.RJComboBox rjComboBox1;
-        private RJCodeAdvance.RJControls.RJTextBox rjTextBox3;
         private RJCodeAdvance.RJControls.RJButton rjButton5;
         private RJCodeAdvance.RJControls.RJButton rjButton12;
         private RJCodeAdvance.RJControls.RJButton rjButton11;
@@ -949,5 +948,6 @@
         private RJCodeAdvance.RJControls.RJButton rjButton14;
         private RJCodeAdvance.RJControls.RJButton rjButton13;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
+        private RJCodeAdvance.RJControls.RJTextBox rjTextBox3;
     }
 }

@@ -8,6 +8,7 @@ namespace PMSales.BusinessLayer
     {
         private readonly CustomerDAL customerDAL = new CustomerDAL();
 
+        // Fetch product names
         public List<string> GetProductNames()
         {
             try
@@ -21,17 +22,18 @@ namespace PMSales.BusinessLayer
             }
         }
 
-        // Fetch product names
-        public List<string> FetchProductNames()
+        // Fetch product names & prices
+        public List<(string ProductName, string Price)> FetchProductNames()
         {
             try
             {
-                return customerDAL.FetchProductNames();
+                // Directly return the result from FetchProductNamesWithPrices
+                return customerDAL.FetchProductNamesWithPrices();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error retrieving product names: {ex.Message}");
-                return new List<string>();
+                Console.WriteLine($"Error retrieving product names and prices: {ex.Message}");
+                return new List<(string ProductName, string Price)>();
             }
         }
     }

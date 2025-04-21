@@ -72,6 +72,10 @@ namespace PMSalesDAL.DatabaseHelper
         }
         #endregion
 
+        #region Insert products
+
+        #endregion
+
         #region Get the total count of customers
         public int GetCustomerCount()
         {
@@ -145,7 +149,51 @@ namespace PMSalesDAL.DatabaseHelper
         }
         #endregion
 
+        #region Get products with prices
+        public List<(string ProductName, string Price)> FetchProductNamesWithPrices()
+        {
+            var products = new List<(string ProductName, string Price)>();
+            const string query = "SELECT_ALL_PRODUCT_NAMES_AND_PRICES";
 
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string productName = reader["ProductName"].ToString() ?? string.Empty;
+                                string price = reader["Price"].ToString() ?? string.Empty;
+                                Console.WriteLine($"Retrieved Product: {productName}, Retrieved Price: {price}");
+                                products.Add((productName, price));
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+                throw; // Rethrow the exception for higher-level handling
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                throw; // Rethrow the exception for higher-level handling
+            }
+
+            if (products.Count == 0)
+            {
+                Console.WriteLine("No products were retrieved from the database.");
+            }
+
+            return products;
+        }
+        #endregion
 
     }
 }
