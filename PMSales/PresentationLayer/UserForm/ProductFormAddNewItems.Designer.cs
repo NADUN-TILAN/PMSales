@@ -58,12 +58,6 @@
             textBoxPhone3 = new RJCodeAdvance.RJControls.RJTextBox();
             labelEmail1 = new Label();
             textBoxEmail1 = new RJCodeAdvance.RJControls.RJTextBox();
-            labelEmail2 = new Label();
-            textBoxEmail2 = new RJCodeAdvance.RJControls.RJTextBox();
-            labelAddress = new Label();
-            textBoxAddress = new RJCodeAdvance.RJControls.RJTextBox();
-            labelCity = new Label();
-            textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
             buttonSave = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
             panel3.SuspendLayout();
@@ -87,7 +81,7 @@
             textBoxLName.Padding = new Padding(10, 7, 10, 7);
             textBoxLName.PasswordChar = false;
             textBoxLName.PlaceholderColor = Color.DarkGray;
-            textBoxLName.PlaceholderText = "Enter Customer LastName";
+            textBoxLName.PlaceholderText = "Stock";
             textBoxLName.Size = new Size(498, 31);
             textBoxLName.TabIndex = 46;
             textBoxLName.Texts = "";
@@ -96,11 +90,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(241, 155);
+            label1.Location = new Point(242, 158);
             label1.Name = "label1";
-            label1.Size = new Size(81, 15);
+            label1.Size = new Size(58, 15);
             label1.TabIndex = 43;
-            label1.Text = "SecondName:";
+            label1.Text = "Category:";
             // 
             // label3
             // 
@@ -368,11 +362,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(241, 194);
+            label2.Location = new Point(242, 197);
             label2.Name = "label2";
-            label2.Size = new Size(63, 15);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 45;
-            label2.Text = "LastName:";
+            label2.Text = "Stock:";
             // 
             // textBoxSName
             // 
@@ -390,7 +384,7 @@
             textBoxSName.Padding = new Padding(10, 7, 10, 7);
             textBoxSName.PasswordChar = false;
             textBoxSName.PlaceholderColor = Color.DarkGray;
-            textBoxSName.PlaceholderText = "Enter Customer SecondName";
+            textBoxSName.PlaceholderText = "Category";
             textBoxSName.Size = new Size(498, 31);
             textBoxSName.TabIndex = 44;
             textBoxSName.Texts = "";
@@ -399,11 +393,11 @@
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new Point(241, 116);
+            labelName.Location = new Point(242, 121);
             labelName.Name = "labelName";
-            labelName.Size = new Size(64, 15);
+            labelName.Size = new Size(87, 15);
             labelName.TabIndex = 26;
-            labelName.Text = "FirstName:";
+            labelName.Text = "Product Name:";
             // 
             // textBoxName
             // 
@@ -421,7 +415,7 @@
             textBoxName.Padding = new Padding(10, 7, 10, 7);
             textBoxName.PasswordChar = false;
             textBoxName.PlaceholderColor = Color.DarkGray;
-            textBoxName.PlaceholderText = "Enter Customer FirstName";
+            textBoxName.PlaceholderText = "Product Name";
             textBoxName.Size = new Size(498, 31);
             textBoxName.TabIndex = 27;
             textBoxName.Texts = "";
@@ -430,11 +424,11 @@
             // labelPhone1
             // 
             labelPhone1.AutoSize = true;
-            labelPhone1.Location = new Point(241, 233);
+            labelPhone1.Location = new Point(242, 238);
             labelPhone1.Name = "labelPhone1";
-            labelPhone1.Size = new Size(53, 15);
+            labelPhone1.Size = new Size(36, 15);
             labelPhone1.TabIndex = 28;
-            labelPhone1.Text = "Phone 1:";
+            labelPhone1.Text = "Price:";
             // 
             // textBoxPhone1
             // 
@@ -452,7 +446,7 @@
             textBoxPhone1.Padding = new Padding(10, 7, 10, 7);
             textBoxPhone1.PasswordChar = false;
             textBoxPhone1.PlaceholderColor = Color.DarkGray;
-            textBoxPhone1.PlaceholderText = "Enter Phone 1";
+            textBoxPhone1.PlaceholderText = "Price";
             textBoxPhone1.Size = new Size(498, 31);
             textBoxPhone1.TabIndex = 29;
             textBoxPhone1.Texts = "";
@@ -461,11 +455,11 @@
             // labelPhone2
             // 
             labelPhone2.AutoSize = true;
-            labelPhone2.Location = new Point(241, 273);
+            labelPhone2.Location = new Point(241, 277);
             labelPhone2.Name = "labelPhone2";
-            labelPhone2.Size = new Size(53, 15);
+            labelPhone2.Size = new Size(62, 15);
             labelPhone2.TabIndex = 30;
-            labelPhone2.Text = "Phone 2:";
+            labelPhone2.Text = "Company:";
             // 
             // textBoxPhone2
             // 
@@ -483,7 +477,7 @@
             textBoxPhone2.Padding = new Padding(10, 7, 10, 7);
             textBoxPhone2.PasswordChar = false;
             textBoxPhone2.PlaceholderColor = Color.DarkGray;
-            textBoxPhone2.PlaceholderText = "Enter Phone 2";
+            textBoxPhone2.PlaceholderText = "Company";
             textBoxPhone2.Size = new Size(498, 31);
             textBoxPhone2.TabIndex = 31;
             textBoxPhone2.Texts = "";
@@ -492,11 +486,11 @@
             // labelPhone3
             // 
             labelPhone3.AutoSize = true;
-            labelPhone3.Location = new Point(241, 313);
+            labelPhone3.Location = new Point(243, 319);
             labelPhone3.Name = "labelPhone3";
-            labelPhone3.Size = new Size(53, 15);
+            labelPhone3.Size = new Size(30, 15);
             labelPhone3.TabIndex = 32;
-            labelPhone3.Text = "Phone 3:";
+            labelPhone3.Text = "Size:";
             // 
             // textBoxPhone3
             // 
@@ -514,7 +508,7 @@
             textBoxPhone3.Padding = new Padding(10, 7, 10, 7);
             textBoxPhone3.PasswordChar = false;
             textBoxPhone3.PlaceholderColor = Color.DarkGray;
-            textBoxPhone3.PlaceholderText = "Enter Phone 3";
+            textBoxPhone3.PlaceholderText = "Size";
             textBoxPhone3.Size = new Size(498, 31);
             textBoxPhone3.TabIndex = 33;
             textBoxPhone3.Texts = "";
@@ -523,11 +517,11 @@
             // labelEmail1
             // 
             labelEmail1.AutoSize = true;
-            labelEmail1.Location = new Point(241, 353);
+            labelEmail1.Location = new Point(241, 357);
             labelEmail1.Name = "labelEmail1";
-            labelEmail1.Size = new Size(48, 15);
+            labelEmail1.Size = new Size(64, 15);
             labelEmail1.TabIndex = 34;
-            labelEmail1.Text = "Email 1:";
+            labelEmail1.Text = "Other Info:";
             // 
             // textBoxEmail1
             // 
@@ -545,104 +539,11 @@
             textBoxEmail1.Padding = new Padding(10, 7, 10, 7);
             textBoxEmail1.PasswordChar = false;
             textBoxEmail1.PlaceholderColor = Color.DarkGray;
-            textBoxEmail1.PlaceholderText = "Enter Email 1";
+            textBoxEmail1.PlaceholderText = "Other Info";
             textBoxEmail1.Size = new Size(498, 31);
             textBoxEmail1.TabIndex = 35;
             textBoxEmail1.Texts = "";
             textBoxEmail1.UnderlinedStyle = false;
-            // 
-            // labelEmail2
-            // 
-            labelEmail2.AutoSize = true;
-            labelEmail2.Location = new Point(241, 393);
-            labelEmail2.Name = "labelEmail2";
-            labelEmail2.Size = new Size(48, 15);
-            labelEmail2.TabIndex = 36;
-            labelEmail2.Text = "Email 2:";
-            // 
-            // textBoxEmail2
-            // 
-            textBoxEmail2.BackColor = Color.White;
-            textBoxEmail2.BorderColor = Color.Gray;
-            textBoxEmail2.BorderFocusColor = Color.DodgerBlue;
-            textBoxEmail2.BorderRadius = 10;
-            textBoxEmail2.BorderSize = 2;
-            textBoxEmail2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxEmail2.ForeColor = Color.Black;
-            textBoxEmail2.Location = new Point(361, 393);
-            textBoxEmail2.Margin = new Padding(4);
-            textBoxEmail2.Multiline = false;
-            textBoxEmail2.Name = "textBoxEmail2";
-            textBoxEmail2.Padding = new Padding(10, 7, 10, 7);
-            textBoxEmail2.PasswordChar = false;
-            textBoxEmail2.PlaceholderColor = Color.DarkGray;
-            textBoxEmail2.PlaceholderText = "Enter Email 2";
-            textBoxEmail2.Size = new Size(498, 31);
-            textBoxEmail2.TabIndex = 37;
-            textBoxEmail2.Texts = "";
-            textBoxEmail2.UnderlinedStyle = false;
-            // 
-            // labelAddress
-            // 
-            labelAddress.AutoSize = true;
-            labelAddress.Location = new Point(241, 433);
-            labelAddress.Name = "labelAddress";
-            labelAddress.Size = new Size(52, 15);
-            labelAddress.TabIndex = 38;
-            labelAddress.Text = "Address:";
-            // 
-            // textBoxAddress
-            // 
-            textBoxAddress.BackColor = Color.White;
-            textBoxAddress.BorderColor = Color.Gray;
-            textBoxAddress.BorderFocusColor = Color.DodgerBlue;
-            textBoxAddress.BorderRadius = 10;
-            textBoxAddress.BorderSize = 2;
-            textBoxAddress.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxAddress.ForeColor = Color.Black;
-            textBoxAddress.Location = new Point(361, 433);
-            textBoxAddress.Margin = new Padding(4);
-            textBoxAddress.Multiline = false;
-            textBoxAddress.Name = "textBoxAddress";
-            textBoxAddress.Padding = new Padding(10, 7, 10, 7);
-            textBoxAddress.PasswordChar = false;
-            textBoxAddress.PlaceholderColor = Color.DarkGray;
-            textBoxAddress.PlaceholderText = "Enter Address";
-            textBoxAddress.Size = new Size(498, 31);
-            textBoxAddress.TabIndex = 39;
-            textBoxAddress.Texts = "";
-            textBoxAddress.UnderlinedStyle = false;
-            // 
-            // labelCity
-            // 
-            labelCity.AutoSize = true;
-            labelCity.Location = new Point(241, 473);
-            labelCity.Name = "labelCity";
-            labelCity.Size = new Size(31, 15);
-            labelCity.TabIndex = 40;
-            labelCity.Text = "City:";
-            // 
-            // textBoxCity
-            // 
-            textBoxCity.BackColor = Color.White;
-            textBoxCity.BorderColor = Color.Gray;
-            textBoxCity.BorderFocusColor = Color.DodgerBlue;
-            textBoxCity.BorderRadius = 10;
-            textBoxCity.BorderSize = 2;
-            textBoxCity.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxCity.ForeColor = Color.Black;
-            textBoxCity.Location = new Point(361, 473);
-            textBoxCity.Margin = new Padding(4);
-            textBoxCity.Multiline = false;
-            textBoxCity.Name = "textBoxCity";
-            textBoxCity.Padding = new Padding(10, 7, 10, 7);
-            textBoxCity.PasswordChar = false;
-            textBoxCity.PlaceholderColor = Color.DarkGray;
-            textBoxCity.PlaceholderText = "Enter City";
-            textBoxCity.Size = new Size(498, 31);
-            textBoxCity.TabIndex = 41;
-            textBoxCity.Texts = "";
-            textBoxCity.UnderlinedStyle = false;
             // 
             // buttonSave
             // 
@@ -653,7 +554,7 @@
             buttonSave.BorderSize = 0;
             buttonSave.FlatStyle = FlatStyle.Flat;
             buttonSave.ForeColor = Color.White;
-            buttonSave.Location = new Point(361, 523);
+            buttonSave.Location = new Point(361, 396);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(498, 35);
             buttonSave.TabIndex = 42;
@@ -690,12 +591,6 @@
             Controls.Add(textBoxPhone3);
             Controls.Add(labelEmail1);
             Controls.Add(textBoxEmail1);
-            Controls.Add(labelEmail2);
-            Controls.Add(textBoxEmail2);
-            Controls.Add(labelAddress);
-            Controls.Add(textBoxAddress);
-            Controls.Add(labelCity);
-            Controls.Add(textBoxCity);
             Controls.Add(buttonSave);
             Controls.Add(panel1);
             Name = "ProductFormAddNewItems";
@@ -739,12 +634,6 @@
         private RJCodeAdvance.RJControls.RJTextBox textBoxPhone3;
         private Label labelEmail1;
         private RJCodeAdvance.RJControls.RJTextBox textBoxEmail1;
-        private Label labelEmail2;
-        private RJCodeAdvance.RJControls.RJTextBox textBoxEmail2;
-        private Label labelAddress;
-        private RJCodeAdvance.RJControls.RJTextBox textBoxAddress;
-        private Label labelCity;
-        private RJCodeAdvance.RJControls.RJTextBox textBoxCity;
         private RJCodeAdvance.RJControls.RJButton buttonSave;
         private Panel panel1;
     }
