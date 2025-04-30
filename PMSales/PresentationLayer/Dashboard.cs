@@ -175,6 +175,14 @@ namespace PMSales.PresentationLayer
             this.Close();
         }
 
+        private void rjButton7_Click(object sender, EventArgs e)
+        {
+            var productForm = new productFormAddNewItems();
+            productForm.Show();
+
+            this.Close();
+        }
+
         #endregion
 
         #region Dashboard Functions
@@ -234,6 +242,6 @@ namespace PMSales.PresentationLayer
         #endregion
 
 
-        
+       
     }
 }

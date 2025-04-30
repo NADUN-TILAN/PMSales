@@ -197,6 +197,7 @@ namespace PMSales.PresentationLayer
             rjButton7.TabIndex = 39;
             rjButton7.TextColor = Color.Transparent;
             rjButton7.UseVisualStyleBackColor = false;
+            rjButton7.Click += rjButton7_Click;
             rjButton7.MouseClick += rjButton7_MouseClick;
             rjButton7.MouseDown += rjButton7_MouseDown;
             rjButton7.MouseLeave += rjButton7_MouseLeave;

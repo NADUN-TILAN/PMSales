@@ -73,7 +73,43 @@ namespace PMSalesDAL.DatabaseHelper
         #endregion
 
         #region Insert products
+        public bool InsertProduct(string productName, string category, int stock, decimal price, string company, string size, string otherInfo)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("PM_INSERT_PRODUCT", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
 
+                        cmd.Parameters.AddWithValue("@ProductName", productName);
+                        cmd.Parameters.AddWithValue("@Category", category);
+                        cmd.Parameters.AddWithValue("@Stock", stock);
+                        cmd.Parameters.AddWithValue("@Price", price);
+                        cmd.Parameters.AddWithValue("@Company", company);
+                        cmd.Parameters.AddWithValue("@Size", size);
+                        cmd.Parameters.AddWithValue("@OtherInfo", otherInfo ?? (object)DBNull.Value);
+
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+
+                        Console.WriteLine("Product inserted successfully.");
+                        return true;
+                    }
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
+        }
         #endregion
 
         #region Get the total count of customers

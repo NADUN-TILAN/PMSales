@@ -36,5 +36,13 @@ namespace PMSales.BusinessLayer
                 return new List<(string ProductName, string Price)>();
             }
         }
+
+        // Save new product
+        public bool SaveProduct(string productName, string category, int stock, decimal price, string company, string size, string otherInfo)
+        {
+            var customerDAL = new CustomerDAL();
+            return customerDAL.InsertProduct(productName, category, stock, price, company, size, otherInfo);
+        }
+
     }
 }

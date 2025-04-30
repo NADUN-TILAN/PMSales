@@ -1,6 +1,6 @@
 ﻿namespace PMSales.PresentationLayer.UserForm
 {
-    partial class ProductFormAddNewItems
+    partial class productFormAddNewItems
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductFormAddNewItems));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(productFormAddNewItems));
             textBoxLName = new RJCodeAdvance.RJControls.RJTextBox();
             label1 = new Label();
             label3 = new Label();
@@ -226,6 +226,7 @@
             rjButton7.TabIndex = 46;
             rjButton7.TextColor = Color.Transparent;
             rjButton7.UseVisualStyleBackColor = false;
+            rjButton7.Click += rjButton7_Click;
             // 
             // rjButton6
             // 
@@ -247,6 +248,7 @@
             rjButton6.TabIndex = 45;
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
+            rjButton6.Click += rjButton6_Click;
             // 
             // rjButton4
             // 
@@ -268,6 +270,7 @@
             rjButton4.TabIndex = 44;
             rjButton4.TextColor = Color.Transparent;
             rjButton4.UseVisualStyleBackColor = false;
+            rjButton4.Click += rjButton4_Click;
             // 
             // rjButton12
             // 
@@ -570,10 +573,10 @@
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 47;
             // 
-            // ProductFormAddNewItems
+            // productFormAddNewItems
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.Inherit;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(textBoxLName);
             Controls.Add(label1);
@@ -593,8 +596,11 @@
             Controls.Add(textBoxEmail1);
             Controls.Add(buttonSave);
             Controls.Add(panel1);
-            Name = "ProductFormAddNewItems";
-            Text = "ProductFormAddNewItems";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "productFormAddNewItems";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Add Product";
             panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
