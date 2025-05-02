@@ -64,6 +64,7 @@ namespace PMSales.PresentationLayer.UserForm
             if (isSaved)
             {
                 MessageBox.Show($"Product '{productName}' has been saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearTextBoxes(); // Clear textboxes after successful save
             }
             else
             {
@@ -127,6 +128,18 @@ namespace PMSales.PresentationLayer.UserForm
             textBoxPhone2.PlaceholderText = "Enter company name...";
             textBoxPhone3.PlaceholderText = "Enter size...";
             textBoxEmail1.PlaceholderText = "Enter additional information...";
+        }
+
+        // Clear all textboxes after saving
+        private void ClearTextBoxes()
+        {
+            textBoxName.Texts = string.Empty;
+            textBoxSName.Texts = string.Empty;
+            textBoxLName.Texts = string.Empty;
+            textBoxPhone1.Texts = string.Empty;
+            textBoxPhone2.Texts = string.Empty;
+            textBoxPhone3.Texts = string.Empty;
+            textBoxEmail1.Texts = string.Empty;
         }
 
 

@@ -429,9 +429,9 @@
             labelPhone1.AutoSize = true;
             labelPhone1.Location = new Point(242, 238);
             labelPhone1.Name = "labelPhone1";
-            labelPhone1.Size = new Size(36, 15);
+            labelPhone1.Size = new Size(62, 15);
             labelPhone1.TabIndex = 28;
-            labelPhone1.Text = "Price:";
+            labelPhone1.Text = "Price (Rs.):";
             // 
             // textBoxPhone1
             // 
@@ -449,7 +449,7 @@
             textBoxPhone1.Padding = new Padding(10, 7, 10, 7);
             textBoxPhone1.PasswordChar = false;
             textBoxPhone1.PlaceholderColor = Color.DarkGray;
-            textBoxPhone1.PlaceholderText = "Price";
+            textBoxPhone1.PlaceholderText = "Price Rs.";
             textBoxPhone1.Size = new Size(498, 31);
             textBoxPhone1.TabIndex = 29;
             textBoxPhone1.Texts = "";

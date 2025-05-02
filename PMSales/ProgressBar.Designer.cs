@@ -64,9 +64,9 @@ namespace PMSales
             // 
             panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
-            panel2.Location = new Point(177, -26);
+            panel2.Location = new Point(146, -26);
             panel2.Name = "panel2";
-            panel2.Size = new Size(187, 172);
+            panel2.Size = new Size(236, 188);
             panel2.TabIndex = 3;
             // 
             // ProgressBar
