@@ -66,6 +66,7 @@
             buttonSave = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
+            rjTextBox3 = new RJCodeAdvance.RJControls.RJTextBox();
             rjComboBox7 = new RJCodeAdvance.RJControls.RJComboBox();
             rjComboBox6 = new RJCodeAdvance.RJControls.RJComboBox();
             rjComboBox5 = new RJCodeAdvance.RJControls.RJComboBox();
@@ -74,7 +75,6 @@
             rjComboBox2 = new RJCodeAdvance.RJControls.RJComboBox();
             rjComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
             comboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
-            rjTextBox3 = new RJCodeAdvance.RJControls.RJTextBox();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -686,158 +686,6 @@
             rjButton5.UseVisualStyleBackColor = false;
             rjButton5.Click += rjButton5_Click;
             // 
-            // rjComboBox7
-            // 
-            rjComboBox7.BackColor = Color.WhiteSmoke;
-            rjComboBox7.BorderColor = Color.DodgerBlue;
-            rjComboBox7.BorderSize = 2;
-            rjComboBox7.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox7.Font = new Font("Segoe UI", 10F);
-            rjComboBox7.ForeColor = Color.Black;
-            rjComboBox7.IconColor = Color.DodgerBlue;
-            rjComboBox7.ListBackColor = Color.LightGray;
-            rjComboBox7.ListTextColor = Color.Black;
-            rjComboBox7.Location = new Point(201, 386);
-            rjComboBox7.MinimumSize = new Size(200, 30);
-            rjComboBox7.Name = "rjComboBox7";
-            rjComboBox7.Padding = new Padding(10, 1, 10, 1);
-            rjComboBox7.Size = new Size(393, 30);
-            rjComboBox7.TabIndex = 34;
-            rjComboBox7.Texts = "";
-            // 
-            // rjComboBox6
-            // 
-            rjComboBox6.BackColor = Color.WhiteSmoke;
-            rjComboBox6.BorderColor = Color.DodgerBlue;
-            rjComboBox6.BorderSize = 2;
-            rjComboBox6.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox6.Font = new Font("Segoe UI", 10F);
-            rjComboBox6.ForeColor = Color.Black;
-            rjComboBox6.IconColor = Color.DodgerBlue;
-            rjComboBox6.ListBackColor = Color.LightGray;
-            rjComboBox6.ListTextColor = Color.Black;
-            rjComboBox6.Location = new Point(201, 347);
-            rjComboBox6.MinimumSize = new Size(200, 30);
-            rjComboBox6.Name = "rjComboBox6";
-            rjComboBox6.Padding = new Padding(10, 1, 10, 1);
-            rjComboBox6.Size = new Size(393, 30);
-            rjComboBox6.TabIndex = 33;
-            rjComboBox6.Texts = "";
-            // 
-            // rjComboBox5
-            // 
-            rjComboBox5.BackColor = Color.WhiteSmoke;
-            rjComboBox5.BorderColor = Color.DodgerBlue;
-            rjComboBox5.BorderSize = 2;
-            rjComboBox5.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox5.Font = new Font("Segoe UI", 10F);
-            rjComboBox5.ForeColor = Color.Black;
-            rjComboBox5.IconColor = Color.DodgerBlue;
-            rjComboBox5.ListBackColor = Color.LightGray;
-            rjComboBox5.ListTextColor = Color.Black;
-            rjComboBox5.Location = new Point(201, 308);
-            rjComboBox5.MinimumSize = new Size(200, 30);
-            rjComboBox5.Name = "rjComboBox5";
-            rjComboBox5.Padding = new Padding(10, 1, 10, 1);
-            rjComboBox5.Size = new Size(393, 30);
-            rjComboBox5.TabIndex = 32;
-            rjComboBox5.Texts = "";
-            // 
-            // rjComboBox4
-            // 
-            rjComboBox4.BackColor = Color.WhiteSmoke;
-            rjComboBox4.BorderColor = Color.DodgerBlue;
-            rjComboBox4.BorderSize = 2;
-            rjComboBox4.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox4.Font = new Font("Segoe UI", 10F);
-            rjComboBox4.ForeColor = Color.Black;
-            rjComboBox4.IconColor = Color.DodgerBlue;
-            rjComboBox4.ListBackColor = Color.LightGray;
-            rjComboBox4.ListTextColor = Color.Black;
-            rjComboBox4.Location = new Point(201, 271);
-            rjComboBox4.MinimumSize = new Size(200, 30);
-            rjComboBox4.Name = "rjComboBox4";
-            rjComboBox4.Padding = new Padding(10, 1, 10, 1);
-            rjComboBox4.Size = new Size(393, 30);
-            rjComboBox4.TabIndex = 31;
-            rjComboBox4.Texts = "";
-            // 
-            // rjComboBox3
-            // 
-            rjComboBox3.BackColor = Color.WhiteSmoke;
-            rjComboBox3.BorderColor = Color.DodgerBlue;
-            rjComboBox3.BorderSize = 2;
-            rjComboBox3.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox3.Font = new Font("Segoe UI", 10F);
-            rjComboBox3.ForeColor = Color.Black;
-            rjComboBox3.IconColor = Color.DodgerBlue;
-            rjComboBox3.ListBackColor = Color.LightGray;
-            rjComboBox3.ListTextColor = Color.Black;
-            rjComboBox3.Location = new Point(201, 231);
-            rjComboBox3.MinimumSize = new Size(200, 30);
-            rjComboBox3.Name = "rjComboBox3";
-            rjComboBox3.Padding = new Padding(10, 1, 10, 1);
-            rjComboBox3.Size = new Size(393, 30);
-            rjComboBox3.TabIndex = 30;
-            rjComboBox3.Texts = "";
-            // 
-            // rjComboBox2
-            // 
-            rjComboBox2.BackColor = Color.WhiteSmoke;
-            rjComboBox2.BorderColor = Color.DodgerBlue;
-            rjComboBox2.BorderSize = 2;
-            rjComboBox2.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox2.Font = new Font("Segoe UI", 10F);
-            rjComboBox2.ForeColor = Color.Black;
-            rjComboBox2.IconColor = Color.DodgerBlue;
-            rjComboBox2.ListBackColor = Color.LightGray;
-            rjComboBox2.ListTextColor = Color.Black;
-            rjComboBox2.Location = new Point(201, 191);
-            rjComboBox2.MinimumSize = new Size(200, 30);
-            rjComboBox2.Name = "rjComboBox2";
-            rjComboBox2.Padding = new Padding(10, 1, 10, 1);
-            rjComboBox2.Size = new Size(393, 30);
-            rjComboBox2.TabIndex = 29;
-            rjComboBox2.Texts = "";
-            // 
-            // rjComboBox1
-            // 
-            rjComboBox1.BackColor = Color.WhiteSmoke;
-            rjComboBox1.BorderColor = Color.DodgerBlue;
-            rjComboBox1.BorderSize = 2;
-            rjComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox1.Font = new Font("Segoe UI", 10F);
-            rjComboBox1.ForeColor = Color.Black;
-            rjComboBox1.IconColor = Color.DodgerBlue;
-            rjComboBox1.ListBackColor = Color.LightGray;
-            rjComboBox1.ListTextColor = Color.Black;
-            rjComboBox1.Location = new Point(201, 152);
-            rjComboBox1.MinimumSize = new Size(200, 30);
-            rjComboBox1.Name = "rjComboBox1";
-            rjComboBox1.Padding = new Padding(10, 1, 10, 1);
-            rjComboBox1.Size = new Size(393, 30);
-            rjComboBox1.TabIndex = 28;
-            rjComboBox1.Texts = "";
-            // 
-            // comboBox1
-            // 
-            comboBox1.BackColor = Color.WhiteSmoke;
-            comboBox1.BorderColor = Color.DodgerBlue;
-            comboBox1.BorderSize = 2;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
-            comboBox1.Font = new Font("Segoe UI", 10F);
-            comboBox1.ForeColor = Color.Black;
-            comboBox1.IconColor = Color.DodgerBlue;
-            comboBox1.ListBackColor = Color.LightGray;
-            comboBox1.ListTextColor = Color.Black;
-            comboBox1.Location = new Point(201, 113);
-            comboBox1.MinimumSize = new Size(200, 30);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Padding = new Padding(10, 1, 10, 1);
-            comboBox1.Size = new Size(393, 30);
-            comboBox1.TabIndex = 27;
-            comboBox1.Texts = "";
-            // 
             // rjTextBox3
             // 
             rjTextBox3.BackColor = Color.White;
@@ -860,6 +708,158 @@
             rjTextBox3.TabIndex = 35;
             rjTextBox3.Texts = "";
             rjTextBox3.UnderlinedStyle = false;
+            // 
+            // rjComboBox7
+            // 
+            rjComboBox7.BackColor = Color.WhiteSmoke;
+            rjComboBox7.BorderColor = Color.DodgerBlue;
+            rjComboBox7.BorderSize = 2;
+            rjComboBox7.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox7.Font = new Font("Microsoft Sans Serif", 9.75F);
+            rjComboBox7.ForeColor = Color.DarkGray;
+            rjComboBox7.IconColor = Color.DodgerBlue;
+            rjComboBox7.ListBackColor = Color.Turquoise;
+            rjComboBox7.ListTextColor = Color.White;
+            rjComboBox7.Location = new Point(201, 386);
+            rjComboBox7.MinimumSize = new Size(200, 30);
+            rjComboBox7.Name = "rjComboBox7";
+            rjComboBox7.Padding = new Padding(10, 1, 10, 1);
+            rjComboBox7.Size = new Size(393, 30);
+            rjComboBox7.TabIndex = 34;
+            rjComboBox7.Texts = "Choose items";
+            // 
+            // rjComboBox6
+            // 
+            rjComboBox6.BackColor = Color.WhiteSmoke;
+            rjComboBox6.BorderColor = Color.DodgerBlue;
+            rjComboBox6.BorderSize = 2;
+            rjComboBox6.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox6.Font = new Font("Microsoft Sans Serif", 9.75F);
+            rjComboBox6.ForeColor = Color.DarkGray;
+            rjComboBox6.IconColor = Color.DodgerBlue;
+            rjComboBox6.ListBackColor = Color.Turquoise;
+            rjComboBox6.ListTextColor = Color.White;
+            rjComboBox6.Location = new Point(201, 347);
+            rjComboBox6.MinimumSize = new Size(200, 30);
+            rjComboBox6.Name = "rjComboBox6";
+            rjComboBox6.Padding = new Padding(10, 1, 10, 1);
+            rjComboBox6.Size = new Size(393, 30);
+            rjComboBox6.TabIndex = 33;
+            rjComboBox6.Texts = "Choose items";
+            // 
+            // rjComboBox5
+            // 
+            rjComboBox5.BackColor = Color.WhiteSmoke;
+            rjComboBox5.BorderColor = Color.DodgerBlue;
+            rjComboBox5.BorderSize = 2;
+            rjComboBox5.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox5.Font = new Font("Microsoft Sans Serif", 9.75F);
+            rjComboBox5.ForeColor = Color.DarkGray;
+            rjComboBox5.IconColor = Color.DodgerBlue;
+            rjComboBox5.ListBackColor = Color.Turquoise;
+            rjComboBox5.ListTextColor = Color.White;
+            rjComboBox5.Location = new Point(201, 308);
+            rjComboBox5.MinimumSize = new Size(200, 30);
+            rjComboBox5.Name = "rjComboBox5";
+            rjComboBox5.Padding = new Padding(10, 1, 10, 1);
+            rjComboBox5.Size = new Size(393, 30);
+            rjComboBox5.TabIndex = 32;
+            rjComboBox5.Texts = "Choose items";
+            // 
+            // rjComboBox4
+            // 
+            rjComboBox4.BackColor = Color.WhiteSmoke;
+            rjComboBox4.BorderColor = Color.DodgerBlue;
+            rjComboBox4.BorderSize = 2;
+            rjComboBox4.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox4.Font = new Font("Microsoft Sans Serif", 9.75F);
+            rjComboBox4.ForeColor = Color.DarkGray;
+            rjComboBox4.IconColor = Color.DodgerBlue;
+            rjComboBox4.ListBackColor = Color.Turquoise;
+            rjComboBox4.ListTextColor = Color.White;
+            rjComboBox4.Location = new Point(201, 271);
+            rjComboBox4.MinimumSize = new Size(200, 30);
+            rjComboBox4.Name = "rjComboBox4";
+            rjComboBox4.Padding = new Padding(10, 1, 10, 1);
+            rjComboBox4.Size = new Size(393, 30);
+            rjComboBox4.TabIndex = 31;
+            rjComboBox4.Texts = "Choose items";
+            // 
+            // rjComboBox3
+            // 
+            rjComboBox3.BackColor = Color.WhiteSmoke;
+            rjComboBox3.BorderColor = Color.DodgerBlue;
+            rjComboBox3.BorderSize = 2;
+            rjComboBox3.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox3.Font = new Font("Microsoft Sans Serif", 9.75F);
+            rjComboBox3.ForeColor = Color.DarkGray;
+            rjComboBox3.IconColor = Color.DodgerBlue;
+            rjComboBox3.ListBackColor = Color.Turquoise;
+            rjComboBox3.ListTextColor = Color.White;
+            rjComboBox3.Location = new Point(201, 231);
+            rjComboBox3.MinimumSize = new Size(200, 30);
+            rjComboBox3.Name = "rjComboBox3";
+            rjComboBox3.Padding = new Padding(10, 1, 10, 1);
+            rjComboBox3.Size = new Size(393, 30);
+            rjComboBox3.TabIndex = 30;
+            rjComboBox3.Texts = "Choose items";
+            // 
+            // rjComboBox2
+            // 
+            rjComboBox2.BackColor = Color.WhiteSmoke;
+            rjComboBox2.BorderColor = Color.DodgerBlue;
+            rjComboBox2.BorderSize = 2;
+            rjComboBox2.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox2.Font = new Font("Microsoft Sans Serif", 9.75F);
+            rjComboBox2.ForeColor = Color.DarkGray;
+            rjComboBox2.IconColor = Color.DodgerBlue;
+            rjComboBox2.ListBackColor = Color.Turquoise;
+            rjComboBox2.ListTextColor = Color.White;
+            rjComboBox2.Location = new Point(201, 191);
+            rjComboBox2.MinimumSize = new Size(200, 30);
+            rjComboBox2.Name = "rjComboBox2";
+            rjComboBox2.Padding = new Padding(10, 1, 10, 1);
+            rjComboBox2.Size = new Size(393, 30);
+            rjComboBox2.TabIndex = 29;
+            rjComboBox2.Texts = "Choose items";
+            // 
+            // rjComboBox1
+            // 
+            rjComboBox1.BackColor = Color.WhiteSmoke;
+            rjComboBox1.BorderColor = Color.DodgerBlue;
+            rjComboBox1.BorderSize = 2;
+            rjComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox1.Font = new Font("Microsoft Sans Serif", 9.75F);
+            rjComboBox1.ForeColor = Color.DarkGray;
+            rjComboBox1.IconColor = Color.DodgerBlue;
+            rjComboBox1.ListBackColor = Color.Turquoise;
+            rjComboBox1.ListTextColor = Color.White;
+            rjComboBox1.Location = new Point(201, 152);
+            rjComboBox1.MinimumSize = new Size(200, 30);
+            rjComboBox1.Name = "rjComboBox1";
+            rjComboBox1.Padding = new Padding(10, 1, 10, 1);
+            rjComboBox1.Size = new Size(393, 30);
+            rjComboBox1.TabIndex = 28;
+            rjComboBox1.Texts = "Choose items";
+            // 
+            // comboBox1
+            // 
+            comboBox1.BackColor = Color.WhiteSmoke;
+            comboBox1.BorderColor = Color.DodgerBlue;
+            comboBox1.BorderSize = 2;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            comboBox1.Font = new Font("Microsoft Sans Serif", 9.75F);
+            comboBox1.ForeColor = Color.DarkGray;
+            comboBox1.IconColor = Color.DodgerBlue;
+            comboBox1.ListBackColor = Color.Turquoise;
+            comboBox1.ListTextColor = Color.White;
+            comboBox1.Location = new Point(201, 113);
+            comboBox1.MinimumSize = new Size(200, 30);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Padding = new Padding(10, 1, 10, 1);
+            comboBox1.Size = new Size(393, 30);
+            comboBox1.TabIndex = 27;
+            comboBox1.Texts = "Choose items";
             // 
             // customerForm2Product
             // 
