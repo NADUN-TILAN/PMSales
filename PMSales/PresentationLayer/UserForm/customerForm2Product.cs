@@ -23,6 +23,7 @@ namespace PMSales.PresentationLayer.UserForm
 
             textBoxName.Texts = fullName;
             textBoxName.Enabled = false;
+            rjTextBox3.Enabled = false;
 
             PopulateComboBoxes();
         }
@@ -48,6 +49,7 @@ namespace PMSales.PresentationLayer.UserForm
                     return;
                 }
 
+                // Clear existing items in ComboBox
                 comboBox1.Items.Clear();
                 rjComboBox1.Items.Clear();
                 rjComboBox2.Items.Clear();
@@ -56,6 +58,16 @@ namespace PMSales.PresentationLayer.UserForm
                 rjComboBox5.Items.Clear();
                 rjComboBox6.Items.Clear();
                 rjComboBox7.Items.Clear();
+
+                // Add empty row at the top
+                comboBox1.Items.Add("Choose items");
+                rjComboBox1.Items.Add("Choose items");
+                rjComboBox2.Items.Add("Choose items");
+                rjComboBox3.Items.Add("Choose items");
+                rjComboBox4.Items.Add(" Choose items");
+                rjComboBox5.Items.Add("Choose items");
+                rjComboBox6.Items.Add("Choose items");
+                rjComboBox7.Items.Add("Choose items");
 
                 foreach (var (ProductName, Price) in productsWithPrices)
                 {

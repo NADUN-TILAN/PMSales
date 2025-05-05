@@ -286,6 +286,7 @@
             rjTextBox2.BorderFocusColor = Color.DodgerBlue;
             rjTextBox2.BorderRadius = 10;
             rjTextBox2.BorderSize = 2;
+            rjTextBox2.Cursor = Cursors.IBeam;
             rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox2.ForeColor = Color.Black;
             rjTextBox2.Location = new Point(761, 194);
@@ -390,6 +391,7 @@
             rjTextBox1.BorderFocusColor = Color.DodgerBlue;
             rjTextBox1.BorderRadius = 10;
             rjTextBox1.BorderSize = 2;
+            rjTextBox1.Cursor = Cursors.IBeam;
             rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rjTextBox1.ForeColor = Color.Black;
             rjTextBox1.Location = new Point(761, 155);
@@ -453,6 +455,7 @@
             textBoxPhone1.BorderFocusColor = Color.DodgerBlue;
             textBoxPhone1.BorderRadius = 10;
             textBoxPhone1.BorderSize = 2;
+            textBoxPhone1.Cursor = Cursors.IBeam;
             textBoxPhone1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxPhone1.ForeColor = Color.Black;
             textBoxPhone1.Location = new Point(761, 233);
@@ -484,6 +487,7 @@
             textBoxPhone2.BorderFocusColor = Color.DodgerBlue;
             textBoxPhone2.BorderRadius = 10;
             textBoxPhone2.BorderSize = 2;
+            textBoxPhone2.Cursor = Cursors.IBeam;
             textBoxPhone2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxPhone2.ForeColor = Color.Black;
             textBoxPhone2.Location = new Point(761, 273);
@@ -515,6 +519,7 @@
             textBoxPhone3.BorderFocusColor = Color.DodgerBlue;
             textBoxPhone3.BorderRadius = 10;
             textBoxPhone3.BorderSize = 2;
+            textBoxPhone3.Cursor = Cursors.IBeam;
             textBoxPhone3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxPhone3.ForeColor = Color.Black;
             textBoxPhone3.Location = new Point(761, 313);
@@ -546,6 +551,7 @@
             textBoxEmail1.BorderFocusColor = Color.DodgerBlue;
             textBoxEmail1.BorderRadius = 10;
             textBoxEmail1.BorderSize = 2;
+            textBoxEmail1.Cursor = Cursors.IBeam;
             textBoxEmail1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxEmail1.ForeColor = Color.Black;
             textBoxEmail1.Location = new Point(761, 353);
@@ -577,6 +583,7 @@
             textBoxEmail2.BorderFocusColor = Color.DodgerBlue;
             textBoxEmail2.BorderRadius = 10;
             textBoxEmail2.BorderSize = 2;
+            textBoxEmail2.Cursor = Cursors.IBeam;
             textBoxEmail2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxEmail2.ForeColor = Color.Black;
             textBoxEmail2.Location = new Point(761, 393);
@@ -608,6 +615,7 @@
             textBoxAddress.BorderFocusColor = Color.DodgerBlue;
             textBoxAddress.BorderRadius = 10;
             textBoxAddress.BorderSize = 2;
+            textBoxAddress.Cursor = Cursors.IBeam;
             textBoxAddress.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxAddress.ForeColor = Color.Black;
             textBoxAddress.Location = new Point(761, 433);
