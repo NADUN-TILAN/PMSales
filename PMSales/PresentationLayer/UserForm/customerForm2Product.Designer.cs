@@ -656,6 +656,7 @@
             buttonSave.Text = "Next >>";
             buttonSave.TextColor = Color.White;
             buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += buttonSave_Click;
             // 
             // panel1
             // 

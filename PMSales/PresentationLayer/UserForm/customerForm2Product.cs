@@ -281,5 +281,44 @@ namespace PMSales.PresentationLayer.UserForm
             // Update the total price
             UpdateTotalPrice();
         }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            Product product = new Product();
+
+            product.product1 = comboBox1.Text;
+            product.product2 = rjComboBox1.Text;
+            product.product3 = rjComboBox2.Text;
+            product.product4 = rjComboBox3.Text;
+            product.product5 = rjComboBox4.Text;
+            product.product6 = rjComboBox5.Text;
+            product.product7 = rjComboBox6.Text;
+            product.product8 = rjComboBox7.Text;
+
+            // Parse quantities safely
+            if (int.TryParse(rjTextBox1.Text, out int qty1)) product.qty1 = qty1; else product.qty1 = 0;
+            if (int.TryParse(rjTextBox2.Text, out int qty2)) product.qty2 = qty2; else product.qty2 = 0;
+            if (int.TryParse(rjTextBox3.Text, out int qty3)) product.qty3 = qty3; else product.qty3 = 0;
+            if (int.TryParse(textBoxPhone1.Text, out int qty4)) product.qty4 = qty4; else product.qty4 = 0;
+            if (int.TryParse(textBoxPhone2.Text, out int qty5)) product.qty5 = qty5; else product.qty5 = 0;
+            if (int.TryParse(textBoxPhone3.Text, out int qty6)) product.qty6 = qty6; else product.qty6 = 0;
+            if (int.TryParse(textBoxEmail1.Text, out int qty7)) product.qty7 = qty7; else product.qty7 = 0;
+            if (int.TryParse(textBoxEmail2.Text, out int qty8)) product.qty8 = qty8; else product.qty8 = 0;
+
+            // Parse total amount as decimal
+            if (decimal.TryParse(textBoxAddress.Text, out decimal totalAmount))
+                product.TotalAmount = totalAmount;
+            else
+                product.TotalAmount = 0;
+
+            // Save product
+            ProductBLL productBLL = new ProductBLL();
+            bool success = productBLL.SaveFullProductEntry(product);
+
+            MessageBox.Show(success ? "Product saved successfully!" : "Failed to save product.");
+        }
+
+
+
     }
 }

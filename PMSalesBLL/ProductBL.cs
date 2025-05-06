@@ -44,5 +44,21 @@ namespace PMSales.BusinessLayer
             return customerDAL.InsertProduct(productName, category, stock, price, company, size, otherInfo);
         }
 
+
+        public bool SaveFullProductEntry(Product product)
+        {
+            try
+            {
+                return customerDAL.InsertFullProduct(product);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving product: {ex.Message}");
+                return false;
+            }
+        }
+
+
+
     }
 }
