@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
 using PMSales.BusinessLayer;
+using PMSalesDomainEntities;
 using RJCodeAdvance.RJControls;
 
 namespace PMSales.PresentationLayer.UserForm
@@ -286,40 +287,60 @@ namespace PMSales.PresentationLayer.UserForm
         {
             Product product = new Product();
 
-            product.product1 = comboBox1.Text;
-            product.product2 = rjComboBox1.Text;
-            product.product3 = rjComboBox2.Text;
-            product.product4 = rjComboBox3.Text;
-            product.product5 = rjComboBox4.Text;
-            product.product6 = rjComboBox5.Text;
-            product.product7 = rjComboBox6.Text;
-            product.product8 = rjComboBox7.Text;
+            // Assign product names from combo boxes
+            product.product1 = comboBox1.SelectedItem?.ToString();
+            product.product2 = rjComboBox1.SelectedItem?.ToString();
+            product.product3 = rjComboBox2.SelectedItem?.ToString();
+            product.product4 = rjComboBox3.SelectedItem?.ToString();
+            product.product5 = rjComboBox4.SelectedItem?.ToString();
+            product.product6 = rjComboBox5.SelectedItem?.ToString();
+            product.product7 = rjComboBox6.SelectedItem?.ToString();
+            product.product8 = rjComboBox7.SelectedItem?.ToString();
 
-            // Parse quantities safely
-            if (int.TryParse(rjTextBox1.Texts, out int qty1)) product.qty1 = qty1; else product.qty1 = 0;
-            if (int.TryParse(rjTextBox2.Texts, out int qty2)) product.qty2 = qty2; else product.qty2 = 0;
-            if (int.TryParse(textBoxPhone1.Texts, out int qty3)) product.qty3 = qty3; else product.qty3 = 0;
-            if (int.TryParse(textBoxPhone2.Texts, out int qty4)) product.qty4 = qty4; else product.qty4 = 0;
-            if (int.TryParse(textBoxPhone3.Texts, out int qty5)) product.qty5 = qty5; else product.qty5 = 0;
-            if (int.TryParse(textBoxEmail1.Texts, out int qty6)) product.qty6 = qty6; else product.qty6 = 0;
-            if (int.TryParse(textBoxEmail2.Texts, out int qty7)) product.qty7 = qty7; else product.qty7 = 0;
-            if (int.TryParse(textBoxAddress.Texts, out int qty8)) product.qty8 = qty8; else product.qty8 = 0;
+            // Assign quantities using .Text instead of .Texts
+            product.qty1 = int.TryParse(rjTextBox1.Text.Trim(), out int q1) ? q1 : 0;
+            product.qty2 = int.TryParse(rjTextBox2.Text.Trim(), out int q2) ? q2 : 0;
+            product.qty3 = int.TryParse(textBoxPhone1.Text.Trim(), out int q3) ? q3 : 0;
+            product.qty4 = int.TryParse(textBoxPhone2.Text.Trim(), out int q4) ? q4 : 0;
+            product.qty5 = int.TryParse(textBoxPhone3.Text.Trim(), out int q5) ? q5 : 0;
+            product.qty6 = int.TryParse(textBoxEmail1.Text.Trim(), out int q6) ? q6 : 0;
+            product.qty7 = int.TryParse(textBoxEmail2.Text.Trim(), out int q7) ? q7 : 0;
+            product.qty8 = int.TryParse(textBoxAddress.Text.Trim(), out int q8) ? q8 : 0;
 
-            // You can then pass this product to your business layer or save it to the database
-            ProductBLL productBLL = new ProductBLL();
-            bool success = productBLL.SaveFullProductEntry(product);
+            // Parse total amount using .Text
+            product.TotalAmount = decimal.TryParse(rjTextBox3.Text.Trim(), out decimal total) ? total : 0;
 
-            if (success)
+            // Optional: Show values for debugging
+            MessageBox.Show(
+                $"Qty1: {product.qty1}, Qty2: {product.qty2}, Qty3: {product.qty3}, Qty4: {product.qty4}\n" +
+                $"Qty5: {product.qty5}, Qty6: {product.qty6}, Qty7: {product.qty7}, Qty8: {product.qty8}\n" +
+                $"TotalAmount: {product.TotalAmount}",
+                "Parsed Values", MessageBoxButtons.OK, MessageBoxIcon.Information
+            );
+
+            try
             {
-                MessageBox.Show("Product details saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-                previousForm.Show();
+                ProductBLL productBLL = new ProductBLL();
+                bool success = productBLL.SaveFullProductEntry(product);
+
+                if (success)
+                {
+                    MessageBox.Show("Product details saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                    previousForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to save product details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Failed to save product details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred while saving: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
 
 
 
