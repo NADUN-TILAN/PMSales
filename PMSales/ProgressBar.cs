@@ -1,5 +1,6 @@
 using PMSales.PresentationLayer;
 using System;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace PMSales
@@ -11,7 +12,14 @@ namespace PMSales
         public ProgressBar()
         {
             InitializeComponent();
+            DisplayAssemblyVersion();
             Load += Form1_Load;
+        }
+
+        private void DisplayAssemblyVersion()
+        {
+            var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "Unknown Version";
+            labelCustomerCounttx.Text = $"Vs.{version}";
         }
 
         private void Form1_Load(object? sender, EventArgs e) // Updated nullability of 'sender'
@@ -65,6 +73,6 @@ namespace PMSales
                 progressTimer?.Dispose();
             }
             base.Dispose(disposing);
-        }
+        }       
     }
 }

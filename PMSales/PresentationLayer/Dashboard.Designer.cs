@@ -58,6 +58,10 @@ namespace PMSales.PresentationLayer
             flowLayoutPanel1 = new FlowLayoutPanel();
             labelCustomerCount = new Label();
             labelCustomerCounttx = new Label();
+            flowLayoutPanel5 = new FlowLayoutPanel();
+            label4 = new Label();
+            flowLayoutPanel6 = new FlowLayoutPanel();
+            label5 = new Label();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -65,6 +69,8 @@ namespace PMSales.PresentationLayer
             flowLayoutPanel3.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
+            flowLayoutPanel5.SuspendLayout();
+            flowLayoutPanel6.SuspendLayout();
             SuspendLayout();
             // 
             // label3
@@ -388,6 +394,8 @@ namespace PMSales.PresentationLayer
             // 
             // panel1
             // 
+            panel1.Controls.Add(flowLayoutPanel5);
+            panel1.Controls.Add(flowLayoutPanel6);
             panel1.Controls.Add(flowLayoutPanel4);
             panel1.Controls.Add(flowLayoutPanel3);
             panel1.Controls.Add(flowLayoutPanel2);
@@ -513,6 +521,58 @@ namespace PMSales.PresentationLayer
             labelCustomerCounttx.TabIndex = 55;
             labelCustomerCounttx.Text = "Vs.Unknown";
             // 
+            // flowLayoutPanel5
+            // 
+            flowLayoutPanel5.BackColor = Color.SteelBlue;
+            flowLayoutPanel5.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel5.BackgroundImage");
+            flowLayoutPanel5.BackgroundImageLayout = ImageLayout.Stretch;
+            flowLayoutPanel5.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel5.Controls.Add(label4);
+            flowLayoutPanel5.Font = new Font("Segoe UI", 8.25F);
+            flowLayoutPanel5.ForeColor = Color.White;
+            flowLayoutPanel5.Location = new Point(81, 262);
+            flowLayoutPanel5.Name = "flowLayoutPanel5";
+            flowLayoutPanel5.Size = new Size(267, 85);
+            flowLayoutPanel5.TabIndex = 57;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(192, 30);
+            label4.TabIndex = 50;
+            label4.Text = "Warranty Claims: 0";
+            // 
+            // flowLayoutPanel6
+            // 
+            flowLayoutPanel6.BackColor = Color.SteelBlue;
+            flowLayoutPanel6.BackgroundImage = (Image)resources.GetObject("flowLayoutPanel6.BackgroundImage");
+            flowLayoutPanel6.BackgroundImageLayout = ImageLayout.Stretch;
+            flowLayoutPanel6.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel6.Controls.Add(label5);
+            flowLayoutPanel6.Font = new Font("Segoe UI", 8.25F);
+            flowLayoutPanel6.ForeColor = Color.White;
+            flowLayoutPanel6.Location = new Point(354, 262);
+            flowLayoutPanel6.Name = "flowLayoutPanel6";
+            flowLayoutPanel6.Size = new Size(267, 84);
+            flowLayoutPanel6.TabIndex = 56;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(3, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(198, 30);
+            label5.TabIndex = 50;
+            label5.Text = "Cancelled Orders: 0";
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -539,6 +599,10 @@ namespace PMSales.PresentationLayer
             flowLayoutPanel2.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
+            flowLayoutPanel5.ResumeLayout(false);
+            flowLayoutPanel5.PerformLayout();
+            flowLayoutPanel6.ResumeLayout(false);
+            flowLayoutPanel6.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -570,5 +634,9 @@ namespace PMSales.PresentationLayer
         private RJCodeAdvance.RJControls.RJButton rjButton14;
         private RJCodeAdvance.RJControls.RJButton rjButton13;
         private RJCodeAdvance.RJControls.RJButton rjButton5;
+        private FlowLayoutPanel flowLayoutPanel5;
+        private Label label4;
+        private FlowLayoutPanel flowLayoutPanel6;
+        private Label label5;
     }
 }

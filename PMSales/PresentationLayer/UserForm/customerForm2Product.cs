@@ -287,30 +287,30 @@ namespace PMSales.PresentationLayer.UserForm
         {
             Product product = new Product();
 
-            // Assign product names from combo boxes
-            product.product1 = comboBox1.SelectedItem?.ToString();
-            product.product2 = rjComboBox1.SelectedItem?.ToString();
-            product.product3 = rjComboBox2.SelectedItem?.ToString();
-            product.product4 = rjComboBox3.SelectedItem?.ToString();
-            product.product5 = rjComboBox4.SelectedItem?.ToString();
-            product.product6 = rjComboBox5.SelectedItem?.ToString();
-            product.product7 = rjComboBox6.SelectedItem?.ToString();
-            product.product8 = rjComboBox7.SelectedItem?.ToString();
+            // Assign product names safely from ComboBoxes
+            product.product1 = comboBox1.SelectedItem?.ToString() ?? string.Empty;
+            product.product2 = rjComboBox1.SelectedItem?.ToString() ?? string.Empty;
+            product.product3 = rjComboBox2.SelectedItem?.ToString() ?? string.Empty;
+            product.product4 = rjComboBox3.SelectedItem?.ToString() ?? string.Empty;
+            product.product5 = rjComboBox4.SelectedItem?.ToString() ?? string.Empty;
+            product.product6 = rjComboBox5.SelectedItem?.ToString() ?? string.Empty;
+            product.product7 = rjComboBox6.SelectedItem?.ToString() ?? string.Empty;
+            product.product8 = rjComboBox7.SelectedItem?.ToString() ?? string.Empty;
 
-            // Assign quantities using .Text instead of .Texts
-            product.qty1 = int.TryParse(rjTextBox1.Text.Trim(), out int q1) ? q1 : 0;
-            product.qty2 = int.TryParse(rjTextBox2.Text.Trim(), out int q2) ? q2 : 0;
-            product.qty3 = int.TryParse(textBoxPhone1.Text.Trim(), out int q3) ? q3 : 0;
-            product.qty4 = int.TryParse(textBoxPhone2.Text.Trim(), out int q4) ? q4 : 0;
-            product.qty5 = int.TryParse(textBoxPhone3.Text.Trim(), out int q5) ? q5 : 0;
-            product.qty6 = int.TryParse(textBoxEmail1.Text.Trim(), out int q6) ? q6 : 0;
-            product.qty7 = int.TryParse(textBoxEmail2.Text.Trim(), out int q7) ? q7 : 0;
-            product.qty8 = int.TryParse(textBoxAddress.Text.Trim(), out int q8) ? q8 : 0;
+            // Assign quantities using .Texts (not .Text)
+            product.qty1 = int.TryParse(rjTextBox1.Texts.Trim(), out int q1) ? q1 : 0;
+            product.qty2 = int.TryParse(rjTextBox2.Texts.Trim(), out int q2) ? q2 : 0;
+            product.qty3 = int.TryParse(textBoxPhone1.Texts.Trim(), out int q3) ? q3 : 0;
+            product.qty4 = int.TryParse(textBoxPhone2.Texts.Trim(), out int q4) ? q4 : 0;
+            product.qty5 = int.TryParse(textBoxPhone3.Texts.Trim(), out int q5) ? q5 : 0;
+            product.qty6 = int.TryParse(textBoxEmail1.Texts.Trim(), out int q6) ? q6 : 0;
+            product.qty7 = int.TryParse(textBoxEmail2.Texts.Trim(), out int q7) ? q7 : 0;
+            product.qty8 = int.TryParse(textBoxAddress.Texts.Trim(), out int q8) ? q8 : 0;
 
-            // Parse total amount using .Text
-            product.TotalAmount = decimal.TryParse(rjTextBox3.Text.Trim(), out decimal total) ? total : 0;
+            // Parse total amount using .Texts
+            product.TotalAmount = decimal.TryParse(rjTextBox3.Texts.Trim(), out decimal total) ? total : 0;
 
-            // Optional: Show values for debugging
+            // Optional: Show parsed values
             MessageBox.Show(
                 $"Qty1: {product.qty1}, Qty2: {product.qty2}, Qty3: {product.qty3}, Qty4: {product.qty4}\n" +
                 $"Qty5: {product.qty5}, Qty6: {product.qty6}, Qty7: {product.qty7}, Qty8: {product.qty8}\n" +
@@ -339,6 +339,10 @@ namespace PMSales.PresentationLayer.UserForm
                 MessageBox.Show($"An error occurred while saving: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
+
 
 
 
