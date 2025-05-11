@@ -19,7 +19,7 @@ namespace PMSales
         private void DisplayAssemblyVersion()
         {
             var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "Unknown Version";
-            labelCustomerCounttx.Text = $"Vs.{version}";
+            labelCustomerCounttx.Text = $"Vs{version}";
         }
 
         private void Form1_Load(object? sender, EventArgs e) // Updated nullability of 'sender'

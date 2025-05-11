@@ -7,23 +7,18 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using PMSales.BusinessLayer;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PMSales.PresentationLayer
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard2 : Form
     {
-        public Dashboard()
+        public Dashboard2()
         {
             InitializeComponent();
             DisplayAssemblyVersion();
-            DisplayCustomerCount();
-            PopulateComboBox1(); // Ensure this is called
-            DisplayProductCount();
-
         }
 
         private void DisplayAssemblyVersion()
@@ -185,74 +180,18 @@ namespace PMSales.PresentationLayer
 
         #endregion
 
-        #region Dashboard Functions
-
-        private void DisplayCustomerCount()
-        {
-            // Assuming GetCustomerCount() retrieves the number of customers
-            int customerCount = GetCustomerCount();
-            labelCustomerCount.Text = $"Customers: {customerCount}";
-        }
-
-        // method to retrieve customer count (replace with actual implementation)
-        private int GetCustomerCount()
-        {
-            var customerBL = new PMSales.BusinessLayer.CustomerBL();
-            return customerBL.GetCustomerCount();
-        }
-
-        private void DisplayProductCount()
-        {
-            // Assuming GetProductCount() retrieves the number of items
-            int productCount = GetProductCount();
-            labelProductCount.Text = $"Products: {productCount}";
-        }
-
-        // method to retrieve product count (replace with actual implementation)
-        private int GetProductCount()
-        {
-            var customerBL = new PMSales.BusinessLayer.CustomerBL();
-            return customerBL.GetProductCount();
-        }
-
-        // Items dropdown
-        private void PopulateComboBox1()
-        {
-            try
-            {
-                var productBL = new PMSales.BusinessLayer.ProductBLL();
-                List<string> products = productBL.GetProductNames(); // Declare 'products' here
-
-                comboBox1.Items.Clear();
-
-                if (products.Count == 0) // Check after 'products' is declared
-                {
-                    MessageBox.Show("No products available.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    comboBox1.Items.AddRange(products.ToArray());
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        #endregion
-
-               
-
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            // Instantiate the Dashboard2View form
-            var Dashboard2View = new Dashboard2();
+            // Instantiate the Dashboard1View form
+            var Dashboard1View = new Dashboard();
 
-            // Show the Dashboard2View form
-            Dashboard2View.Show();
+            // Show the Dashboard1View form
+            Dashboard1View.Show();
 
             // Close the current Dashboard form
             this.Close();
         }
+
+        
     }
 }
