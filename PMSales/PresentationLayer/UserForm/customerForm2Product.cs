@@ -108,18 +108,38 @@ namespace PMSales.PresentationLayer.UserForm
         {
             decimal totalPrice = 0;
 
-            // List of all combo boxes
-            var comboBoxes = new[] { comboBox1, rjComboBox1, rjComboBox2, rjComboBox3, rjComboBox4, rjComboBox5, rjComboBox6, rjComboBox7 };
-
-            foreach (var comboBox in comboBoxes)
+            // Array of (object comboBox, RJTextBox qtyTextBox) pairs
+            var productInputs = new (object comboBox, RJCodeAdvance.RJControls.RJTextBox qtyTextBox)[]
             {
-                if (comboBox.SelectedItem is string selectedProduct && productPriceMap.ContainsKey(selectedProduct))
+                (comboBox1, rjTextBox1),
+                (rjComboBox1, rjTextBox2),
+                (rjComboBox2, textBoxPhone1),
+                (rjComboBox3, textBoxPhone2),
+                (rjComboBox4, textBoxPhone3),
+                (rjComboBox5, textBoxEmail1),
+                (rjComboBox6, textBoxEmail2),
+                (rjComboBox7, textBoxAddress)
+            };
+
+            foreach (var (comboBoxObj, qtyTextBox) in productInputs)
+            {
+                string? selectedProduct = null;
+
+                // Handle both ComboBox and RJComboBox
+                if (comboBoxObj is ComboBox cb)
+                    selectedProduct = cb.SelectedItem as string;
+                else if (comboBoxObj is RJCodeAdvance.RJControls.RJComboBox rjcb)
+                    selectedProduct = rjcb.SelectedItem as string;
+
+                if (!string.IsNullOrEmpty(selectedProduct) && productPriceMap.ContainsKey(selectedProduct))
                 {
-                    totalPrice += productPriceMap[selectedProduct];
+                    int qty = 1;
+                    if (!int.TryParse(qtyTextBox.Texts?.Trim(), out qty) || qty < 1)
+                        qty = 1;
+                    totalPrice += productPriceMap[selectedProduct] * qty;
                 }
             }
 
-            // Update the total price in rjTextBox3
             rjTextBox3.Texts = totalPrice.ToString("F2");
         }
 
