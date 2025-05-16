@@ -301,7 +301,7 @@ namespace PMSales.PresentationLayer.UserForm
 
             // Update the total price
             UpdateTotalPrice();
-        }
+        }       
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
@@ -317,18 +317,35 @@ namespace PMSales.PresentationLayer.UserForm
             product.product7 = rjComboBox6.SelectedItem?.ToString() ?? string.Empty;
             product.product8 = rjComboBox7.SelectedItem?.ToString() ?? string.Empty;
 
-            // Assign quantities using .Texts (not .Text)
-            product.qty1 = int.TryParse(rjTextBox1.Texts.Trim(), out int q1) ? q1 : 0;
-            product.qty2 = int.TryParse(rjTextBox2.Texts.Trim(), out int q2) ? q2 : 0;
-            product.qty3 = int.TryParse(textBoxPhone1.Texts.Trim(), out int q3) ? q3 : 0;
-            product.qty4 = int.TryParse(textBoxPhone2.Texts.Trim(), out int q4) ? q4 : 0;
-            product.qty5 = int.TryParse(textBoxPhone3.Texts.Trim(), out int q5) ? q5 : 0;
-            product.qty6 = int.TryParse(textBoxEmail1.Texts.Trim(), out int q6) ? q6 : 0;
-            product.qty7 = int.TryParse(textBoxEmail2.Texts.Trim(), out int q7) ? q7 : 0;
-            product.qty8 = int.TryParse(textBoxAddress.Texts.Trim(), out int q8) ? q8 : 0;
+            // Helper function for quantity logic
+            int? GetQty(string productName, string qtyText)
+            {
+                // Treat "Choose items" and empty as not selected
+                if (string.IsNullOrWhiteSpace(productName) || productName.Trim().Equals("Choose items", StringComparison.OrdinalIgnoreCase))
+                    return null;
+                if (int.TryParse(qtyText.Trim(), out int qty))
+                    return qty < 2 ? 1 : qty;
+                return 1; // If invalid, but product is selected, default to 1
+            }
 
-            // Parse total amount using .Texts
-            product.TotalAmount = decimal.TryParse(rjTextBox3.Texts.Trim(), out decimal total) ? total : 0;
+            // Assign quantities using the logic: if product is available and Qty < 2, set Qty = 1
+            product.qty1 = GetQty(product.product1, rjTextBox1.Texts);
+            product.qty2 = GetQty(product.product2, rjTextBox2.Texts);
+            product.qty3 = GetQty(product.product3, textBoxPhone1.Texts);
+            product.qty4 = GetQty(product.product4, textBoxPhone2.Texts);
+            product.qty5 = GetQty(product.product5, textBoxPhone3.Texts);
+            product.qty6 = GetQty(product.product6, textBoxEmail1.Texts);
+            product.qty7 = GetQty(product.product7, textBoxEmail2.Texts);
+            product.qty8 = GetQty(product.product8, textBoxAddress.Texts);
+
+            // Parse total amount 
+            UpdateTotalPrice(); // Always call before reading the value
+
+            string totalText = rjTextBox3.Texts?.Trim() ?? "0";
+            if (decimal.TryParse(totalText, out decimal totalAmount))
+                product.TotalAmount = totalAmount;
+            else
+                product.TotalAmount = 0;
 
             // Optional: Show parsed values
             MessageBox.Show(
@@ -359,8 +376,6 @@ namespace PMSales.PresentationLayer.UserForm
                 MessageBox.Show($"An error occurred while saving: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
 
 
 

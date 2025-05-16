@@ -244,21 +244,21 @@ namespace PMSalesDAL.DatabaseHelper
                         cmd.CommandType = CommandType.StoredProcedure;
 
                         cmd.Parameters.AddWithValue("@product1", product.product1 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty1", product.qty1);
+                        cmd.Parameters.AddWithValue("@qty1", product.qty1 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@product2", product.product2 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty2", product.qty2);
+                        cmd.Parameters.AddWithValue("@qty2", product.qty2 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@product3", product.product3 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty3", product.qty3);
+                        cmd.Parameters.AddWithValue("@qty3", product.qty3 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@product4", product.product4 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty4", product.qty4);
+                        cmd.Parameters.AddWithValue("@qty4", product.qty4 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@product5", product.product5 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty5", product.qty5);
+                        cmd.Parameters.AddWithValue("@qty5", product.qty5 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@product6", product.product6 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty6", product.qty6);
+                        cmd.Parameters.AddWithValue("@qty6", product.qty6 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@product7", product.product7 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty7", product.qty7);
+                        cmd.Parameters.AddWithValue("@qty7", product.qty7 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@product8", product.product8 ?? (object)DBNull.Value);
-                        cmd.Parameters.AddWithValue("@qty8", product.qty8);
+                        cmd.Parameters.AddWithValue("@qty8", product.qty8 ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@TotalAmount", product.TotalAmount);
 
                         conn.Open();
