@@ -6,12 +6,15 @@ using System.Windows.Forms;
 using PMSales.BusinessLayer;
 using PMSalesDomainEntities;
 using RJCodeAdvance.RJControls;
+using System.Globalization;
 
 namespace PMSales.PresentationLayer.UserForm
 {
     public partial class customerForm2Product : Form
     {
         private readonly customerForm1Add previousForm;
+        private bool isAlreadySaved;
+        private Product? lastSavedProduct = null;
 
         // Dictionary to store product names and prices
         private Dictionary<string, decimal> productPriceMap = new Dictionary<string, decimal>();
@@ -103,45 +106,12 @@ namespace PMSales.PresentationLayer.UserForm
             }
         }
 
-        // Method to calculate the total price based on selected items
         private void UpdateTotalPrice()
         {
-            decimal totalPrice = 0;
-
-            // Array of (object comboBox, RJTextBox qtyTextBox) pairs
-            var productInputs = new (object comboBox, RJCodeAdvance.RJControls.RJTextBox qtyTextBox)[]
-            {
-                (comboBox1, rjTextBox1),
-                (rjComboBox1, rjTextBox2),
-                (rjComboBox2, textBoxPhone1),
-                (rjComboBox3, textBoxPhone2),
-                (rjComboBox4, textBoxPhone3),
-                (rjComboBox5, textBoxEmail1),
-                (rjComboBox6, textBoxEmail2),
-                (rjComboBox7, textBoxAddress)
-            };
-
-            foreach (var (comboBoxObj, qtyTextBox) in productInputs)
-            {
-                string? selectedProduct = null;
-
-                // Handle both ComboBox and RJComboBox
-                if (comboBoxObj is ComboBox cb)
-                    selectedProduct = cb.SelectedItem as string;
-                else if (comboBoxObj is RJCodeAdvance.RJControls.RJComboBox rjcb)
-                    selectedProduct = rjcb.SelectedItem as string;
-
-                if (!string.IsNullOrEmpty(selectedProduct) && productPriceMap.ContainsKey(selectedProduct))
-                {
-                    int qty = 1;
-                    if (!int.TryParse(qtyTextBox.Texts?.Trim(), out qty) || qty < 1)
-                        qty = 1;
-                    totalPrice += productPriceMap[selectedProduct] * qty;
-                }
-            }
-
-            rjTextBox3.Texts = totalPrice.ToString("F2");
+            decimal totalPrice = CalculateTotalPrice();
+            rjTextBox3.Texts = totalPrice.ToString("F2", CultureInfo.InvariantCulture);
         }
+
 
         // When user selects a product, set Qty = 1 and show price
         private void comboBox1_SelectedIndexChanged(object? sender, EventArgs e)
@@ -301,11 +271,59 @@ namespace PMSales.PresentationLayer.UserForm
 
             // Update the total price
             UpdateTotalPrice();
-        }       
+        }
+
+        // Calculate total price based on selected products and quantities
+        private decimal CalculateTotalPrice()
+        {
+            decimal totalPrice = 0;
+
+            var productInputs = new (object comboBox, RJCodeAdvance.RJControls.RJTextBox qtyTextBox)[]
+            {
+                (comboBox1, rjTextBox1),
+                (rjComboBox1, rjTextBox2),
+                (rjComboBox2, textBoxPhone1),
+                (rjComboBox3, textBoxPhone2),
+                (rjComboBox4, textBoxPhone3),
+                (rjComboBox5, textBoxEmail1),
+                (rjComboBox6, textBoxEmail2),
+                (rjComboBox7, textBoxAddress)
+            };
+
+            foreach (var (comboBoxObj, qtyTextBox) in productInputs)
+            {
+                string? selectedProduct = null;
+
+                if (comboBoxObj is ComboBox cb)
+                    selectedProduct = cb.SelectedItem as string;
+                else if (comboBoxObj is RJCodeAdvance.RJControls.RJComboBox rjcb)
+                    selectedProduct = rjcb.SelectedItem as string;
+
+                if (!string.IsNullOrEmpty(selectedProduct) && productPriceMap.ContainsKey(selectedProduct))
+                {
+                    int qty = 1;
+                    if (!int.TryParse(qtyTextBox.Texts?.Trim(), out qty) || qty < 1)
+                        qty = 1;
+                    totalPrice += productPriceMap[selectedProduct] * qty;
+                }
+            }
+
+            return totalPrice;
+        }
+
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
             Product product = new Product();
+
+            // Prevent saving again if already saved
+            if (isAlreadySaved)
+            {
+                this.Hide();
+                var customerForm2 = new customerForm2Product(previousForm, textBoxName.Texts.Trim());
+                customerForm2.Show();
+                return;
+            }
 
             // Assign product names safely from ComboBoxes
             product.product1 = comboBox1.SelectedItem?.ToString() ?? string.Empty;
@@ -338,19 +356,21 @@ namespace PMSales.PresentationLayer.UserForm
             product.qty7 = GetQty(product.product7, textBoxEmail2.Texts);
             product.qty8 = GetQty(product.product8, textBoxAddress.Texts);
 
-            // Parse total amount 
-            UpdateTotalPrice(); // Always call before reading the value
-
-            string totalText = rjTextBox3.Texts?.Trim() ?? "0";
-            if (decimal.TryParse(totalText, out decimal totalAmount))
-                product.TotalAmount = totalAmount;
-            else
-                product.TotalAmount = 0;
+            // get total price
+            decimal totalPrice = CalculateTotalPrice();
+            product.TotalAmount = totalPrice;
+            rjTextBox3.Texts = totalPrice.ToString("F2", CultureInfo.InvariantCulture);
 
             // Optional: Show parsed values
             MessageBox.Show(
-                $"Qty1: {product.qty1}, Qty2: {product.qty2}, Qty3: {product.qty3}, Qty4: {product.qty4}\n" +
-                $"Qty5: {product.qty5}, Qty6: {product.qty6}, Qty7: {product.qty7}, Qty8: {product.qty8}\n" +
+                $"Product1: {product.product1}, Qty1: {product.qty1}, " +
+                $"Product2: {product.product2}, Qty2: {product.qty2}, " +
+                $"Product3: {product.product3}, Qty3: {product.qty3}, " +
+                $"Product4: {product.product4}, Qty4: {product.qty4}\n" +
+                $"Product5: {product.product5}, Qty5: {product.qty5}, " +
+                $"Product6: {product.product6}, Qty6: {product.qty6}, " +
+                $"Product7: {product.product7}, Qty7: {product.qty7}, " +
+                $"Product8: {product.product8}, Qty8: {product.qty8}\n" +
                 $"TotalAmount: {product.TotalAmount}",
                 "Parsed Values", MessageBoxButtons.OK, MessageBoxIcon.Information
             );
@@ -362,9 +382,19 @@ namespace PMSales.PresentationLayer.UserForm
 
                 if (success)
                 {
+                    isAlreadySaved = true;
+                    lastSavedProduct = product;
                     MessageBox.Show("Product details saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                    previousForm.Show();
+
+                    this.Hide();
+                    // Show confirmation form
+                    var customerFormConfirm = new customerForm3Confirm();
+                    customerFormConfirm.Show();
+
+                    if (previousForm != null && !previousForm.IsDisposed)
+                    {
+                        previousForm.Show();
+                    }
                 }
                 else
                 {
@@ -373,14 +403,10 @@ namespace PMSales.PresentationLayer.UserForm
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred while saving: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An unexpected error occurred while saving product details.\n\n{ex.Message}", "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
-
-
-
-
-
 
 
 
