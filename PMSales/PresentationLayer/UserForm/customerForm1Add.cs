@@ -272,6 +272,25 @@ namespace PMSales.PresentationLayer.UserForm
             }
         }
 
+        // In customerForm1Add.cs
+        public PMSalesDomainEntities.Customer GetCurrentCustomer()
+        {
+            return new PMSalesDomainEntities.Customer
+            {
+                FirstName = textBoxName.Texts.Trim(),
+                SecondName = textBoxSName.Texts.Trim(),
+                LastName = textBoxLName.Texts.Trim(),
+                Phone1 = textBoxPhone1.Texts.Trim(),
+                Phone2 = textBoxPhone2.Texts.Trim(),
+                Phone3 = textBoxPhone3.Texts.Trim(),
+                Email1 = textBoxEmail1.Texts.Trim(),
+                Email2 = textBoxEmail2.Texts.Trim(),
+                Address = textBoxAddress.Texts.Trim(),
+                City = textBoxCity.Texts.Trim()
+            };
+        }
+
+
         // Helper method to validate email format
         private bool IsValidEmail(string email)
         {

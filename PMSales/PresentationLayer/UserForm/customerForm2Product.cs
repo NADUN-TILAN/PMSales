@@ -19,11 +19,15 @@ namespace PMSales.PresentationLayer.UserForm
         // Dictionary to store product names and prices
         private Dictionary<string, decimal> productPriceMap = new Dictionary<string, decimal>();
 
+        // Last saved product
+        private readonly PMSalesDomainEntities.Customer _customer;
+
         // Constructor
         public customerForm2Product(customerForm1Add form, string fullName)
         {
             InitializeComponent();
             previousForm = form;
+            _customer = form.GetCurrentCustomer();
 
             textBoxName.Texts = fullName;
             textBoxName.Enabled = false;
@@ -35,8 +39,9 @@ namespace PMSales.PresentationLayer.UserForm
         // Back button
         private void rjButton5_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             previousForm.Show();
+            this.Hide();
         }
 
         // Populate ComboBox with product names and store prices
@@ -319,9 +324,12 @@ namespace PMSales.PresentationLayer.UserForm
             // Prevent saving again if already saved
             if (isAlreadySaved)
             {
-                this.Hide();
-                var customerForm2 = new customerForm2Product(previousForm, textBoxName.Texts.Trim());
-                customerForm2.Show();
+                MessageBox.Show(
+                    "Product details have already been saved. Duplicate save is not allowed.",
+                    "Already Saved",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
                 return;
             }
 
@@ -361,19 +369,36 @@ namespace PMSales.PresentationLayer.UserForm
             product.TotalAmount = totalPrice;
             rjTextBox3.Texts = totalPrice.ToString("F2", CultureInfo.InvariantCulture);
 
-            // Optional: Show parsed values
-            MessageBox.Show(
-                $"Product1: {product.product1}, Qty1: {product.qty1}, " +
-                $"Product2: {product.product2}, Qty2: {product.qty2}, " +
-                $"Product3: {product.product3}, Qty3: {product.qty3}, " +
-                $"Product4: {product.product4}, Qty4: {product.qty4}\n" +
-                $"Product5: {product.product5}, Qty5: {product.qty5}, " +
-                $"Product6: {product.product6}, Qty6: {product.qty6}, " +
-                $"Product7: {product.product7}, Qty7: {product.qty7}, " +
-                $"Product8: {product.product8}, Qty8: {product.qty8}\n" +
-                $"TotalAmount: {product.TotalAmount}",
-                "Parsed Values", MessageBoxButtons.OK, MessageBoxIcon.Information
+            // Optional: Show parsed values           
+            var productLines = new List<string>();
+            for (int i = 1; i <= 8; i++)
+            {
+                var productName = (string?)typeof(Product).GetProperty($"product{i}")?.GetValue(product);
+                var qty = (int?)typeof(Product).GetProperty($"qty{i}")?.GetValue(product);
+
+                if (!string.IsNullOrWhiteSpace(productName) && !productName.Trim().Equals("Choose items", StringComparison.OrdinalIgnoreCase))
+                {
+                    productLines.Add($"Product {i}: {productName}   Qty: {qty ?? 1}");
+                }
+            }
+
+            string message = string.Join(Environment.NewLine, productLines);
+            message += Environment.NewLine + "-----------------------------";
+            message += Environment.NewLine + $"Total Amount: {product.TotalAmount:C2}";
+
+            var result = MessageBox.Show(
+                message,
+                "Confirm Product Details",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
             );
+
+
+            if (result != DialogResult.Yes)
+            {
+                // User cancelled, do not proceed
+                return;
+            }
 
             try
             {
@@ -384,17 +409,25 @@ namespace PMSales.PresentationLayer.UserForm
                 {
                     isAlreadySaved = true;
                     lastSavedProduct = product;
-                    MessageBox.Show("Product details saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    this.Hide();
-                    // Show confirmation form
-                    var customerFormConfirm = new customerForm3Confirm();
-                    customerFormConfirm.Show();
+                    var saveResult = MessageBox.Show(
+                        "Product details have been saved successfully.\n\nDo you want to continue?",
+                        "Save Confirmation",
+                        MessageBoxButtons.OKCancel,
+                        MessageBoxIcon.Information
+                    );
 
-                    if (previousForm != null && !previousForm.IsDisposed)
+                    if (saveResult != DialogResult.OK)
                     {
-                        previousForm.Show();
+                        // User chose Cancel, so do not proceed further
+                        return;
                     }
+
+                    this.Hide();                    
+
+                    // Pass the last saved product to the confirmation form
+                    var customerFormConfirm = new customerForm3Confirm(previousForm, product, _customer);
+                    customerFormConfirm.Show();                    
                 }
                 else
                 {
