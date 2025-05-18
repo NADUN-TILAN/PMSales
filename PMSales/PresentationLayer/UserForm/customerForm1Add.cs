@@ -18,7 +18,7 @@ namespace PMSales.PresentationLayer.UserForm
             customerBL = new CustomerBL(); // Initialize the CustomerBL instance
         }
 
-        #region btn 4 and 6 and 7
+        #region btn 4 and 6 and 7 and 9
         //btn 4
         private void rjButton4_MouseHover(object sender, EventArgs e) //eveent 1
         {
@@ -100,6 +100,32 @@ namespace PMSales.PresentationLayer.UserForm
         private void rjButton7_MouseUp(object sender, MouseEventArgs e) //eveent 5
         {
             ApplyHoverStyle(rjButton7);
+        }
+
+        //btn 9
+        private void rjButton9_MouseHover(object sender, EventArgs e) //eveent 1
+        {
+            ApplyHoverStyle(rjButton9);
+        }
+
+        private void rjButton9_MouseLeave(object sender, EventArgs e) //eveent 2
+        {
+            ApplyLeaveStyle(rjButton9);
+        }
+
+        private void rjButton9_MouseClick(object sender, MouseEventArgs e) //eveent 3
+        {
+            ApplyClickStyle(rjButton9);
+        }
+
+        private void rjButton9_MouseDown(object sender, MouseEventArgs e) //eveent 4
+        {
+            ApplyPressedStyle(rjButton9);
+        }
+
+        private void rjButton9_MouseUp(object sender, MouseEventArgs e) //eveent 5
+        {
+            ApplyHoverStyle(rjButton9);
         }
         #endregion 
 
@@ -303,7 +329,18 @@ namespace PMSales.PresentationLayer.UserForm
             {
                 return false;
             }
-        }        
+        }
 
+        private void rjButton9_Click(object sender, EventArgs e)
+        {
+            // Instantiate the SalesReportView form
+            var SalesReportView = new salesFormReport();
+
+            // Show the SalesReportView form
+            SalesReportView.Show();
+
+            // Close the current Dashboard form
+            this.Close();
+        }
     }
 }

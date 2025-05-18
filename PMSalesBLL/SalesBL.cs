@@ -11,6 +11,12 @@ namespace PMSalesBLL
         {
             return customerDAL.InsertSale(sale);
         }
+
+        public List<Sales> GetAllSales()
+        {
+            return customerDAL.GetAllSalesReports();
+        }
+
     }
 }
 

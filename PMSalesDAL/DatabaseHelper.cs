@@ -280,7 +280,7 @@ namespace PMSalesDAL.DatabaseHelper
             }
         }
 
-
+        /// Insert a sale
         public bool InsertSale(Sales sale)
         {
             try
@@ -341,6 +341,75 @@ namespace PMSalesDAL.DatabaseHelper
                 Console.WriteLine($"Error: {ex.Message}");
                 return false;
             }
+        }
+
+        // Get all sales reports
+        public List<Sales> GetAllSalesReports()
+        {
+            var salesList = new List<Sales>();
+            const string query = "GET_ALL_CONFIRMED_SALES_REPORTS";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var sale = new Sales
+                            {
+                                FirstName = reader["FirstName"]?.ToString(),
+                                SecondName = reader["SecondName"]?.ToString(),
+                                LastName = reader["LastName"]?.ToString(),
+                                Address = reader["Address"]?.ToString(),
+                                City = reader["City"]?.ToString(),
+                                ContactNo1 = reader["Contact No 1"]?.ToString(),
+                                ContactNo2 = reader["Contact No 2"]?.ToString(),
+                                ContactNo3 = reader["Contact No 3"]?.ToString(),
+                                Email1 = reader["Email 1"]?.ToString(),
+                                Email2 = reader["Email 2"]?.ToString(),
+                                Item1 = reader["Item 1"]?.ToString(),
+                                Qty1 = reader["Qty 1"]?.ToString(),
+                                Item2 = reader["Item 2"]?.ToString(),
+                                Qty2 = reader["Qty 2"]?.ToString(),
+                                Item3 = reader["Item 3"]?.ToString(),
+                                Qty3 = reader["Qty 3"]?.ToString(),
+                                Item4 = reader["Item 4"]?.ToString(),
+                                Qty4 = reader["Qty 4"]?.ToString(),
+                                Item5 = reader["Item 5"]?.ToString(),
+                                Qty5 = reader["Qty 5"]?.ToString(),
+                                Item6 = reader["Item 6"]?.ToString(),
+                                Qty6 = reader["Qty 6"]?.ToString(),
+                                Item7 = reader["Item 7"]?.ToString(),
+                                Qty7 = reader["Qty 7"]?.ToString(),
+                                Item8 = reader["Item 8"]?.ToString(),
+                                Qty8 = reader["Qty 8"]?.ToString(),
+                                TotalPrice = reader["Total Price"] != DBNull.Value ? Convert.ToDecimal(reader["Total Price"]) : 0,
+                                WarrantyDueDate = reader["Warranty DueDate"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(reader["Warranty DueDate"]) : null,
+                                WarrantyClaims = reader["Warranty Claims"]?.ToString(),
+                                ProductStatus = reader["Product Status"] != DBNull.Value ? (int?)Convert.ToInt32(reader["Product Status"]) : null,
+                                ProductWarrantyStatus = reader["Product Warranty Status"] != DBNull.Value ? (int?)Convert.ToInt32(reader["Product Warranty Status"]) : null,
+                                ConfirmOrders = reader["Confirm Orders"] != DBNull.Value ? (int?)Convert.ToInt32(reader["Confirm Orders"]) : null,
+                                ReturnedOrders = reader["Returned Orders"] != DBNull.Value ? (int?)Convert.ToInt32(reader["Returned Orders"]) : null,
+                                CreatedDate = reader["Created Date"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(reader["Created Date"]) : null,
+                                UpdatedDate = reader["Updated Date"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(reader["Updated Date"]) : null
+                            };
+
+                            salesList.Add(sale);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching sales: {ex.Message}");
+            }
+
+            return salesList;
         }
 
 

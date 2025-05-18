@@ -46,16 +46,16 @@ namespace PMSales.PresentationLayer
             panel4 = new Panel();
             rjButton13 = new RJCodeAdvance.RJControls.RJButton();
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
-            comboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
-            rjComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
             panel1 = new Panel();
-            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel7 = new Panel();
             panel8 = new Panel();
             rjComboBox2 = new RJCodeAdvance.RJControls.RJComboBox();
             rjComboBox3 = new RJCodeAdvance.RJControls.RJComboBox();
             panel6 = new Panel();
             panel5 = new Panel();
+            comboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
+            rjComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
+            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             flowLayoutPanel5 = new FlowLayoutPanel();
             label4 = new Label();
             flowLayoutPanel6 = new FlowLayoutPanel();
@@ -168,6 +168,11 @@ namespace PMSales.PresentationLayer
             rjButton9.TabIndex = 41;
             rjButton9.TextColor = Color.Transparent;
             rjButton9.UseVisualStyleBackColor = false;
+            rjButton9.Click += rjButton9_Click;
+            rjButton9.MouseDown += rjButton9_MouseDown;
+            rjButton9.MouseLeave += rjButton9_MouseLeave;
+            rjButton9.MouseHover += rjButton9_MouseHover;
+            rjButton9.MouseUp += rjButton9_MouseUp;
             // 
             // rjButton8
             // 
@@ -359,6 +364,96 @@ namespace PMSales.PresentationLayer
             rjButton5.TextColor = Color.White;
             rjButton5.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(panel7);
+            panel1.Controls.Add(panel8);
+            panel1.Controls.Add(rjComboBox2);
+            panel1.Controls.Add(rjComboBox3);
+            panel1.Controls.Add(panel6);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(rjComboBox1);
+            panel1.Controls.Add(rjButton1);
+            panel1.Controls.Add(flowLayoutPanel5);
+            panel1.Controls.Add(flowLayoutPanel6);
+            panel1.Controls.Add(flowLayoutPanel4);
+            panel1.Controls.Add(flowLayoutPanel3);
+            panel1.Controls.Add(flowLayoutPanel2);
+            panel1.Controls.Add(flowLayoutPanel1);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(labelCustomerCounttx);
+            panel1.Location = new Point(160, 46);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(790, 556);
+            panel1.TabIndex = 47;
+            // 
+            // panel7
+            // 
+            panel7.Location = new Point(40, 394);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(42, 32);
+            panel7.TabIndex = 81;
+            // 
+            // panel8
+            // 
+            panel8.Location = new Point(40, 429);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(42, 32);
+            panel8.TabIndex = 80;
+            // 
+            // rjComboBox2
+            // 
+            rjComboBox2.BackColor = Color.DodgerBlue;
+            rjComboBox2.BorderColor = Color.DodgerBlue;
+            rjComboBox2.BorderSize = 0;
+            rjComboBox2.Cursor = Cursors.No;
+            rjComboBox2.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox2.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rjComboBox2.ForeColor = Color.White;
+            rjComboBox2.IconColor = Color.White;
+            rjComboBox2.ListBackColor = Color.DarkTurquoise;
+            rjComboBox2.ListTextColor = Color.White;
+            rjComboBox2.Location = new Point(55, 394);
+            rjComboBox2.MinimumSize = new Size(200, 30);
+            rjComboBox2.Name = "rjComboBox2";
+            rjComboBox2.Size = new Size(200, 30);
+            rjComboBox2.TabIndex = 78;
+            rjComboBox2.Texts = "         Delivery Services";
+            // 
+            // rjComboBox3
+            // 
+            rjComboBox3.BackColor = Color.DodgerBlue;
+            rjComboBox3.BorderColor = Color.DodgerBlue;
+            rjComboBox3.BorderSize = 0;
+            rjComboBox3.Cursor = Cursors.No;
+            rjComboBox3.DropDownStyle = ComboBoxStyle.DropDown;
+            rjComboBox3.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rjComboBox3.ForeColor = Color.White;
+            rjComboBox3.IconColor = Color.White;
+            rjComboBox3.ListBackColor = Color.DarkTurquoise;
+            rjComboBox3.ListTextColor = Color.White;
+            rjComboBox3.Location = new Point(55, 429);
+            rjComboBox3.MinimumSize = new Size(200, 30);
+            rjComboBox3.Name = "rjComboBox3";
+            rjComboBox3.Size = new Size(200, 30);
+            rjComboBox3.TabIndex = 79;
+            rjComboBox3.Texts = "                     Rs. 00.00";
+            // 
+            // panel6
+            // 
+            panel6.Location = new Point(40, 359);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(42, 32);
+            panel6.TabIndex = 77;
+            // 
+            // panel5
+            // 
+            panel5.Location = new Point(40, 465);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(42, 32);
+            panel5.TabIndex = 76;
+            // 
             // comboBox1
             // 
             comboBox1.BackColor = Color.DodgerBlue;
@@ -371,11 +466,11 @@ namespace PMSales.PresentationLayer
             comboBox1.IconColor = Color.White;
             comboBox1.ListBackColor = Color.DarkTurquoise;
             comboBox1.ListTextColor = Color.White;
-            comboBox1.Location = new Point(51, 359);
+            comboBox1.Location = new Point(55, 359);
             comboBox1.MinimumSize = new Size(200, 30);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(200, 32);
-            comboBox1.TabIndex = 56;
+            comboBox1.Size = new Size(200, 30);
+            comboBox1.TabIndex = 74;
             comboBox1.Texts = "         Available Products";
             // 
             // rjComboBox1
@@ -390,36 +485,12 @@ namespace PMSales.PresentationLayer
             rjComboBox1.IconColor = Color.White;
             rjComboBox1.ListBackColor = Color.DarkTurquoise;
             rjComboBox1.ListTextColor = Color.White;
-            rjComboBox1.Location = new Point(148, 359);
+            rjComboBox1.Location = new Point(55, 465);
             rjComboBox1.MinimumSize = new Size(200, 30);
             rjComboBox1.Name = "rjComboBox1";
-            rjComboBox1.Size = new Size(200, 32);
-            rjComboBox1.TabIndex = 56;
-            rjComboBox1.Texts = "                             Tax %";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(rjButton1);
-            panel1.Controls.Add(panel7);
-            panel1.Controls.Add(panel8);
-            panel1.Controls.Add(rjComboBox2);
-            panel1.Controls.Add(rjComboBox3);
-            panel1.Controls.Add(panel6);
-            panel1.Controls.Add(panel5);
-            panel1.Controls.Add(flowLayoutPanel5);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(rjComboBox1);
-            panel1.Controls.Add(flowLayoutPanel6);
-            panel1.Controls.Add(flowLayoutPanel4);
-            panel1.Controls.Add(flowLayoutPanel3);
-            panel1.Controls.Add(flowLayoutPanel2);
-            panel1.Controls.Add(flowLayoutPanel1);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(labelCustomerCounttx);
-            panel1.Location = new Point(160, 46);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(790, 556);
-            panel1.TabIndex = 47;
+            rjComboBox1.Size = new Size(200, 30);
+            rjComboBox1.TabIndex = 75;
+            rjComboBox1.Texts = "                     Tax 0%";
             // 
             // rjButton1
             // 
@@ -439,72 +510,6 @@ namespace PMSales.PresentationLayer
             rjButton1.TextColor = Color.White;
             rjButton1.UseVisualStyleBackColor = false;
             rjButton1.Click += rjButton1_Click;
-            // 
-            // panel7
-            // 
-            panel7.Location = new Point(346, 359);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(10, 32);
-            panel7.TabIndex = 65;
-            // 
-            // panel8
-            // 
-            panel8.Location = new Point(528, 359);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(10, 32);
-            panel8.TabIndex = 64;
-            // 
-            // rjComboBox2
-            // 
-            rjComboBox2.BackColor = Color.DodgerBlue;
-            rjComboBox2.BorderColor = Color.DodgerBlue;
-            rjComboBox2.BorderSize = 0;
-            rjComboBox2.Cursor = Cursors.No;
-            rjComboBox2.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox2.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rjComboBox2.ForeColor = Color.White;
-            rjComboBox2.IconColor = Color.White;
-            rjComboBox2.ListBackColor = Color.DarkTurquoise;
-            rjComboBox2.ListTextColor = Color.White;
-            rjComboBox2.Location = new Point(325, 359);
-            rjComboBox2.MinimumSize = new Size(200, 30);
-            rjComboBox2.Name = "rjComboBox2";
-            rjComboBox2.Size = new Size(200, 32);
-            rjComboBox2.TabIndex = 62;
-            rjComboBox2.Texts = "         Delivery Services";
-            // 
-            // rjComboBox3
-            // 
-            rjComboBox3.BackColor = Color.DodgerBlue;
-            rjComboBox3.BorderColor = Color.DodgerBlue;
-            rjComboBox3.BorderSize = 0;
-            rjComboBox3.Cursor = Cursors.No;
-            rjComboBox3.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox3.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rjComboBox3.ForeColor = Color.White;
-            rjComboBox3.IconColor = Color.White;
-            rjComboBox3.ListBackColor = Color.DarkTurquoise;
-            rjComboBox3.ListTextColor = Color.White;
-            rjComboBox3.Location = new Point(422, 359);
-            rjComboBox3.MinimumSize = new Size(200, 30);
-            rjComboBox3.Name = "rjComboBox3";
-            rjComboBox3.Size = new Size(200, 32);
-            rjComboBox3.TabIndex = 63;
-            rjComboBox3.Texts = "                            Rs,";
-            // 
-            // panel6
-            // 
-            panel6.Location = new Point(39, 359);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(42, 32);
-            panel6.TabIndex = 59;
-            // 
-            // panel5
-            // 
-            panel5.Location = new Point(254, 359);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(10, 32);
-            panel5.TabIndex = 58;
             // 
             // flowLayoutPanel5
             // 
@@ -728,8 +733,6 @@ namespace PMSales.PresentationLayer
         private Label labelProductCount;
         private Label labelCustomerCounttx;
         private Panel panel4;
-        private RJCodeAdvance.RJControls.RJComboBox comboBox1;
-        private RJCodeAdvance.RJControls.RJComboBox rjComboBox1;
         private RJCodeAdvance.RJControls.RJButton rjButton14;
         private RJCodeAdvance.RJControls.RJButton rjButton13;
         private RJCodeAdvance.RJControls.RJButton rjButton5;
@@ -737,12 +740,14 @@ namespace PMSales.PresentationLayer
         private Label label4;
         private FlowLayoutPanel flowLayoutPanel6;
         private Label label5;
-        private Panel panel5;
-        private Panel panel6;
+        private RJCodeAdvance.RJControls.RJButton rjButton1;
         private Panel panel7;
         private Panel panel8;
         private RJCodeAdvance.RJControls.RJComboBox rjComboBox2;
         private RJCodeAdvance.RJControls.RJComboBox rjComboBox3;
-        private RJCodeAdvance.RJControls.RJButton rjButton1;
+        private Panel panel6;
+        private Panel panel5;
+        private RJCodeAdvance.RJControls.RJComboBox comboBox1;
+        private RJCodeAdvance.RJControls.RJComboBox rjComboBox1;
     }
 }

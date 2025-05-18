@@ -1,35 +1,34 @@
-﻿using PMSales.PresentationLayer.UserForm;
-using RJCodeAdvance.RJControls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using PMSales.BusinessLayer;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PMSalesBLL;
+using PMSalesDomainEntities;
+using RJCodeAdvance.RJControls;
 
-namespace PMSales.PresentationLayer
+namespace PMSales.PresentationLayer.UserForm
 {
-    public partial class Dashboard : Form
+    public partial class salesFormReport : Form
     {
-        public Dashboard()
+        private readonly SalesBL salesBL = new SalesBL();
+
+        public salesFormReport()
         {
             InitializeComponent();
-            DisplayAssemblyVersion();
-            DisplayCustomerCount();
-            PopulateComboBox1(); // Ensure this is called
-            DisplayProductCount();
-
+            DisplayCurrentDateTime();
+            LoadSalesData();
         }
 
-        private void DisplayAssemblyVersion()
+        private void DisplayCurrentDateTime()
         {
-            var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "Unknown Version";
-            labelCustomerCounttx.Text = $"Vs{version}";
+            var now = DateTime.Now;
+            labelCustomerCounttx.Text = now.ToString("yyyy-MM-dd hh:mm:ss tt");
         }
 
         #region btn 4 and 6 and 7 and 9
@@ -57,6 +56,11 @@ namespace PMSales.PresentationLayer
         private void rjButton4_MouseUp(object sender, MouseEventArgs e) //eveent 5
         {
             ApplyHoverStyle(rjButton4);
+        }
+
+        private void rjButton4_Click(object sender, EventArgs e)
+        {
+
         }
 
         //btn 6
@@ -176,14 +180,36 @@ namespace PMSales.PresentationLayer
         #endregion
 
         #region Features
-        //Customers 
-        private void rjButton4_Click(object sender, EventArgs e)
+        private void salesReportGridviwer_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
-            // Instantiate the customerForm1Add form
-            var customerForm = new customerForm1Add();
+            var grid = sender as DataGridView;
+            if (grid == null)
+                return;
 
-            // Show the customerForm1Add form
-            customerForm.Show();
+            var rowIdx = (e.RowIndex + 1).ToString();
+
+            var centerFormat = new StringFormat()
+            {
+                Alignment = StringAlignment.Center,
+                LineAlignment = StringAlignment.Center
+            };
+
+            Rectangle headerBounds = new Rectangle(
+                e.RowBounds.Left,
+                e.RowBounds.Top,
+                grid.RowHeadersWidth,
+                e.RowBounds.Height);
+
+            e.Graphics.DrawString(rowIdx, this.Font, SystemBrushes.ControlText, headerBounds, centerFormat);
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            // Instantiate the Dashboard2View form
+            var Dashboard2View = new Dashboard();
+
+            // Show the Dashboard2View form
+            Dashboard2View.Show();
 
             // Close the current Dashboard form
             this.Close();
@@ -209,88 +235,27 @@ namespace PMSales.PresentationLayer
             this.Close();
         }
 
+        
         #endregion
 
-        #region Dashboard Functions
-
-        private void DisplayCustomerCount()
-        {
-            // Assuming GetCustomerCount() retrieves the number of customers
-            int customerCount = GetCustomerCount();
-            labelCustomerCount.Text = $"Customers: {customerCount}";
-        }
-
-        // method to retrieve customer count (replace with actual implementation)
-        private int GetCustomerCount()
-        {
-            var customerBL = new PMSales.BusinessLayer.CustomerBL();
-            return customerBL.GetCustomerCount();
-        }
-
-        private void DisplayProductCount()
-        {
-            // Assuming GetProductCount() retrieves the number of items
-            int productCount = GetProductCount();
-            labelProductCount.Text = $"Products: {productCount}";
-        }
-
-        // method to retrieve product count (replace with actual implementation)
-        private int GetProductCount()
-        {
-            var customerBL = new PMSales.BusinessLayer.CustomerBL();
-            return customerBL.GetProductCount();
-        }
-
-        // Items dropdown
-        private void PopulateComboBox1()
+        private void LoadSalesData()
         {
             try
             {
-                var productBL = new PMSales.BusinessLayer.ProductBLL();
-                List<string> products = productBL.GetProductNames(); // Declare 'products' here
-
-                comboBox1.Items.Clear();
-
-                if (products.Count == 0) // Check after 'products' is declared
+                var salesList = salesBL.GetAllSales();
+                if (salesList == null || salesList.Count == 0)
                 {
-                    MessageBox.Show("No products available.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No sales data found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else
-                {
-                    comboBox1.Items.AddRange(products.ToArray());
-                }
+                salesReportGridviwer.DataSource = salesList;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error loading products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error loading sales data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        #endregion
 
+        
 
-
-        private void rjButton1_Click(object sender, EventArgs e)
-        {
-            // Instantiate the Dashboard2View form
-            var Dashboard2View = new Dashboard2();
-
-            // Show the Dashboard2View form
-            Dashboard2View.Show();
-
-            // Close the current Dashboard form
-            this.Close();
-        }
-
-        private void rjButton9_Click(object sender, EventArgs e)
-        {
-            // Instantiate the SalesReportView form
-            var SalesReportView = new salesFormReport();
-
-            // Show the SalesReportView form
-            SalesReportView.Show();
-
-            // Close the current Dashboard form
-            this.Close();
-        }
     }
 }

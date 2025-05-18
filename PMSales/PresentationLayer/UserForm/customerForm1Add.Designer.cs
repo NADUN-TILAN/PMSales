@@ -514,6 +514,11 @@
             rjButton9.TabIndex = 48;
             rjButton9.TextColor = Color.Transparent;
             rjButton9.UseVisualStyleBackColor = false;
+            rjButton9.Click += rjButton9_Click;
+            rjButton9.MouseDown += rjButton9_MouseDown;
+            rjButton9.MouseLeave += rjButton9_MouseLeave;
+            rjButton9.MouseHover += rjButton9_MouseHover;
+            rjButton9.MouseUp += rjButton9_MouseUp;
             // 
             // rjButton8
             // 

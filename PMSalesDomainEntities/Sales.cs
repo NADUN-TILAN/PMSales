@@ -40,11 +40,13 @@ namespace PMSalesDomainEntities
 
         // Sale Info
         public decimal TotalPrice { get; set; }
-        public string? WarrantyDueDate { get; set; }
+        public DateTime? WarrantyDueDate { get; set; }
         public string? WarrantyClaims { get; set; }
         public int? ProductStatus { get; set; }
         public int? ProductWarrantyStatus { get; set; }
         public int? ConfirmOrders { get; set; }
         public int? ReturnedOrders { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }
