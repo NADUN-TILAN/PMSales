@@ -281,6 +281,71 @@ namespace PMSalesDAL.DatabaseHelper
         }
 
 
+        public bool InsertSale(Sales sale)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("PM_INSERT_CONFIRMED_SALES", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        // Customer info
+                        cmd.Parameters.AddWithValue("@fname", sale.FirstName ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@sname", sale.SecondName ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@lname", sale.LastName ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@address", sale.Address ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@city", sale.City ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@phone1", sale.ContactNo1 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@phone2", sale.ContactNo2 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@phone3", sale.ContactNo3 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@email1", sale.Email1 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@email2", sale.Email2 ?? (object)DBNull.Value);
+
+                        // Product/Item info
+                        cmd.Parameters.AddWithValue("@item1", sale.Item1 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty1", sale.Qty1 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@item2", sale.Item2 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty2", sale.Qty2 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@item3", sale.Item3 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty3", sale.Qty3 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@item4", sale.Item4 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty4", sale.Qty4 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@item5", sale.Item5 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty5", sale.Qty5 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@item6", sale.Item6 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty6", sale.Qty6 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@item7", sale.Item7 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty7", sale.Qty7 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@item8", sale.Item8 ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@qty8", sale.Qty8 ?? (object)DBNull.Value);
+
+                        // Sale info
+                        cmd.Parameters.AddWithValue("@totalprice", sale.TotalPrice);
+                        cmd.Parameters.AddWithValue("@warrantyduedate", sale.WarrantyDueDate ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@warrantyclaims", sale.WarrantyClaims ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@prodstatus", sale.ProductStatus ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@prodwarrantystatus", sale.ProductWarrantyStatus ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@confirmorders", sale.ConfirmOrders ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@returnedorders", sale.ReturnedOrders ?? (object)DBNull.Value);
+
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
+        }
+
+
+
+
 
 
     }

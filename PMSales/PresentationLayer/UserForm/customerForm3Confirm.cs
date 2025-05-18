@@ -1,4 +1,5 @@
-﻿using PMSalesDomainEntities;
+﻿using PMSalesBLL;
+using PMSalesDomainEntities;
 using System;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
@@ -89,7 +90,84 @@ namespace PMSales.PresentationLayer.UserForm
             rjTextBox11.Enabled = false;
             rjTextBox12.Enabled = false;
 
-            
         }
+
+        // Confirm Sales
+        private void buttonConfirm_Click(object sender, EventArgs e)
+        {
+            var salesBL = new SalesBL();
+
+            var sale = new Sales
+            {
+                // Customer Info
+                FirstName = _customer.FirstName,
+                SecondName = _customer.SecondName,
+                LastName = _customer.LastName,
+                Address = _customer.Address,
+                City = _customer.City,
+                ContactNo1 = _customer.Phone1,
+                ContactNo2 = _customer.Phone2,
+                ContactNo3 = _customer.Phone3,
+                Email1 = _customer.Email1,
+                Email2 = _customer.Email2,
+
+                // Product/Item Info
+                Item1 = _product.product1,
+                Qty1 = _product.qty1?.ToString(),
+                Item2 = _product.product2,
+                Qty2 = _product.qty2?.ToString(),
+                Item3 = _product.product3,
+                Qty3 = _product.qty3?.ToString(),
+                Item4 = _product.product4,
+                Qty4 = _product.qty4?.ToString(),
+                Item5 = _product.product5,
+                Qty5 = _product.qty5?.ToString(),
+                Item6 = _product.product6,
+                Qty6 = _product.qty6?.ToString(),
+                Item7 = _product.product7,
+                Qty7 = _product.qty7?.ToString(),
+                Item8 = _product.product8,
+                Qty8 = _product.qty8?.ToString(),
+
+                // Sale Info
+                TotalPrice = _product.TotalAmount,
+                // Set these as needed from our UI or business logic:
+                WarrantyDueDate = null,
+                WarrantyClaims = null,
+                ProductStatus = null,
+                ProductWarrantyStatus = null,
+                ConfirmOrders = 1,
+                ReturnedOrders = null
+            };
+
+            bool result = salesBL.SaveConfirmSale(sale);
+
+            if (result)
+            {
+                MessageBox.Show(
+                    "The sale has been saved successfully.",
+                    "Sale Confirmation",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+            }
+            else
+            {
+                MessageBox.Show(
+                    "An error occurred while saving the sale. Please try again.",
+                    "Save Failed",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+
+            this.Hide();
+            var homeForm = new Dashboard();
+            homeForm.Show();
+
+        }
+
+
+
     }
 }

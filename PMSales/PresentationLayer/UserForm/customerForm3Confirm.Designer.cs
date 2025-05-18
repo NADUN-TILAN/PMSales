@@ -44,7 +44,7 @@
             rjButton6 = new RJCodeAdvance.RJControls.RJButton();
             rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             label3 = new Label();
-            buttonSave = new RJCodeAdvance.RJControls.RJButton();
+            buttonConfirm = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             rjTextBox12 = new RJCodeAdvance.RJControls.RJTextBox();
@@ -346,22 +346,23 @@
             label3.TabIndex = 26;
             label3.Text = "Confirmation of Sales Application";
             // 
-            // buttonSave
+            // buttonConfirm
             // 
-            buttonSave.BackColor = Color.DodgerBlue;
-            buttonSave.BackgroundColor = Color.DodgerBlue;
-            buttonSave.BorderColor = Color.PaleVioletRed;
-            buttonSave.BorderRadius = 20;
-            buttonSave.BorderSize = 0;
-            buttonSave.FlatStyle = FlatStyle.Flat;
-            buttonSave.ForeColor = Color.White;
-            buttonSave.Location = new Point(498, 523);
-            buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(361, 35);
-            buttonSave.TabIndex = 42;
-            buttonSave.Text = "--- Complete ---";
-            buttonSave.TextColor = Color.White;
-            buttonSave.UseVisualStyleBackColor = false;
+            buttonConfirm.BackColor = Color.DodgerBlue;
+            buttonConfirm.BackgroundColor = Color.DodgerBlue;
+            buttonConfirm.BorderColor = Color.PaleVioletRed;
+            buttonConfirm.BorderRadius = 20;
+            buttonConfirm.BorderSize = 0;
+            buttonConfirm.FlatStyle = FlatStyle.Flat;
+            buttonConfirm.ForeColor = Color.White;
+            buttonConfirm.Location = new Point(498, 523);
+            buttonConfirm.Name = "buttonConfirm";
+            buttonConfirm.Size = new Size(361, 35);
+            buttonConfirm.TabIndex = 42;
+            buttonConfirm.Text = "--- Complete ---";
+            buttonConfirm.TextColor = Color.White;
+            buttonConfirm.UseVisualStyleBackColor = false;
+            buttonConfirm.Click += buttonConfirm_Click;
             // 
             // panel1
             // 
@@ -1019,7 +1020,7 @@
             Controls.Add(textBoxAddress);
             Controls.Add(labelCity);
             Controls.Add(textBoxCity);
-            Controls.Add(buttonSave);
+            Controls.Add(buttonConfirm);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -1039,7 +1040,7 @@
         private RJCodeAdvance.RJControls.RJButton rjButton4;
         private Panel panel3;
         private Label label3;
-        private RJCodeAdvance.RJControls.RJButton buttonSave;
+        private RJCodeAdvance.RJControls.RJButton buttonConfirm;
         private Panel panel1;
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox2;
         private Label label1;

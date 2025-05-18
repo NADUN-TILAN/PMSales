@@ -1,4 +1,4 @@
-using PMSales.PresentationLayer;
+﻿using PMSales.PresentationLayer;
 using System;
 using System.Reflection;
 using System.Windows.Forms;
@@ -26,7 +26,7 @@ namespace PMSales
         {
             // Initialize progress bar properties
             hopeProgressBar1.ValueNumber = 0;
-            hopeProgressBar1.FullBallonText = "Completed!";
+            hopeProgressBar1.FullBallonText = "✔️";
             hopeProgressBar1.ProgressBarStyle = ReaLTaiizor.Controls.HopeProgressBar.Style.ToolTip;
 
             // Optional: Update color at runtime (already set in Designer)
