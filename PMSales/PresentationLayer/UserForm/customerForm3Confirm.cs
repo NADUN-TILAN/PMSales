@@ -72,6 +72,9 @@ namespace PMSales.PresentationLayer.UserForm
             rjTextBox11.Texts = _product.qty7?.ToString() ?? "";
             rjTextBox12.Texts = _product.qty8?.ToString() ?? "";
 
+            // Set total amount
+            rjTextBox17.Texts = "Rs. " + _product.TotalAmount.ToString("N2");
+
             // Set all product/qty textboxes to read-only
             rjTextBox1.Enabled = false;
             rjTextBox2.Enabled = false;
@@ -89,6 +92,9 @@ namespace PMSales.PresentationLayer.UserForm
             rjTextBox10.Enabled = false;
             rjTextBox11.Enabled = false;
             rjTextBox12.Enabled = false;
+
+            // Set total amount textbox to read-only
+            rjTextBox17.Enabled = false;
 
         }
 

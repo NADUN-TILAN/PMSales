@@ -78,6 +78,8 @@
             textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
             textBoxAddress = new RJCodeAdvance.RJControls.RJTextBox();
             labelCity = new Label();
+            rjTextBox17 = new RJCodeAdvance.RJControls.RJTextBox();
+            label2 = new Label();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
@@ -355,7 +357,7 @@
             buttonConfirm.BorderSize = 0;
             buttonConfirm.FlatStyle = FlatStyle.Flat;
             buttonConfirm.ForeColor = Color.White;
-            buttonConfirm.Location = new Point(498, 523);
+            buttonConfirm.Location = new Point(498, 544);
             buttonConfirm.Name = "buttonConfirm";
             buttonConfirm.Size = new Size(361, 35);
             buttonConfirm.TabIndex = 42;
@@ -366,6 +368,8 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(rjTextBox17);
+            panel1.Controls.Add(label2);
             panel1.Controls.Add(rjButton5);
             panel1.Controls.Add(rjTextBox12);
             panel1.Controls.Add(rjTextBox11);
@@ -401,7 +405,7 @@
             rjButton5.BorderSize = 0;
             rjButton5.FlatStyle = FlatStyle.Flat;
             rjButton5.ForeColor = Color.White;
-            rjButton5.Location = new Point(201, 477);
+            rjButton5.Location = new Point(201, 498);
             rjButton5.Name = "rjButton5";
             rjButton5.Size = new Size(168, 35);
             rjButton5.TabIndex = 69;
@@ -1001,6 +1005,38 @@
             labelCity.TabIndex = 40;
             labelCity.Text = "City :";
             // 
+            // rjTextBox17
+            // 
+            rjTextBox17.BackColor = Color.White;
+            rjTextBox17.BorderColor = Color.Gray;
+            rjTextBox17.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox17.BorderRadius = 10;
+            rjTextBox17.BorderSize = 2;
+            rjTextBox17.Cursor = Cursors.No;
+            rjTextBox17.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox17.ForeColor = Color.Black;
+            rjTextBox17.Location = new Point(202, 459);
+            rjTextBox17.Margin = new Padding(4);
+            rjTextBox17.Multiline = false;
+            rjTextBox17.Name = "rjTextBox17";
+            rjTextBox17.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox17.PasswordChar = false;
+            rjTextBox17.PlaceholderColor = Color.DarkGray;
+            rjTextBox17.PlaceholderText = "Total Price Rs.";
+            rjTextBox17.Size = new Size(498, 31);
+            rjTextBox17.TabIndex = 70;
+            rjTextBox17.Texts = "";
+            rjTextBox17.UnderlinedStyle = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(82, 464);
+            label2.Name = "label2";
+            label2.Size = new Size(80, 15);
+            label2.TabIndex = 71;
+            label2.Text = "Total Price Rs.";
+            // 
             // customerForm3Confirm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1085,5 +1121,7 @@
         private RJCodeAdvance.RJControls.RJButton rjButton14;
         private RJCodeAdvance.RJControls.RJButton rjButton13;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
+        private RJCodeAdvance.RJControls.RJTextBox rjTextBox17;
+        private Label label2;
     }
 }
