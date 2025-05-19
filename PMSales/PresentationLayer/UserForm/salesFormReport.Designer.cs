@@ -158,7 +158,7 @@
             rjButton9.Size = new Size(47, 44);
             rjButton9.TabIndex = 41;
             rjButton9.TextColor = Color.Transparent;
-            rjButton9.UseVisualStyleBackColor = false;           
+            rjButton9.UseVisualStyleBackColor = false;
             // 
             // rjButton8
             // 
@@ -327,7 +327,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(81, 26);
+            label3.Location = new Point(17, 26);
             label3.Name = "label3";
             label3.Size = new Size(144, 30);
             label3.TabIndex = 26;
@@ -337,7 +337,7 @@
             // 
             labelCustomerCounttx.AutoSize = true;
             labelCustomerCounttx.Font = new Font("Yu Gothic UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelCustomerCounttx.Location = new Point(89, 510);
+            labelCustomerCounttx.Location = new Point(14, 510);
             labelCustomerCounttx.Name = "labelCustomerCounttx";
             labelCustomerCounttx.Size = new Size(80, 21);
             labelCustomerCounttx.TabIndex = 55;
@@ -364,7 +364,7 @@
             rjButton2.FlatStyle = FlatStyle.Flat;
             rjButton2.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold);
             rjButton2.ForeColor = Color.White;
-            rjButton2.Location = new Point(741, 497);
+            rjButton2.Location = new Point(737, 502);
             rjButton2.Name = "rjButton2";
             rjButton2.Size = new Size(37, 34);
             rjButton2.TabIndex = 67;
@@ -380,11 +380,11 @@
             salesReportGridviwer.BorderStyle = BorderStyle.Fixed3D;
             salesReportGridviwer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             salesReportGridviwer.GridColor = Color.CornflowerBlue;
-            salesReportGridviwer.Location = new Point(89, 78);
+            salesReportGridviwer.Location = new Point(16, 78);
             salesReportGridviwer.Name = "salesReportGridviwer";
             salesReportGridviwer.ReadOnly = true;
             salesReportGridviwer.ScrollBars = ScrollBars.Horizontal;
-            salesReportGridviwer.Size = new Size(687, 412);
+            salesReportGridviwer.Size = new Size(759, 413);
             salesReportGridviwer.TabIndex = 63;
             salesReportGridviwer.RowPostPaint += salesReportGridviwer_RowPostPaint;
             // 

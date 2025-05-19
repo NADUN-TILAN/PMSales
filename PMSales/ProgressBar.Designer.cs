@@ -45,7 +45,7 @@ namespace PMSales
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(45, 235);
+            label1.Location = new Point(48, 235);
             label1.Name = "label1";
             label1.Size = new Size(213, 16);
             label1.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace PMSales
             // 
             panel1.BackgroundImage = Properties.Resources.NewSoft___Copy;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Location = new Point(77, 157);
+            panel1.Location = new Point(85, 157);
             panel1.Name = "panel1";
             panel1.Size = new Size(133, 120);
             panel1.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace PMSales
             // 
             labelCustomerCounttx.AutoSize = true;
             labelCustomerCounttx.Font = new Font("Yu Gothic UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelCustomerCounttx.Location = new Point(12, 9);
+            labelCustomerCounttx.Location = new Point(-3, 151);
             labelCustomerCounttx.Name = "labelCustomerCounttx";
             labelCustomerCounttx.Size = new Size(98, 21);
             labelCustomerCounttx.TabIndex = 56;
@@ -75,8 +75,9 @@ namespace PMSales
             panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
             panel2.Controls.Add(label1);
+            panel2.Controls.Add(labelCustomerCounttx);
             panel2.Controls.Add(panel1);
-            panel2.Location = new Point(122, -26);
+            panel2.Location = new Point(121, -26);
             panel2.Name = "panel2";
             panel2.Size = new Size(310, 250);
             panel2.TabIndex = 3;
@@ -89,7 +90,6 @@ namespace PMSales
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(556, 263);
             Controls.Add(hopeProgressBar1);
-            Controls.Add(labelCustomerCounttx);
             Controls.Add(panel2);
             Cursor = Cursors.WaitCursor;
             FormBorderStyle = FormBorderStyle.None;
@@ -99,7 +99,6 @@ namespace PMSales
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
         private Label label1;
         private System.Windows.Forms.Panel panel1;

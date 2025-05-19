@@ -1,4 +1,6 @@
-﻿using PMSales.PresentationLayer.UserForm;
+﻿using PMSales.BusinessLayer;
+using PMSales.PresentationLayer.UserForm;
+using PMSalesBLL;
 using RJCodeAdvance.RJControls;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using PMSales.BusinessLayer;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,6 +24,8 @@ namespace PMSales.PresentationLayer
             DisplayCustomerCount();
             PopulateComboBox1(); // Ensure this is called
             DisplayProductCount();
+            GetConfirmSalesCount();
+            DisplayConfirmSalesCount();
 
         }
 
@@ -239,9 +242,21 @@ namespace PMSales.PresentationLayer
         {
             var customerBL = new PMSales.BusinessLayer.CustomerBL();
             return customerBL.GetProductCount();
+        }        
+
+        // Displays the confirmed sales count on the label
+        private void DisplayConfirmSalesCount()
+        {
+            int confirmSalesCount = GetConfirmSalesCount();
+            label2.Text = $"Confirmed Sales: {confirmSalesCount}";
+        }
+        // Returns the confirmed sales count
+        private int GetConfirmSalesCount()
+        {
+            var salesBL = new SalesBL();
+            return salesBL.GetSalesCount();
         }
 
-            int confirmSalesCount = GetConfirmSalesCount();
         // Items dropdown
         private void PopulateComboBox1()
         {
