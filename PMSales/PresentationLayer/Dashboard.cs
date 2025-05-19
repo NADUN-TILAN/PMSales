@@ -241,6 +241,7 @@ namespace PMSales.PresentationLayer
             return customerBL.GetProductCount();
         }
 
+            int confirmSalesCount = GetConfirmSalesCount();
         // Items dropdown
         private void PopulateComboBox1()
         {
