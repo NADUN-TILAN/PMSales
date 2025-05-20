@@ -126,9 +126,9 @@ namespace PMSales.PresentationLayer.UserForm
             ApplyLeaveStyle(rjButton9);
         }
 
-        private void rjButton9_MouseClick(object sender, MouseEventArgs e) //eveent 3
+        private void rjButton9_Click(object sender, EventArgs e)
         {
-            ApplyClickStyle(rjButton9);
+            ApplyHoverStyle(rjButton9);
         }
 
         private void rjButton9_MouseDown(object sender, MouseEventArgs e) //eveent 4
@@ -235,7 +235,7 @@ namespace PMSales.PresentationLayer.UserForm
             this.Close();
         }
 
-        
+
         #endregion
 
         private void LoadSalesData()
@@ -256,6 +256,5 @@ namespace PMSales.PresentationLayer.UserForm
         }
 
         
-
     }
 }

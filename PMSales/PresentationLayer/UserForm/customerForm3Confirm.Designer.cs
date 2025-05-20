@@ -46,6 +46,8 @@
             label3 = new Label();
             buttonConfirm = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
+            rjTextBox17 = new RJCodeAdvance.RJControls.RJTextBox();
+            label2 = new Label();
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             rjTextBox12 = new RJCodeAdvance.RJControls.RJTextBox();
             rjTextBox11 = new RJCodeAdvance.RJControls.RJTextBox();
@@ -78,8 +80,6 @@
             textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
             textBoxAddress = new RJCodeAdvance.RJControls.RJTextBox();
             labelCity = new Label();
-            rjTextBox17 = new RJCodeAdvance.RJControls.RJTextBox();
-            label2 = new Label();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
@@ -253,6 +253,11 @@
             rjButton9.TabIndex = 48;
             rjButton9.TextColor = Color.Transparent;
             rjButton9.UseVisualStyleBackColor = false;
+            rjButton9.Click += rjButton9_Click;
+            rjButton9.MouseDown += rjButton9_MouseDown;
+            rjButton9.MouseLeave += rjButton9_MouseLeave;
+            rjButton9.MouseHover += rjButton9_MouseHover;
+            rjButton9.MouseUp += rjButton9_MouseUp;
             // 
             // rjButton8
             // 
@@ -295,6 +300,11 @@
             rjButton7.TabIndex = 46;
             rjButton7.TextColor = Color.Transparent;
             rjButton7.UseVisualStyleBackColor = false;
+            rjButton7.Click += rjButton7_Click;
+            rjButton7.MouseDown += rjButton7_MouseDown;
+            rjButton7.MouseLeave += rjButton7_MouseLeave;
+            rjButton7.MouseHover += rjButton7_MouseHover;
+            rjButton7.MouseUp += rjButton7_MouseUp;
             // 
             // rjButton6
             // 
@@ -316,6 +326,11 @@
             rjButton6.TabIndex = 45;
             rjButton6.TextColor = Color.Transparent;
             rjButton6.UseVisualStyleBackColor = false;
+            rjButton6.Click += rjButton6_Click;
+            rjButton6.MouseDown += rjButton6_MouseDown;
+            rjButton6.MouseLeave += rjButton6_MouseLeave;
+            rjButton6.MouseHover += rjButton6_MouseHover;
+            rjButton6.MouseUp += rjButton6_MouseUp;
             // 
             // rjButton3
             // 
@@ -337,6 +352,11 @@
             rjButton3.TabIndex = 44;
             rjButton3.TextColor = Color.Transparent;
             rjButton3.UseVisualStyleBackColor = false;
+            rjButton3.Click += rjButton4_Click;
+            rjButton3.MouseDown += rjButton4_MouseDown;
+            rjButton3.MouseLeave += rjButton4_MouseLeave;
+            rjButton3.MouseHover += rjButton4_MouseHover;
+            rjButton3.MouseUp += rjButton4_MouseUp;
             // 
             // label3
             // 
@@ -395,6 +415,38 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 47;
+            // 
+            // rjTextBox17
+            // 
+            rjTextBox17.BackColor = Color.White;
+            rjTextBox17.BorderColor = Color.Gray;
+            rjTextBox17.BorderFocusColor = Color.DodgerBlue;
+            rjTextBox17.BorderRadius = 10;
+            rjTextBox17.BorderSize = 2;
+            rjTextBox17.Cursor = Cursors.No;
+            rjTextBox17.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rjTextBox17.ForeColor = Color.Black;
+            rjTextBox17.Location = new Point(202, 459);
+            rjTextBox17.Margin = new Padding(4);
+            rjTextBox17.Multiline = false;
+            rjTextBox17.Name = "rjTextBox17";
+            rjTextBox17.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox17.PasswordChar = false;
+            rjTextBox17.PlaceholderColor = Color.DarkGray;
+            rjTextBox17.PlaceholderText = "Total Price Rs.";
+            rjTextBox17.Size = new Size(498, 31);
+            rjTextBox17.TabIndex = 70;
+            rjTextBox17.Texts = "";
+            rjTextBox17.UnderlinedStyle = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(82, 464);
+            label2.Name = "label2";
+            label2.Size = new Size(80, 15);
+            label2.TabIndex = 71;
+            label2.Text = "Total Price Rs.";
             // 
             // rjButton5
             // 
@@ -1004,38 +1056,6 @@
             labelCity.Size = new Size(34, 15);
             labelCity.TabIndex = 40;
             labelCity.Text = "City :";
-            // 
-            // rjTextBox17
-            // 
-            rjTextBox17.BackColor = Color.White;
-            rjTextBox17.BorderColor = Color.Gray;
-            rjTextBox17.BorderFocusColor = Color.DodgerBlue;
-            rjTextBox17.BorderRadius = 10;
-            rjTextBox17.BorderSize = 2;
-            rjTextBox17.Cursor = Cursors.No;
-            rjTextBox17.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjTextBox17.ForeColor = Color.Black;
-            rjTextBox17.Location = new Point(202, 459);
-            rjTextBox17.Margin = new Padding(4);
-            rjTextBox17.Multiline = false;
-            rjTextBox17.Name = "rjTextBox17";
-            rjTextBox17.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox17.PasswordChar = false;
-            rjTextBox17.PlaceholderColor = Color.DarkGray;
-            rjTextBox17.PlaceholderText = "Total Price Rs.";
-            rjTextBox17.Size = new Size(498, 31);
-            rjTextBox17.TabIndex = 70;
-            rjTextBox17.Texts = "";
-            rjTextBox17.UnderlinedStyle = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(82, 464);
-            label2.Name = "label2";
-            label2.Size = new Size(80, 15);
-            label2.TabIndex = 71;
-            label2.Text = "Total Price Rs.";
             // 
             // customerForm3Confirm
             // 
