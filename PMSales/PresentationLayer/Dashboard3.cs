@@ -16,5 +16,17 @@ namespace PMSales.PresentationLayer.UserForm
         {
             InitializeComponent();
         }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            // Instantiate the Dashboard1View form
+            var Dashboard2View = new Dashboard2();
+
+            // Show the Dashboard1View form
+            Dashboard2View.Show();
+
+            // Close the current Dashboard form
+            this.Close();
+        }
     }
 }

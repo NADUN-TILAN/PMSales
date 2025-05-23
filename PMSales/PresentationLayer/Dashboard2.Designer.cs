@@ -46,16 +46,17 @@
             rjButton13 = new RJCodeAdvance.RJControls.RJButton();
             rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
-            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
-            dataGridView1 = new DataGridView();
-            dataGridView2 = new DataGridView();
-            labelEmail2 = new Label();
+            rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             label1 = new Label();
+            labelEmail2 = new Label();
+            dataGridView2 = new DataGridView();
+            dataGridView1 = new DataGridView();
+            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -348,6 +349,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(rjButton2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(labelEmail2);
             panel1.Controls.Add(dataGridView2);
@@ -360,40 +362,33 @@
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 50;
             // 
-            // rjButton1
+            // rjButton2
             // 
-            rjButton1.BackColor = SystemColors.HotTrack;
-            rjButton1.BackgroundColor = SystemColors.HotTrack;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 20;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold);
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(739, 496);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(37, 34);
-            rjButton1.TabIndex = 62;
-            rjButton1.Text = "<<";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
-            rjButton1.Click += rjButton1_Click;
+            rjButton2.BackColor = Color.DodgerBlue;
+            rjButton2.BackgroundColor = Color.DodgerBlue;
+            rjButton2.BorderColor = Color.PaleVioletRed;
+            rjButton2.BorderRadius = 20;
+            rjButton2.BorderSize = 0;
+            rjButton2.FlatStyle = FlatStyle.Flat;
+            rjButton2.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold);
+            rjButton2.ForeColor = Color.White;
+            rjButton2.Location = new Point(740, 493);
+            rjButton2.Name = "rjButton2";
+            rjButton2.Size = new Size(37, 34);
+            rjButton2.TabIndex = 67;
+            rjButton2.Text = ">>";
+            rjButton2.TextColor = Color.White;
+            rjButton2.UseVisualStyleBackColor = false;
+            rjButton2.Click += rjButton2_Click;
             // 
-            // dataGridView1
+            // label1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(81, 75);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(695, 194);
-            dataGridView1.TabIndex = 63;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(81, 279);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(695, 194);
-            dataGridView2.TabIndex = 64;
+            label1.AutoSize = true;
+            label1.Location = new Point(7, 279);
+            label1.Name = "label1";
+            label1.Size = new Size(48, 15);
+            label1.TabIndex = 66;
+            label1.Text = "Cancels";
             // 
             // labelEmail2
             // 
@@ -404,14 +399,40 @@
             labelEmail2.TabIndex = 65;
             labelEmail2.Text = "Profits:";
             // 
-            // label1
+            // dataGridView2
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(7, 279);
-            label1.Name = "label1";
-            label1.Size = new Size(48, 15);
-            label1.TabIndex = 66;
-            label1.Text = "Cancels";
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(81, 279);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(695, 194);
+            dataGridView2.TabIndex = 64;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(81, 75);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(695, 194);
+            dataGridView1.TabIndex = 63;
+            // 
+            // rjButton1
+            // 
+            rjButton1.BackColor = SystemColors.HotTrack;
+            rjButton1.BackgroundColor = SystemColors.HotTrack;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 20;
+            rjButton1.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Flat;
+            rjButton1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold);
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Location = new Point(700, 493);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(37, 34);
+            rjButton1.TabIndex = 62;
+            rjButton1.Text = "<<";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += rjButton1_Click;
             // 
             // Dashboard2
             // 
@@ -430,8 +451,8 @@
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -458,5 +479,6 @@
         private DataGridView dataGridView1;
         private Label label1;
         private Label labelEmail2;
+        private RJCodeAdvance.RJControls.RJButton rjButton2;
     }
 }

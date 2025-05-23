@@ -192,6 +192,16 @@ namespace PMSales.PresentationLayer
             this.Close();
         }
 
-        
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            // Instantiate the Dashboard3View form
+            var Dashboard3View = new Dashboard3();
+
+            // Show the Dashboard3View form
+            Dashboard3View.Show();
+
+            // Close the current Dashboard form
+            this.Close();
+        }
     }
 }

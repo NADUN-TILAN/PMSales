@@ -32,6 +32,8 @@
             dataGridView2 = new DataGridView();
             rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             panel1 = new Panel();
+            label1 = new Label();
+            labelEmail2 = new Label();
             dataGridView1 = new DataGridView();
             label3 = new Label();
             labelCustomerCounttx = new Label();
@@ -49,8 +51,6 @@
             rjButton14 = new RJCodeAdvance.RJControls.RJButton();
             rjButton12 = new RJCodeAdvance.RJControls.RJButton();
             panel3 = new Panel();
-            labelEmail2 = new Label();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -83,6 +83,7 @@
             rjButton1.Text = "<<";
             rjButton1.TextColor = Color.White;
             rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += rjButton1_Click;
             // 
             // panel1
             // 
@@ -97,6 +98,24 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 53;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(5, 279);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 15);
+            label1.TabIndex = 67;
+            label1.Text = "Cancelled:";
+            // 
+            // labelEmail2
+            // 
+            labelEmail2.AutoSize = true;
+            labelEmail2.Location = new Point(3, 75);
+            labelEmail2.Name = "labelEmail2";
+            labelEmail2.Size = new Size(75, 15);
+            labelEmail2.TabIndex = 66;
+            labelEmail2.Text = "Wrnt Claims:";
             // 
             // dataGridView1
             // 
@@ -379,33 +398,17 @@
             panel3.Size = new Size(160, 556);
             panel3.TabIndex = 55;
             // 
-            // labelEmail2
-            // 
-            labelEmail2.AutoSize = true;
-            labelEmail2.Location = new Point(3, 75);
-            labelEmail2.Name = "labelEmail2";
-            labelEmail2.Size = new Size(75, 15);
-            labelEmail2.TabIndex = 66;
-            labelEmail2.Text = "Wrnt Claims:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(5, 279);
-            label1.Name = "label1";
-            label1.Size = new Size(62, 15);
-            label1.TabIndex = 67;
-            label1.Text = "Cancelled:";
-            // 
             // Dashboard3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(panel3);
             Name = "Dashboard3";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard3";
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             panel1.ResumeLayout(false);
