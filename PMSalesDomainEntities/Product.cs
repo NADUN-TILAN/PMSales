@@ -35,6 +35,8 @@ namespace PMSalesDomainEntities
         public int? qty8 { get; set; }
 
         public decimal TotalAmount { get; set; }
+
+        public DateTime? WarrantyDueDate { get; set; }
     }
 
 }

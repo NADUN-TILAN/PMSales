@@ -292,10 +292,10 @@ namespace PMSales.PresentationLayer.UserForm
                 // Sale Info
                 TotalPrice = _product.TotalAmount,
                 // Set these as needed from our UI or business logic:
-                WarrantyDueDate = null,
-                WarrantyClaims = null,
-                ProductStatus = null,
-                ProductWarrantyStatus = null,
+                WarrantyDueDate = DateTime.Now.AddMonths(6),
+                WarrantyClaims = "0",
+                ProductStatus = "",
+                ProductWarrantyStatus = "",
                 ConfirmOrders = 1,
                 ReturnedOrders = null
             };

@@ -26,6 +26,7 @@ namespace PMSales.PresentationLayer
             DisplayProductCount();
             GetConfirmSalesCount();
             DisplayConfirmSalesCount();
+            labelAddButton = label6;
 
         }
 
@@ -35,16 +36,22 @@ namespace PMSales.PresentationLayer
             labelCustomerCounttx.Text = $"Vs{version}";
         }
 
+        // 1. Add this to the field declarations (with the other controls)
+        private Label? labelAddButton;
+
         #region btn 4 and 6 and 7 and 9
         //btn 4
         private void rjButton4_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton4);
+            labelAddButton!.Text = "Add New Item";
+            labelAddButton.Visible = true;
         }
 
         private void rjButton4_MouseLeave(object sender, EventArgs e) //eveent 2
         {
             ApplyLeaveStyle(rjButton4);
+            labelAddButton!.Visible = false;
         }
 
         private void rjButton4_MouseClick(object sender, MouseEventArgs e) //eveent 3
@@ -242,7 +249,7 @@ namespace PMSales.PresentationLayer
         {
             var customerBL = new PMSales.BusinessLayer.CustomerBL();
             return customerBL.GetProductCount();
-        }        
+        }
 
         // Displays the confirmed sales count on the label
         private void DisplayConfirmSalesCount()
@@ -283,7 +290,17 @@ namespace PMSales.PresentationLayer
         }
         #endregion
 
+        //private void rjButton4_MouseLeave(object sender, EventArgs e)
+        //{
+        //    if (labelAddButton != null)
+        //        labelAddButton.Text = "Add New Item";
+        //}
 
+        //private void rjButton4_MouseHover(object sender, EventArgs e)
+        //{
+        //    if (labelAddButton != null)
+        //        labelAddButton.Text = "Add Button";
+        //}
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
@@ -307,6 +324,6 @@ namespace PMSales.PresentationLayer
 
             // Close the current Dashboard form
             this.Close();
-        }
+        }        
     }
 }

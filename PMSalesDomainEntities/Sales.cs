@@ -42,8 +42,8 @@ namespace PMSalesDomainEntities
         public decimal TotalPrice { get; set; }
         public DateTime? WarrantyDueDate { get; set; }
         public string? WarrantyClaims { get; set; }
-        public int? ProductStatus { get; set; }
-        public int? ProductWarrantyStatus { get; set; }
+        public string? ProductStatus { get; set; }
+        public string? ProductWarrantyStatus { get; set; }
         public int? ConfirmOrders { get; set; }
         public int? ReturnedOrders { get; set; }
         public DateTime? CreatedDate { get; set; }
