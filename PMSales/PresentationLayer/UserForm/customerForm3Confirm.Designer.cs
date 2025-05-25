@@ -1061,6 +1061,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(950, 602);
             Controls.Add(panel2);
             Controls.Add(panel3);

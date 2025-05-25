@@ -26,7 +26,14 @@ namespace PMSales.PresentationLayer
             DisplayProductCount();
             GetConfirmSalesCount();
             DisplayConfirmSalesCount();
+
             labelAddButton = label6;
+            labelDashButton = label7;
+            labelAddPButton = label8;
+            labelEmailButton = label9;
+            labelSalesButton = label10;
+            labelSearchButton = label11;
+            labelHelpButton = label12;
 
         }
 
@@ -38,13 +45,19 @@ namespace PMSales.PresentationLayer
 
         // 1. Add this to the field declarations (with the other controls)
         private Label? labelAddButton;
+        private Label? labelDashButton;
+        private Label? labelAddPButton;
+        private Label? labelEmailButton;
+        private Label? labelSalesButton;
+        private Label? labelSearchButton;
+        private Label? labelHelpButton;
 
         #region btn 4 and 6 and 7 and 9
         //btn 4
         private void rjButton4_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton4);
-            labelAddButton!.Text = "Add New Item";
+            labelAddButton!.Text = "Add New Sale";
             labelAddButton.Visible = true;
         }
 

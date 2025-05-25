@@ -33,14 +33,15 @@ namespace PMSales.PresentationLayer
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             label3 = new Label();
             panel3 = new Panel();
+            label6 = new Label();
             rjButton11 = new RJCodeAdvance.RJControls.RJButton();
             rjButton10 = new RJCodeAdvance.RJControls.RJButton();
             rjButton9 = new RJCodeAdvance.RJControls.RJButton();
             rjButton8 = new RJCodeAdvance.RJControls.RJButton();
             rjButton7 = new RJCodeAdvance.RJControls.RJButton();
             rjButton6 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             rjButton12 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             panel2 = new Panel();
             panel6 = new Panel();
             rjButton14 = new RJCodeAdvance.RJControls.RJButton();
@@ -63,7 +64,12 @@ namespace PMSales.PresentationLayer
             flowLayoutPanel1 = new FlowLayoutPanel();
             labelCustomerCount = new Label();
             labelCustomerCounttx = new Label();
-            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -88,6 +94,12 @@ namespace PMSales.PresentationLayer
             // panel3
             // 
             panel3.BackColor = Color.DodgerBlue;
+            panel3.Controls.Add(label12);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(label10);
+            panel3.Controls.Add(label9);
+            panel3.Controls.Add(label8);
+            panel3.Controls.Add(label7);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(rjButton11);
             panel3.Controls.Add(rjButton10);
@@ -101,6 +113,17 @@ namespace PMSales.PresentationLayer
             panel3.Name = "panel3";
             panel3.Size = new Size(160, 556);
             panel3.TabIndex = 49;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(64, 25);
+            label6.Name = "label6";
+            label6.Size = new Size(84, 15);
+            label6.TabIndex = 68;
+            label6.Text = "Add New Sale";
             // 
             // rjButton11
             // 
@@ -244,6 +267,23 @@ namespace PMSales.PresentationLayer
             rjButton6.MouseHover += rjButton6_MouseHover;
             rjButton6.MouseUp += rjButton6_MouseUp;
             // 
+            // rjButton12
+            // 
+            rjButton12.BackColor = Color.Navy;
+            rjButton12.BackgroundColor = Color.Navy;
+            rjButton12.BorderColor = Color.PaleVioletRed;
+            rjButton12.BorderRadius = 10;
+            rjButton12.BorderSize = 0;
+            rjButton12.FlatStyle = FlatStyle.Popup;
+            rjButton12.ForeColor = Color.White;
+            rjButton12.Location = new Point(6, 359);
+            rjButton12.Name = "rjButton12";
+            rjButton12.Size = new Size(143, 26);
+            rjButton12.TabIndex = 36;
+            rjButton12.Text = "Add";
+            rjButton12.TextColor = Color.White;
+            rjButton12.UseVisualStyleBackColor = false;
+            // 
             // rjButton4
             // 
             rjButton4.AccessibleDescription = "";
@@ -271,23 +311,6 @@ namespace PMSales.PresentationLayer
             rjButton4.MouseLeave += rjButton4_MouseLeave;
             rjButton4.MouseHover += rjButton4_MouseHover;
             rjButton4.MouseUp += rjButton4_MouseUp;
-            // 
-            // rjButton12
-            // 
-            rjButton12.BackColor = Color.Navy;
-            rjButton12.BackgroundColor = Color.Navy;
-            rjButton12.BorderColor = Color.PaleVioletRed;
-            rjButton12.BorderRadius = 10;
-            rjButton12.BorderSize = 0;
-            rjButton12.FlatStyle = FlatStyle.Popup;
-            rjButton12.ForeColor = Color.White;
-            rjButton12.Location = new Point(6, 359);
-            rjButton12.Name = "rjButton12";
-            rjButton12.Size = new Size(143, 26);
-            rjButton12.TabIndex = 36;
-            rjButton12.Text = "Add";
-            rjButton12.TextColor = Color.White;
-            rjButton12.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -591,19 +614,77 @@ namespace PMSales.PresentationLayer
             labelCustomerCounttx.TabIndex = 55;
             labelCustomerCounttx.Text = "Vs.Unknown";
             // 
-            // label6
+            // label7
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(75, 26);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 15);
-            label6.TabIndex = 67;
-            label6.Text = "label6";
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(64, 75);
+            label7.Name = "label7";
+            label7.Size = new Size(66, 15);
+            label7.TabIndex = 69;
+            label7.Text = "Dashboard";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(64, 126);
+            label8.Name = "label8";
+            label8.Size = new Size(76, 15);
+            label8.TabIndex = 70;
+            label8.Text = "Add Product";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(64, 175);
+            label9.Name = "label9";
+            label9.Size = new Size(72, 15);
+            label9.TabIndex = 71;
+            label9.Text = "Email Views";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(64, 223);
+            label10.Name = "label10";
+            label10.Size = new Size(82, 15);
+            label10.TabIndex = 72;
+            label10.Text = "Sales Reports";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(64, 274);
+            label11.Name = "label11";
+            label11.Size = new Size(45, 15);
+            label11.TabIndex = 73;
+            label11.Text = "Search";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(65, 324);
+            label12.Name = "label12";
+            label12.Size = new Size(33, 15);
+            label12.TabIndex = 74;
+            label12.Text = "Help";
             // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(panel3);
@@ -611,6 +692,7 @@ namespace PMSales.PresentationLayer
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
@@ -668,5 +750,11 @@ namespace PMSales.PresentationLayer
         private Panel panel6;
         private RJCodeAdvance.RJControls.RJComboBox comboBox1;
         private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label12;
+        private Label label11;
+        private Label label10;
     }
 }
