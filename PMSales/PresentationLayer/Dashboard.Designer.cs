@@ -33,6 +33,12 @@ namespace PMSales.PresentationLayer
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             label3 = new Label();
             panel3 = new Panel();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
             label6 = new Label();
             rjButton11 = new RJCodeAdvance.RJControls.RJButton();
             rjButton10 = new RJCodeAdvance.RJControls.RJButton();
@@ -64,12 +70,6 @@ namespace PMSales.PresentationLayer
             flowLayoutPanel1 = new FlowLayoutPanel();
             labelCustomerCount = new Label();
             labelCustomerCounttx = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -114,6 +114,66 @@ namespace PMSales.PresentationLayer
             panel3.Size = new Size(160, 556);
             panel3.TabIndex = 49;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(65, 324);
+            label12.Name = "label12";
+            label12.Size = new Size(0, 15);
+            label12.TabIndex = 74;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(64, 274);
+            label11.Name = "label11";
+            label11.Size = new Size(0, 15);
+            label11.TabIndex = 73;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(64, 223);
+            label10.Name = "label10";
+            label10.Size = new Size(0, 15);
+            label10.TabIndex = 72;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(64, 175);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 15);
+            label9.TabIndex = 71;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(64, 126);
+            label8.Name = "label8";
+            label8.Size = new Size(0, 15);
+            label8.TabIndex = 70;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(64, 75);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 15);
+            label7.TabIndex = 69;
+            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -121,9 +181,8 @@ namespace PMSales.PresentationLayer
             label6.ForeColor = Color.White;
             label6.Location = new Point(64, 25);
             label6.Name = "label6";
-            label6.Size = new Size(84, 15);
+            label6.Size = new Size(0, 15);
             label6.TabIndex = 68;
-            label6.Text = "Add New Sale";
             // 
             // rjButton11
             // 
@@ -145,6 +204,11 @@ namespace PMSales.PresentationLayer
             rjButton11.TabIndex = 43;
             rjButton11.TextColor = Color.Transparent;
             rjButton11.UseVisualStyleBackColor = false;
+            rjButton11.Click += rjButton11_Click;
+            rjButton11.MouseDown += rjButton11_MouseDown;
+            rjButton11.MouseLeave += rjButton11_MouseLeave;
+            rjButton11.MouseHover += rjButton11_MouseHover;
+            rjButton11.MouseUp += rjButton11_MouseUp;
             // 
             // rjButton10
             // 
@@ -166,6 +230,11 @@ namespace PMSales.PresentationLayer
             rjButton10.TabIndex = 42;
             rjButton10.TextColor = Color.Transparent;
             rjButton10.UseVisualStyleBackColor = false;
+            rjButton10.Click += rjButton10_Click;
+            rjButton10.MouseDown += rjButton10_MouseDown;
+            rjButton10.MouseLeave += rjButton10_MouseLeave;
+            rjButton10.MouseHover += rjButton10_MouseHover;
+            rjButton10.MouseUp += rjButton10_MouseUp;
             // 
             // rjButton9
             // 
@@ -213,6 +282,11 @@ namespace PMSales.PresentationLayer
             rjButton8.TabIndex = 40;
             rjButton8.TextColor = Color.Transparent;
             rjButton8.UseVisualStyleBackColor = false;
+            rjButton8.Click += rjButton8_Click;
+            rjButton8.MouseDown += rjButton8_MouseDown;
+            rjButton8.MouseLeave += rjButton8_MouseLeave;
+            rjButton8.MouseHover += rjButton8_MouseHover;
+            rjButton8.MouseUp += rjButton8_MouseUp;
             // 
             // rjButton7
             // 
@@ -613,72 +687,6 @@ namespace PMSales.PresentationLayer
             labelCustomerCounttx.Size = new Size(98, 21);
             labelCustomerCounttx.TabIndex = 55;
             labelCustomerCounttx.Text = "Vs.Unknown";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(64, 75);
-            label7.Name = "label7";
-            label7.Size = new Size(66, 15);
-            label7.TabIndex = 69;
-            label7.Text = "Dashboard";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(64, 126);
-            label8.Name = "label8";
-            label8.Size = new Size(76, 15);
-            label8.TabIndex = 70;
-            label8.Text = "Add Product";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(64, 175);
-            label9.Name = "label9";
-            label9.Size = new Size(72, 15);
-            label9.TabIndex = 71;
-            label9.Text = "Email Views";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(64, 223);
-            label10.Name = "label10";
-            label10.Size = new Size(82, 15);
-            label10.TabIndex = 72;
-            label10.Text = "Sales Reports";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(64, 274);
-            label11.Name = "label11";
-            label11.Size = new Size(45, 15);
-            label11.TabIndex = 73;
-            label11.Text = "Search";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(65, 324);
-            label12.Name = "label12";
-            label12.Size = new Size(33, 15);
-            label12.TabIndex = 74;
-            label12.Text = "Help";
             // 
             // Dashboard
             // 
