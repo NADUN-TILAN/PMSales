@@ -33,6 +33,13 @@
             label1 = new Label();
             label3 = new Label();
             panel3 = new Panel();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
             rjButton11 = new RJCodeAdvance.RJControls.RJButton();
             rjButton10 = new RJCodeAdvance.RJControls.RJButton();
             rjButton9 = new RJCodeAdvance.RJControls.RJButton();
@@ -109,6 +116,13 @@
             // panel3
             // 
             panel3.BackColor = Color.DodgerBlue;
+            panel3.Controls.Add(label12);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(label10);
+            panel3.Controls.Add(label9);
+            panel3.Controls.Add(label8);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(label6);
             panel3.Controls.Add(rjButton11);
             panel3.Controls.Add(rjButton10);
             panel3.Controls.Add(rjButton9);
@@ -121,6 +135,76 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(160, 556);
             panel3.TabIndex = 49;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(69, 323);
+            label12.Name = "label12";
+            label12.Size = new Size(0, 15);
+            label12.TabIndex = 70;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(69, 273);
+            label11.Name = "label11";
+            label11.Size = new Size(0, 15);
+            label11.TabIndex = 71;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(69, 223);
+            label10.Name = "label10";
+            label10.Size = new Size(0, 15);
+            label10.TabIndex = 72;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(69, 173);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 15);
+            label9.TabIndex = 73;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(69, 124);
+            label8.Name = "label8";
+            label8.Size = new Size(0, 15);
+            label8.TabIndex = 74;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(69, 73);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 15);
+            label7.TabIndex = 75;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(69, 25);
+            label6.Name = "label6";
+            label6.Size = new Size(0, 15);
+            label6.TabIndex = 69;
             // 
             // rjButton11
             // 
@@ -142,6 +226,10 @@
             rjButton11.TabIndex = 50;
             rjButton11.TextColor = Color.Transparent;
             rjButton11.UseVisualStyleBackColor = false;
+            rjButton11.MouseDown += rjButton11_MouseDown;
+            rjButton11.MouseLeave += rjButton11_MouseLeave;
+            rjButton11.MouseHover += rjButton11_MouseHover;
+            rjButton11.MouseUp += rjButton11_MouseUp;
             // 
             // rjButton10
             // 
@@ -163,6 +251,10 @@
             rjButton10.TabIndex = 49;
             rjButton10.TextColor = Color.Transparent;
             rjButton10.UseVisualStyleBackColor = false;
+            rjButton10.MouseDown += rjButton10_MouseDown;
+            rjButton10.MouseLeave += rjButton10_MouseLeave;
+            rjButton10.MouseHover += rjButton10_MouseHover;
+            rjButton10.MouseUp += rjButton10_MouseUp;
             // 
             // rjButton9
             // 
@@ -210,6 +302,10 @@
             rjButton8.TabIndex = 47;
             rjButton8.TextColor = Color.Transparent;
             rjButton8.UseVisualStyleBackColor = false;
+            rjButton8.MouseDown += rjButton8_MouseDown;
+            rjButton8.MouseLeave += rjButton8_MouseLeave;
+            rjButton8.MouseHover += rjButton8_MouseHover;
+            rjButton8.MouseUp += rjButton8_MouseUp;
             // 
             // rjButton7
             // 
@@ -620,6 +716,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add Product";
             panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -660,5 +757,12 @@
         private RJCodeAdvance.RJControls.RJTextBox textBoxEmail1;
         private RJCodeAdvance.RJControls.RJButton buttonSave;
         private Panel panel1;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label6;
     }
 }

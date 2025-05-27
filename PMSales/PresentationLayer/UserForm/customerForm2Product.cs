@@ -34,18 +34,39 @@ namespace PMSales.PresentationLayer.UserForm
             rjTextBox3.Enabled = false;
 
             PopulateComboBoxes();
+
+            // Initialize labels for button tooltips
+            labelAddButton = label6;
+            labelDashButton = label7;
+            labelAddPButton = label8;
+            labelEmailButton = label9;
+            labelSalesButton = label10;
+            labelSearchButton = label11;
+            labelHelpButton = label12;
         }
 
-        #region btn 4 and 6 and 7 and 9
+        // 1. Add this to the field declarations (with the other controls)
+        private Label? labelAddButton;
+        private Label? labelDashButton;
+        private Label? labelAddPButton;
+        private Label? labelEmailButton;
+        private Label? labelSalesButton;
+        private Label? labelSearchButton;
+        private Label? labelHelpButton;
+
+        #region btn 4 and 6 and 7 and 9 and 10 and 11
         //btn 4
         private void rjButton4_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton4);
+            labelAddButton!.Text = "Add New Sale";
+            labelAddButton.Visible = true;
         }
 
         private void rjButton4_MouseLeave(object sender, EventArgs e) //eveent 2
         {
             ApplyLeaveStyle(rjButton4);
+            labelAddButton!.Visible = false;
         }
 
         private void rjButton4_MouseClick(object sender, MouseEventArgs e) //eveent 3
@@ -77,11 +98,14 @@ namespace PMSales.PresentationLayer.UserForm
         private void rjButton6_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton6);
+            labelDashButton!.Text = "Dashboard";
+            labelDashButton.Visible = true;
         }
 
         private void rjButton6_MouseLeave(object sender, EventArgs e) //eveent 2
         {
             ApplyLeaveStyle(rjButton6);
+            labelDashButton!.Visible = false;
         }
 
         private void rjButton6_Click(object sender, EventArgs e)
@@ -103,11 +127,14 @@ namespace PMSales.PresentationLayer.UserForm
         private void rjButton7_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton7);
+            labelAddPButton!.Text = "Add New Item";
+            labelAddPButton.Visible = true;
         }
 
         private void rjButton7_MouseLeave(object sender, EventArgs e) //eveent 2
         {
             ApplyLeaveStyle(rjButton7);
+            labelAddPButton!.Visible = false;
         }
 
         private void rjButton7_Click(object sender, EventArgs e)
@@ -125,15 +152,47 @@ namespace PMSales.PresentationLayer.UserForm
             ApplyHoverStyle(rjButton7);
         }
 
+        //btn 8
+        private void rjButton8_MouseHover(object sender, EventArgs e) //eveent 1
+        {
+            ApplyHoverStyle(rjButton8);
+            labelEmailButton!.Text = "Check Mails";
+            labelEmailButton.Visible = true;
+        }
+
+        private void rjButton8_MouseLeave(object sender, EventArgs e) //eveent 2
+        {
+            ApplyLeaveStyle(rjButton8);
+            labelEmailButton!.Visible = false;
+        }
+
+        private void rjButton8_MouseClick(object sender, MouseEventArgs e) //eveent 3
+        {
+            ApplyClickStyle(rjButton8);
+        }
+
+        private void rjButton8_MouseDown(object sender, MouseEventArgs e) //eveent 4
+        {
+            ApplyPressedStyle(rjButton8);
+        }
+
+        private void rjButton8_MouseUp(object sender, MouseEventArgs e) //eveent 5
+        {
+            ApplyHoverStyle(rjButton8);
+        }
+
         //btn 9
         private void rjButton9_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton9);
+            labelSalesButton!.Text = "View Sales";
+            labelSalesButton.Visible = true;
         }
 
         private void rjButton9_MouseLeave(object sender, EventArgs e) //eveent 2
         {
             ApplyLeaveStyle(rjButton9);
+            labelSalesButton!.Visible = false;
         }
 
         private void rjButton9_Click(object sender, EventArgs e)
@@ -149,6 +208,64 @@ namespace PMSales.PresentationLayer.UserForm
         private void rjButton9_MouseUp(object sender, MouseEventArgs e) //eveent 5
         {
             ApplyHoverStyle(rjButton9);
+        }
+
+        //btn 10
+        private void rjButton10_MouseHover(object sender, EventArgs e) //eveent 1
+        {
+            ApplyHoverStyle(rjButton10);
+            labelSearchButton!.Text = "Search";
+            labelSearchButton.Visible = true;
+        }
+
+        private void rjButton10_MouseLeave(object sender, EventArgs e) //eveent 2
+        {
+            ApplyLeaveStyle(rjButton10);
+            labelSearchButton!.Visible = false;
+        }
+
+        private void rjButton10_MouseClick(object sender, MouseEventArgs e) //eveent 3
+        {
+            ApplyClickStyle(rjButton10);
+        }
+
+        private void rjButton10_MouseDown(object sender, MouseEventArgs e) //eveent 4
+        {
+            ApplyPressedStyle(rjButton10);
+        }
+
+        private void rjButton10_MouseUp(object sender, MouseEventArgs e) //eveent 5
+        {
+            ApplyHoverStyle(rjButton10);
+        }
+
+        //btn 11
+        private void rjButton11_MouseHover(object sender, EventArgs e) //eveent 1
+        {
+            ApplyHoverStyle(rjButton11);
+            labelHelpButton!.Text = "Help";
+            labelHelpButton.Visible = true;
+        }
+
+        private void rjButton11_MouseLeave(object sender, EventArgs e) //eveent 2
+        {
+            ApplyLeaveStyle(rjButton11);
+            labelHelpButton!.Visible = false;
+        }
+
+        private void rjButton11_MouseClick(object sender, MouseEventArgs e) //eveent 3
+        {
+            ApplyClickStyle(rjButton11);
+        }
+
+        private void rjButton11_MouseDown(object sender, MouseEventArgs e) //eveent 4
+        {
+            ApplyPressedStyle(rjButton11);
+        }
+
+        private void rjButton11_MouseUp(object sender, MouseEventArgs e) //eveent 5
+        {
+            ApplyHoverStyle(rjButton11);
         }
         #endregion 
 
@@ -594,6 +711,19 @@ namespace PMSales.PresentationLayer.UserForm
 
         }
 
-        
+        private void rjButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

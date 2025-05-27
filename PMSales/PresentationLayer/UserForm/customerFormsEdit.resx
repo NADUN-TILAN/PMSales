@@ -126,6 +126,12 @@
   <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="rjButton1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="rjButton14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1009,6 +1015,9 @@
     <value>True</value>
   </metadata>
   <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="rjButton5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="rjButton5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -4566,7 +4575,7 @@
   <data name="rjButton9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAzoAAAKwCAIAAADfj53pAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7svYV3W8ue5zv/2Htv1kzPvJ55Mz3dt/t2Xz5wT5jZkNghMzPFDjMz
+        vQAADr0BR/uQrQAA/7JJREFUeF7svYV3W8ue5zv/2Htv1kzPvJ55Mz3dt/t2Xz5wT5jZkNghMzPFDjMz
         mGKGmJkZxLQZ663aJcmSSlZsx85RTn6f9V0VR94qbYH3/qhqV9V/QgAAAAAAAEAU859CbwAAAAAAAACi
         CdA1AAAAAACAqAZ0DQAAAAAAIKoBXQMAAAAAAIhqQNcAAAAAAACiGtA1AAAAAACAqAZ0DQAAAAAAIKoB
         XQMAAAAAAIhqQNcAAAAAAACiGtA1AAAAAACAqAZ0DQAAAAAAIKoBXQMAAAAAAIhqQNcAAAAAAACiGtA1
@@ -6450,7 +6459,7 @@
   <data name="rjButton8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA4gAAAOTCAIAAAByw7rBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7s/edXG9m+6HuvP+9589w77nPu3uecffZaq/OK3e12xoByIjmSlSPg
+        vQAADr0BR/uQrQAA/7JJREFUeF7s/edXG9m+6HuvP+9589w77nPu3uecffZaq/OK3e12xoByIjmSlSPg
         nNtu5xywyTkq51RRCahnTBWURf0Ai6iSxBrfMQeSillTBb34WKH0J5pZppllilmimCU6X4ZZzjDLSyso
         9n8rSwXl/7d6w/Ly0tJSbnnTMvnSK9uIXcPuS6H79eUitZITTuRy9gDi7auYXRNLGaHFWxWeSwsnLJsS
         cJniS2bSyQwtmNICDMumCheZSFNcyQxdeOTZW7fYHpQSePEUXXbxVh6jqfKKt+YoRe6sOFlsMYKIkESU
