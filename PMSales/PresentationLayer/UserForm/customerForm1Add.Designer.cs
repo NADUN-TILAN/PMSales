@@ -496,6 +496,7 @@
             rjButton11.TabIndex = 50;
             rjButton11.TextColor = Color.Transparent;
             rjButton11.UseVisualStyleBackColor = false;
+            rjButton11.Click += rjButton11_Click;
             rjButton11.MouseDown += rjButton11_MouseDown;
             rjButton11.MouseLeave += rjButton11_MouseLeave;
             rjButton11.MouseHover += rjButton11_MouseHover;
@@ -531,6 +532,7 @@
             rjButton10.TabIndex = 49;
             rjButton10.TextColor = Color.Transparent;
             rjButton10.UseVisualStyleBackColor = false;
+            rjButton10.Click += rjButton10_Click;
             rjButton10.MouseDown += rjButton10_MouseDown;
             rjButton10.MouseLeave += rjButton10_MouseLeave;
             rjButton10.MouseHover += rjButton10_MouseHover;
@@ -808,6 +810,7 @@
             // 
             // customerForm1Add
             // 
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(label2);

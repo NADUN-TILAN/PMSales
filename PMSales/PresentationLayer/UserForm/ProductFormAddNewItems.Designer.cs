@@ -226,6 +226,7 @@
             rjButton11.TabIndex = 50;
             rjButton11.TextColor = Color.Transparent;
             rjButton11.UseVisualStyleBackColor = false;
+            rjButton11.Click += rjButton11_Click;
             rjButton11.MouseDown += rjButton11_MouseDown;
             rjButton11.MouseLeave += rjButton11_MouseLeave;
             rjButton11.MouseHover += rjButton11_MouseHover;
@@ -251,6 +252,7 @@
             rjButton10.TabIndex = 49;
             rjButton10.TextColor = Color.Transparent;
             rjButton10.UseVisualStyleBackColor = false;
+            rjButton10.Click += rjButton10_Click;
             rjButton10.MouseDown += rjButton10_MouseDown;
             rjButton10.MouseLeave += rjButton10_MouseLeave;
             rjButton10.MouseHover += rjButton10_MouseHover;
@@ -302,6 +304,7 @@
             rjButton8.TabIndex = 47;
             rjButton8.TextColor = Color.Transparent;
             rjButton8.UseVisualStyleBackColor = false;
+            rjButton8.Click += rjButton8_Click;
             rjButton8.MouseDown += rjButton8_MouseDown;
             rjButton8.MouseLeave += rjButton8_MouseLeave;
             rjButton8.MouseHover += rjButton8_MouseHover;

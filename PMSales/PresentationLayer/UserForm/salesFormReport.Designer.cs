@@ -53,6 +53,12 @@
             label3 = new Label();
             labelCustomerCounttx = new Label();
             panel1 = new Panel();
+            rjButton16 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton17 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton18 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton15 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton3 = new RJCodeAdvance.RJControls.RJButton();
+            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             salesReportGridviwer = new DataGridView();
             panel2.SuspendLayout();
@@ -446,6 +452,12 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(rjButton16);
+            panel1.Controls.Add(rjButton17);
+            panel1.Controls.Add(rjButton18);
+            panel1.Controls.Add(rjButton15);
+            panel1.Controls.Add(rjButton3);
+            panel1.Controls.Add(rjButton1);
             panel1.Controls.Add(rjButton2);
             panel1.Controls.Add(salesReportGridviwer);
             panel1.Controls.Add(label3);
@@ -454,6 +466,132 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 53;
+            // 
+            // rjButton16
+            // 
+            rjButton16.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton16.BackColor = Color.White;
+            rjButton16.BackgroundColor = Color.White;
+            rjButton16.BackgroundImage = (Image)resources.GetObject("rjButton16.BackgroundImage");
+            rjButton16.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton16.BorderColor = Color.PaleVioletRed;
+            rjButton16.BorderRadius = 10;
+            rjButton16.BorderSize = 0;
+            rjButton16.CausesValidation = false;
+            rjButton16.Cursor = Cursors.Hand;
+            rjButton16.FlatStyle = FlatStyle.Flat;
+            rjButton16.ForeColor = Color.Transparent;
+            rjButton16.Location = new Point(631, 24);
+            rjButton16.Name = "rjButton16";
+            rjButton16.Size = new Size(35, 31);
+            rjButton16.TabIndex = 73;
+            rjButton16.TextColor = Color.Transparent;
+            rjButton16.UseVisualStyleBackColor = false;
+            // 
+            // rjButton17
+            // 
+            rjButton17.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton17.BackColor = Color.White;
+            rjButton17.BackgroundColor = Color.White;
+            rjButton17.BackgroundImage = (Image)resources.GetObject("rjButton17.BackgroundImage");
+            rjButton17.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton17.BorderColor = Color.PaleVioletRed;
+            rjButton17.BorderRadius = 10;
+            rjButton17.BorderSize = 0;
+            rjButton17.CausesValidation = false;
+            rjButton17.Cursor = Cursors.Hand;
+            rjButton17.FlatStyle = FlatStyle.Flat;
+            rjButton17.ForeColor = Color.Transparent;
+            rjButton17.Location = new Point(596, 24);
+            rjButton17.Name = "rjButton17";
+            rjButton17.Size = new Size(35, 31);
+            rjButton17.TabIndex = 72;
+            rjButton17.TextColor = Color.Transparent;
+            rjButton17.UseVisualStyleBackColor = false;
+            // 
+            // rjButton18
+            // 
+            rjButton18.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton18.BackColor = Color.White;
+            rjButton18.BackgroundColor = Color.White;
+            rjButton18.BackgroundImage = (Image)resources.GetObject("rjButton18.BackgroundImage");
+            rjButton18.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton18.BorderColor = Color.PaleVioletRed;
+            rjButton18.BorderRadius = 10;
+            rjButton18.BorderSize = 0;
+            rjButton18.CausesValidation = false;
+            rjButton18.Cursor = Cursors.Hand;
+            rjButton18.FlatStyle = FlatStyle.Flat;
+            rjButton18.ForeColor = Color.Transparent;
+            rjButton18.Location = new Point(561, 24);
+            rjButton18.Name = "rjButton18";
+            rjButton18.Size = new Size(35, 31);
+            rjButton18.TabIndex = 71;
+            rjButton18.TextColor = Color.Transparent;
+            rjButton18.UseVisualStyleBackColor = false;
+            // 
+            // rjButton15
+            // 
+            rjButton15.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton15.BackColor = Color.White;
+            rjButton15.BackgroundColor = Color.White;
+            rjButton15.BackgroundImage = (Image)resources.GetObject("rjButton15.BackgroundImage");
+            rjButton15.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton15.BorderColor = Color.PaleVioletRed;
+            rjButton15.BorderRadius = 10;
+            rjButton15.BorderSize = 0;
+            rjButton15.CausesValidation = false;
+            rjButton15.Cursor = Cursors.Hand;
+            rjButton15.FlatStyle = FlatStyle.Flat;
+            rjButton15.ForeColor = Color.Transparent;
+            rjButton15.Location = new Point(736, 24);
+            rjButton15.Name = "rjButton15";
+            rjButton15.Size = new Size(35, 31);
+            rjButton15.TabIndex = 70;
+            rjButton15.TextColor = Color.Transparent;
+            rjButton15.UseVisualStyleBackColor = false;
+            // 
+            // rjButton3
+            // 
+            rjButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton3.BackColor = Color.White;
+            rjButton3.BackgroundColor = Color.White;
+            rjButton3.BackgroundImage = (Image)resources.GetObject("rjButton3.BackgroundImage");
+            rjButton3.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton3.BorderColor = Color.PaleVioletRed;
+            rjButton3.BorderRadius = 10;
+            rjButton3.BorderSize = 0;
+            rjButton3.CausesValidation = false;
+            rjButton3.Cursor = Cursors.Hand;
+            rjButton3.FlatStyle = FlatStyle.Flat;
+            rjButton3.ForeColor = Color.Transparent;
+            rjButton3.Location = new Point(701, 24);
+            rjButton3.Name = "rjButton3";
+            rjButton3.Size = new Size(35, 31);
+            rjButton3.TabIndex = 69;
+            rjButton3.TextColor = Color.Transparent;
+            rjButton3.UseVisualStyleBackColor = false;
+            // 
+            // rjButton1
+            // 
+            rjButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            rjButton1.BackColor = Color.White;
+            rjButton1.BackgroundColor = Color.White;
+            rjButton1.BackgroundImage = (Image)resources.GetObject("rjButton1.BackgroundImage");
+            rjButton1.BackgroundImageLayout = ImageLayout.Zoom;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 0;
+            rjButton1.CausesValidation = false;
+            rjButton1.Cursor = Cursors.Hand;
+            rjButton1.FlatStyle = FlatStyle.Flat;
+            rjButton1.ForeColor = Color.Transparent;
+            rjButton1.Location = new Point(666, 24);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(35, 31);
+            rjButton1.TabIndex = 68;
+            rjButton1.TextColor = Color.Transparent;
+            rjButton1.UseVisualStyleBackColor = false;
             // 
             // rjButton2
             // 
@@ -500,6 +638,7 @@
             Controls.Add(panel3);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "salesFormReport";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sales Reports";
@@ -539,5 +678,11 @@
         private Label label8;
         private Label label7;
         private Label label6;
+        private RJCodeAdvance.RJControls.RJButton rjButton16;
+        private RJCodeAdvance.RJControls.RJButton rjButton17;
+        private RJCodeAdvance.RJControls.RJButton rjButton18;
+        private RJCodeAdvance.RJControls.RJButton rjButton15;
+        private RJCodeAdvance.RJControls.RJButton rjButton3;
+        private RJCodeAdvance.RJControls.RJButton rjButton1;
     }
 }

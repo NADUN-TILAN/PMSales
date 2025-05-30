@@ -98,7 +98,7 @@ namespace PMSales.PresentationLayer.UserForm
         private void rjButton6_MouseUp(object sender, MouseEventArgs e) //eveent 5
         {
             ApplyHoverStyle(rjButton6);
-        }        
+        }
 
         //btn 7
         private void rjButton7_MouseHover(object sender, EventArgs e) //eveent 1
@@ -461,6 +461,16 @@ namespace PMSales.PresentationLayer.UserForm
         }
 
         private void rjButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton10_Click(object sender, EventArgs e)
         {
 
         }

@@ -171,10 +171,10 @@ namespace PMSales.PresentationLayer.UserForm
             labelSalesButton!.Visible = false;
         }
 
-        private void rjButton9_Click(object sender, EventArgs e)
-        {
-            ApplyLeaveStyle(rjButton9);
-        }
+        //private void rjButton9_Click(object sender, EventArgs e)
+        //{
+        //    ApplyLeaveStyle(rjButton9);
+        //}
 
         private void rjButton9_MouseDown(object sender, MouseEventArgs e) //eveent 4
         {
@@ -408,6 +408,31 @@ namespace PMSales.PresentationLayer.UserForm
             textBoxEmail1.Texts = string.Empty;
         }
 
-        
+        private void rjButton11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton9_Click(object sender, EventArgs e)
+        {
+            // Instantiate the SalesReportView form
+            var SalesReportView = new salesFormReport();
+
+            // Show the SalesReportView form
+            SalesReportView.Show();
+
+            // Close the current Dashboard form
+            this.Close();
+        }
+
+        private void rjButton8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
