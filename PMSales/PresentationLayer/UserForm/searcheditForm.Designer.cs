@@ -1,6 +1,6 @@
-﻿namespace PMSales.PresentationLayer
+﻿namespace PMSales.PresentationLayer.UserForm
 {
-    partial class HelpForm2
+    partial class searcheditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HelpForm2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(searcheditForm));
             panel3 = new Panel();
             label12 = new Label();
             label11 = new Label();
@@ -57,7 +57,6 @@
             rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             label3 = new Label();
             panel1 = new Panel();
-            rjButton17 = new RJCodeAdvance.RJControls.RJButton();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -406,7 +405,7 @@
             rjButton16.Name = "rjButton16";
             rjButton16.Size = new Size(143, 26);
             rjButton16.TabIndex = 70;
-            rjButton16.Text = "About Us";
+            rjButton16.Text = "Edit Sales";
             rjButton16.TextColor = Color.White;
             rjButton16.UseVisualStyleBackColor = false;
             // 
@@ -423,14 +422,14 @@
             rjButton15.Name = "rjButton15";
             rjButton15.Size = new Size(143, 26);
             rjButton15.TabIndex = 69;
-            rjButton15.Text = "Terms";
+            rjButton15.Text = "Edit Product";
             rjButton15.TextColor = Color.White;
             rjButton15.UseVisualStyleBackColor = false;
             // 
             // rjButton3
             // 
-            rjButton3.BackColor = Color.LightSeaGreen;
-            rjButton3.BackgroundColor = Color.LightSeaGreen;
+            rjButton3.BackColor = Color.Navy;
+            rjButton3.BackgroundColor = Color.Navy;
             rjButton3.BorderColor = Color.PaleVioletRed;
             rjButton3.BorderRadius = 10;
             rjButton3.BorderSize = 0;
@@ -440,14 +439,14 @@
             rjButton3.Name = "rjButton3";
             rjButton3.Size = new Size(143, 26);
             rjButton3.TabIndex = 68;
-            rjButton3.Text = "Development Co.";
+            rjButton3.Text = "Edit Customer";
             rjButton3.TextColor = Color.White;
             rjButton3.UseVisualStyleBackColor = false;
             // 
             // rjButton2
             // 
-            rjButton2.BackColor = Color.Navy;
-            rjButton2.BackgroundColor = Color.Navy;
+            rjButton2.BackColor = Color.LightSeaGreen;
+            rjButton2.BackgroundColor = Color.LightSeaGreen;
             rjButton2.BorderColor = Color.PaleVioletRed;
             rjButton2.BorderRadius = 10;
             rjButton2.BorderSize = 0;
@@ -457,7 +456,7 @@
             rjButton2.Name = "rjButton2";
             rjButton2.Size = new Size(143, 26);
             rjButton2.TabIndex = 67;
-            rjButton2.Text = "Manual";
+            rjButton2.Text = "Search";
             rjButton2.TextColor = Color.White;
             rjButton2.UseVisualStyleBackColor = false;
             // 
@@ -478,7 +477,6 @@
             rjButton1.Text = ">>";
             rjButton1.TextColor = Color.White;
             rjButton1.UseVisualStyleBackColor = false;
-            rjButton1.Click += rjButton1_Click;
             // 
             // label3
             // 
@@ -486,13 +484,12 @@
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(81, 26);
             label3.Name = "label3";
-            label3.Size = new Size(123, 30);
+            label3.Size = new Size(377, 30);
             label3.TabIndex = 26;
-            label3.Text = "Help Board";
+            label3.Text = "Search And Edit Application Reports ";
             // 
             // panel1
             // 
-            panel1.Controls.Add(rjButton17);
             panel1.Controls.Add(rjButton16);
             panel1.Controls.Add(rjButton15);
             panel1.Controls.Add(rjButton3);
@@ -504,37 +501,17 @@
             panel1.Size = new Size(790, 556);
             panel1.TabIndex = 59;
             // 
-            // rjButton17
-            // 
-            rjButton17.BackColor = SystemColors.HotTrack;
-            rjButton17.BackgroundColor = SystemColors.HotTrack;
-            rjButton17.BorderColor = Color.PaleVioletRed;
-            rjButton17.BorderRadius = 20;
-            rjButton17.BorderSize = 0;
-            rjButton17.FlatStyle = FlatStyle.Flat;
-            rjButton17.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold);
-            rjButton17.ForeColor = Color.White;
-            rjButton17.Location = new Point(701, 496);
-            rjButton17.Name = "rjButton17";
-            rjButton17.Size = new Size(37, 34);
-            rjButton17.TabIndex = 63;
-            rjButton17.Text = "<<";
-            rjButton17.TextColor = Color.White;
-            rjButton17.UseVisualStyleBackColor = false;
-            rjButton17.Click += rjButton17_Click;
-            // 
-            // HelpForm2
+            // searcheditForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "HelpForm2";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "HelpForm2";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "searcheditForm";
+            Text = "Search & Edit Form";
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel2.ResumeLayout(false);
@@ -573,6 +550,5 @@
         private RJCodeAdvance.RJControls.RJButton rjButton1;
         private Label label3;
         private Panel panel1;
-        private RJCodeAdvance.RJControls.RJButton rjButton17;
     }
 }

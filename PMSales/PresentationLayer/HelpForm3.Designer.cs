@@ -478,6 +478,7 @@
             rjButton1.Text = ">>";
             rjButton1.TextColor = Color.White;
             rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += rjButton1_Click;
             // 
             // label3
             // 
@@ -520,16 +521,19 @@
             rjButton17.Text = "<<";
             rjButton17.TextColor = Color.White;
             rjButton17.UseVisualStyleBackColor = false;
+            rjButton17.Click += rjButton17_Click;
             // 
             // HelpForm3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "HelpForm3";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HelpForm3";
             panel3.ResumeLayout(false);
             panel3.PerformLayout();

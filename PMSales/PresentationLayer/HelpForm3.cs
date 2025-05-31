@@ -16,5 +16,23 @@ namespace PMSales.PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            var HelpForm4View = new HelpForm4();
+
+            HelpForm4View.Show();
+
+            this.Close();
+        }
+
+        private void rjButton17_Click(object sender, EventArgs e)
+        {
+            var HelpForm2View = new HelpForm2();
+
+            HelpForm2View.Show();
+
+            this.Close();
+        }
     }
 }

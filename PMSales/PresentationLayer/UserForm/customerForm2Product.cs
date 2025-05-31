@@ -214,7 +214,7 @@ namespace PMSales.PresentationLayer.UserForm
         private void rjButton10_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton10);
-            labelSearchButton!.Text = "Search";
+            labelSearchButton!.Text = "Search & Edit";
             labelSearchButton.Visible = true;
         }
 

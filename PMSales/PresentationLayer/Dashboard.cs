@@ -203,7 +203,7 @@ namespace PMSales.PresentationLayer
         private void rjButton10_MouseHover(object sender, EventArgs e) //eveent 1
         {
             ApplyHoverStyle(rjButton10);
-            labelSearchButton!.Text = "Search";
+            labelSearchButton!.Text = "Search & Edit";
             labelSearchButton.Visible = true;
         }
 
@@ -437,7 +437,11 @@ namespace PMSales.PresentationLayer
 
         private void rjButton11_Click(object sender, EventArgs e)
         {
+            var HelpForm1View = new HelpForm();
 
+            HelpForm1View.Show();
+
+            this.Close();
         }
     }
 }

@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace PMSales.PresentationLayer.UserForm
 {
-    public partial class HelpForm : Form
+    public partial class searcheditForm : Form
     {
-        public HelpForm()
+        public searcheditForm()
         {
             InitializeComponent();
-        }
-
-        private void rjButton1_Click(object sender, EventArgs e)
-        {
-            var HelpForm2View = new HelpForm2();
-
-            HelpForm2View.Show();
-
-            this.Close();
         }
     }
 }

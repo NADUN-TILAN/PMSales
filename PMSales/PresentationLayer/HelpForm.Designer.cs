@@ -160,6 +160,7 @@
             rjButton1.Text = ">>";
             rjButton1.TextColor = Color.White;
             rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += rjButton1_Click;
             // 
             // label3
             // 
@@ -505,11 +506,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(panel3);
             Name = "HelpForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HelpForm";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -54,7 +54,6 @@
             rjButton15 = new RJCodeAdvance.RJControls.RJButton();
             rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             rjButton2 = new RJCodeAdvance.RJControls.RJButton();
-            rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             label3 = new Label();
             panel1 = new Panel();
             rjButton17 = new RJCodeAdvance.RJControls.RJButton();
@@ -461,24 +460,6 @@
             rjButton2.TextColor = Color.White;
             rjButton2.UseVisualStyleBackColor = false;
             // 
-            // rjButton1
-            // 
-            rjButton1.BackColor = Color.DodgerBlue;
-            rjButton1.BackgroundColor = Color.DodgerBlue;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 20;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold);
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(739, 496);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(37, 34);
-            rjButton1.TabIndex = 66;
-            rjButton1.Text = ">>";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -496,7 +477,6 @@
             panel1.Controls.Add(rjButton15);
             panel1.Controls.Add(rjButton3);
             panel1.Controls.Add(rjButton2);
-            panel1.Controls.Add(rjButton1);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(160, 46);
             panel1.Name = "panel1";
@@ -513,23 +493,26 @@
             rjButton17.FlatStyle = FlatStyle.Flat;
             rjButton17.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold);
             rjButton17.ForeColor = Color.White;
-            rjButton17.Location = new Point(701, 496);
+            rjButton17.Location = new Point(732, 496);
             rjButton17.Name = "rjButton17";
             rjButton17.Size = new Size(37, 34);
             rjButton17.TabIndex = 71;
             rjButton17.Text = "<<";
             rjButton17.TextColor = Color.White;
             rjButton17.UseVisualStyleBackColor = false;
+            rjButton17.Click += rjButton17_Click;
             // 
             // HelpForm4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(950, 602);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "HelpForm4";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HelpForm4";
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
@@ -566,7 +549,6 @@
         private RJCodeAdvance.RJControls.RJButton rjButton15;
         private RJCodeAdvance.RJControls.RJButton rjButton3;
         private RJCodeAdvance.RJControls.RJButton rjButton2;
-        private RJCodeAdvance.RJControls.RJButton rjButton1;
         private Label label3;
         private Panel panel1;
         private RJCodeAdvance.RJControls.RJButton rjButton17;
