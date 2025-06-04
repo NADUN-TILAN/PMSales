@@ -43,6 +43,19 @@ namespace PMSalesBLL
             }
         }
 
+        public decimal GetConfirmedCanceledProducts()
+        {
+            try
+            {
+                return customerDAL.GetConfirmedCanceledProductCount();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving canceled products: {ex.Message}");
+                return 0m;
+            }
+        }
+
     }
 }
 

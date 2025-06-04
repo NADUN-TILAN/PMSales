@@ -167,6 +167,19 @@ namespace PMSalesDAL.DatabaseHelper
                 }
             }
         }
+        
+        public int GetConfirmedCanceledProductCount()
+        {
+            const string query = "GET_NUMBER_OF_CONFIRMED_CANCELED_SALES";
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    return (int)command.ExecuteScalar();
+                }
+            }
+        }
         #endregion
 
         #region Get products
