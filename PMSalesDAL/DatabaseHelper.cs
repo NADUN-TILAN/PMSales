@@ -115,7 +115,7 @@ namespace PMSalesDAL.DatabaseHelper
         #region Get the total count of customers
         public int GetCustomerCount()
         {
-            const string query = "GET_NUMBER_OF_CUSTOMERS"; // Replace 'Customers' with your actual table name
+            const string query = "GET_NUMBER_OF_CUSTOMERS"; 
 
             using (var connection = new SqlConnection(connectionString))
             {
@@ -129,7 +129,7 @@ namespace PMSalesDAL.DatabaseHelper
 
         public int GetProductCount()
         {
-            const string query = "GET_NUMBER_OF_PRODUCTS"; // Replace 'Products' with your actual table name
+            const string query = "GET_NUMBER_OF_PRODUCTS"; 
 
             using (var connection = new SqlConnection(connectionString))
             {
@@ -143,7 +143,7 @@ namespace PMSalesDAL.DatabaseHelper
 
         public int GetAllSalesCount()
         {
-            const string query = "GET_NUMBER_OF_SALES"; // Replace 'Customers' with your actual table name
+            const string query = "GET_NUMBER_OF_SALES"; 
 
             using (var connection = new SqlConnection(connectionString))
             {
@@ -151,6 +151,19 @@ namespace PMSalesDAL.DatabaseHelper
                 {
                     connection.Open();
                     return (int)command.ExecuteScalar();
+                }
+            }
+        }
+
+        public decimal GetAllConfirmedProfit()
+        {
+            const string query = "GET_CONFIRMED_PROFIT_OF_SALES"; 
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    return (decimal)command.ExecuteScalar();
                 }
             }
         }

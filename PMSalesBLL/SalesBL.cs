@@ -30,6 +30,19 @@ namespace PMSalesBLL
             }
         }
 
+        public decimal GetConfirmedProfit()
+        {
+            try
+            {
+                return customerDAL.GetAllConfirmedProfit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving profit: {ex.Message}");
+                return 0m;
+            }
+        }
+
     }
 }
 

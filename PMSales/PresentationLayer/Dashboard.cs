@@ -26,6 +26,7 @@ namespace PMSales.PresentationLayer
             DisplayProductCount();
             GetConfirmSalesCount();
             DisplayConfirmSalesCount();
+            DisplayConfirmedProfit();
 
             // Initialize labels for button tooltips
             labelAddButton = label6;
@@ -372,6 +373,14 @@ namespace PMSales.PresentationLayer
         {
             var salesBL = new SalesBL();
             return salesBL.GetSalesCount();
+        }
+
+        // Displays the confirmed profit on the label
+        private void DisplayConfirmedProfit()
+        {
+            var salesBL = new SalesBL();
+            decimal confirmedProfit = salesBL.GetConfirmedProfit();
+            label1.Text = $"Confirmed Profit: Rs. {confirmedProfit:N2}";
         }
 
         // Items dropdown
