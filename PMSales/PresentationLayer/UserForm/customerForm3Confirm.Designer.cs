@@ -87,6 +87,8 @@
             textBoxCity = new RJCodeAdvance.RJControls.RJTextBox();
             textBoxAddress = new RJCodeAdvance.RJControls.RJTextBox();
             labelCity = new Label();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
@@ -487,6 +489,8 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(checkBox2);
+            panel1.Controls.Add(checkBox1);
             panel1.Controls.Add(rjTextBox17);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(rjButton5);
@@ -541,7 +545,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(82, 464);
+            label2.Location = new Point(81, 464);
             label2.Name = "label2";
             label2.Size = new Size(80, 15);
             label2.TabIndex = 71;
@@ -1156,6 +1160,26 @@
             labelCity.TabIndex = 40;
             labelCity.Text = "City :";
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(84, 500);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(70, 19);
+            checkBox1.TabIndex = 72;
+            checkBox1.Text = "Confirm";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(84, 522);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(55, 19);
+            checkBox2.TabIndex = 73;
+            checkBox2.Text = "Email";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
             // customerForm3Confirm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1251,5 +1275,7 @@
         private Label label8;
         private Label label7;
         private Label label6;
+        private CheckBox checkBox2;
+        private CheckBox checkBox1;
     }
 }
