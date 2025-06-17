@@ -157,7 +157,7 @@ namespace PMSalesDAL.DatabaseHelper
 
         public decimal GetAllConfirmedProfit()
         {
-            const string query = "GET_CONFIRMED_PROFIT_OF_SALES"; 
+            const string query = "GET_CONFIRMED_TOTALAMOUNT_OF_SALES"; 
             using (var connection = new SqlConnection(connectionString))
             {
                 using (var command = new SqlCommand(query, connection))

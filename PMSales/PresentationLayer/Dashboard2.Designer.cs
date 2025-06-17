@@ -484,11 +484,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(7, 279);
+            label1.Location = new Point(9, 280);
             label1.Name = "label1";
-            label1.Size = new Size(48, 15);
+            label1.Size = new Size(33, 15);
             label1.TabIndex = 66;
-            label1.Text = "Cancels";
+            label1.Text = "Sales";
             // 
             // labelEmail2
             // 

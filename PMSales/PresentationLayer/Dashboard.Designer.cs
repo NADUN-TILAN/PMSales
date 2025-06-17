@@ -648,9 +648,9 @@ namespace PMSales.PresentationLayer
             label1.ForeColor = Color.Black;
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(84, 28);
+            label1.Size = new Size(157, 28);
             label1.TabIndex = 50;
-            label1.Text = "Profit: 0";
+            label1.Text = "Total Amount: 0";
             // 
             // flowLayoutPanel1
             // 
